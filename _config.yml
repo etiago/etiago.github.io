@@ -1,9 +1,9 @@
-title: John Smith
+title: Tiago Espinha
 description: My Personal Blog
-author: John Smith
+author: Tiago Espinha
 logo: http://aboutashu.com/hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/ashutosh2k12
-about: Freelance developer
+github: https://github.com/etiago
+about: "Tiago's Tech Blog"
 disqus_shortname: aboutashu
 google_analytics: UA-72862926-1
 urls:
@@ -21,7 +21,7 @@ urls:
       url: '#'
       icon: fa-graduation-cap
     - text: Github
-      url: https://github.com/ashutosh2k12
+      url: https://github.com/etiago
       icon: fa-github
     - text: XML Feed
       url: /feed.xml
@@ -48,7 +48,6 @@ enableTags: true
 tagarray: []
 
 url: "http://aboutashu.com/hcz-jekyll-blog"
-baseurl: "/hcz-jekyll-blog"
 paginate: 20
 per_page: 20
 paginate_path: "/page:num/"

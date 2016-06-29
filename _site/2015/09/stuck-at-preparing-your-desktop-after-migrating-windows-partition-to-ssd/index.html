@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+        <title>Stuck at &#8220;Preparing your Desktop&#8221; After Migrating Windows Partition to SSD? - Tiago Espinha</title>
+        <meta name="author" content="Tiago Espinha" />
+        <meta name="description" content="Stuck at &#8220;Preparing your Desktop&#8221; After Migrating Windows Partition to SSD?" />
+        <meta name="keywords" content="Stuck at &#8220;Preparing your Desktop&#8221; After Migrating Windows Partition to SSD?, Tiago Espinha, Software, Windows" />
+
+        <meta content="0" property="fb:app_id">
+        <meta content="Tiago Espinha" property="og:site_name">
+        
+          <meta content="Stuck at &#8220;Preparing your Desktop&#8221; After Migrating Windows Partition to SSD?" property="og:title">
+        
+        
+          <meta content="article" property="og:type">
+        
+        
+          <meta content="My Personal Blog" property="og:description">
+        
+        
+          <meta content="http://aboutashu.com/hcz-jekyll-blog/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/" property="og:url">
+        
+        
+          <meta content="2015-09-08T22:52:59+02:00" property="article:published_time">
+          <meta content="http://aboutashu.com/hcz-jekyll-blog/about/" property="article:author">
+        
+        
+          <meta content="http://aboutashu.com/static/img/logo-high-resolution.png" property="og:image">
+        
+        
+          
+          <meta content="Software" property="article:section">
+          
+        
+        
+          
+          <meta content="HDD" property="article:tag">
+          
+          <meta content="Migrate Windows Partition" property="article:tag">
+          
+          <meta content="Software" property="article:tag">
+          
+          <meta content="SSD" property="article:tag">
+          
+          <meta content="Ubuntu" property="article:tag">
+          
+          <meta content="Windows" property="article:tag">
+          
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@\#">
+        <meta name="twitter:creator" content="@\#">
+        
+          <meta name="twitter:title" content="Stuck at &#8220;Preparing your Desktop&#8221; After Migrating Windows Partition to SSD?">
+        
+        
+          <meta name="twitter:url" content="http://aboutashu.com/hcz-jekyll-blog/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/">
+        
+        
+          <meta name="twitter:description" content="My Personal Blog">
+        
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+
+        <!-- Core BootStrap CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Material Design CSS -->
+        <link rel="stylesheet" href="http://aboutashu.com/hcz-jekyll-blog/static/css/bootstrap-material-design.min.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="http://aboutashu.com/hcz-jekyll-blog/static/css/syntax.css">
+
+        <!-- Custom CSS -->        
+        <link rel="stylesheet" href="http://aboutashu.com/hcz-jekyll-blog/static/css/thickbox.css">
+        <link rel="stylesheet" href="http://aboutashu.com/hcz-jekyll-blog/static/css/main.css">
+        <link rel="stylesheet" href="http://aboutashu.com/hcz-jekyll-blog/static/css/projects.css">
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72862926-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </head>
+
+    <body class="home overflow-hidden">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="header-panel shadow-z-2">
+    <div class="container">
+    <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="row-picture">
+        <img id="about" class="logo-img" src="http://aboutashu.com/hcz-jekyll-blog/static/img/avatar.png" height="75px" width="75px">
+      </div>
+      <div class="row-details">
+      <h4 class="list-group-item-heading">Tiago Espinha</h4>
+      <p class="list-group-item-text">Tiago's Tech Blog</p>
+      <div class="social-icons">
+	
+        <a class="icon" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-skype"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-stack-exchange"></i></a>
+    
+</div>
+      </div>
+        <div class="navbar-header pull-right">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-2x fa-bars"></i>
+            </button>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-8 col-xs-12">
+      <h2 class="blog-title-pro">Stuck at &#8220;Preparing your Desktop&#8221; After Migrating Windows Partition to SSD?</h2>
+      <p class="info">
+      
+      <span class="time">08 Sep 2015</span>
+      
+      
+    <span class="categories">
+        &raquo; <a href="/category/Software">Software</a>, <a href="/category/Windows">Windows</a>
+    </span>
+    
+      </p>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="container main outer">
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                    <nav class="menu">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="list-separator nav navbar-nav well well-primary post">
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 current-menu-item stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd"><a href="/about/"><i class="fa fa-comments"></i> About</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd"><a href="/projects/"><i class="fa fa-desktop"></i> Projects</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd"><a href="#"><i class="fa fa-graduation-cap"></i> Resume</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd"><a href="https://github.com/etiago"><i class="fa fa-github"></i> Github</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd"><a href="/feed.xml"><i class="fa fa-feed"></i> XML Feed</a></li>
+
+</ul>
+    </div>
+    </nav>
+
+            </div> <!-- end /.col-md-3 -->
+
+            <div class="col-md-9 col-xs-12 full">
+                <div class="post-content well">
+<article class="content">
+    <div class="post"><p style="text-align: justify;">
+  Recently at work I helped a colleague migrating his laptop from a HDD to an SSD. He was dual-booting his machine with Windows 7 and Ubuntu, and after skillfully shrinking his original partitions (in order to fit the SSD), we copied the partitions over with dd from the HDD to the SSD. After that was done, Grub was understandably confused as its entries were pointing to the HDD partitions rather than the SSD partitions but even after an update-grub and grub-install from within Ubuntu, Windows still wouldn&#8217;t boot.
+</p>
+
+<p style="text-align: justify;">
+  We consistently got stuck at &#8220;Preparing your Desktop&#8221; screen and eventually Windows would boot into a completely empty desktop.
+</p>
+
+<p style="text-align: justify;">
+  Keep reading to figure out how to fix this.
+</p>
+
+<p style="text-align: justify;">
+  <!--more-->
+</p>
+
+<p style="text-align: justify;">
+  Even though my Windows skills have rusted from having fully migrated to Arch Linux a while back, I still remembered you could run programs from the task manager which, conveniently, is still possible to launch using the Ctrl+Alt+Del combination. Having done so allowed me to diagnose the problem: when I ran cmd.exe, Windows was mounting the SSD partition from which I was trying to boot as F:\ rather than C:\ where Windows expected everything to be.
+</p>
+
+<p style="text-align: justify;">
+  The fix, after you know what to do, is simple-ish.
+</p>
+
+<p style="text-align: justify;">
+  Essentially you need to change your registry (you know, regedit) and remove all the letter mappings so that Windows will remap all your drives again at boot.
+</p>
+
+<p style="text-align: justify;">
+  Easy right? Just launch regedit and edit away! But NO! Because you will, with 100% certainty, not be able to launch regedit!
+</p>
+
+<p style="text-align: justify;">
+  So what&#8217;s the solution then, how can you edit your registry without actually being able to boot into Windows?
+</p>
+
+<p style="text-align: justify;">
+  Nice question! We do it from Ubuntu using a nifty tool called chntpw which was originally developed (I assume&#8230; based on the name&#8230;) to change the password of NT-based systems.
+</p>
+
+<p style="text-align: justify;">
+  So! Jump on Ubuntu, get yourself chntpw installed (seriously, if you don&#8217;t know how to do this, get a friend to help you as the next steps are VERY sensitive!) and do the following steps:
+</p>
+
+<ol style="text-align: justify;">
+  <li>
+    Mount your Windows partition (from now on called <WindowsPartition>).
+  &lt;/li&gt;
+  <li>
+    Run chntpw -i <WindowsPartition>/Windows/System32/config/system (N.B. Windows is not case-sensitive but Linux is! Therefore, your file might be called SYSTEM).
+  &lt;/li&gt;
+  <li>
+    From the menu, choose option 9 (Registry Editor).
+  </li>
+  <li>
+    Now if you type &#8220;ls&#8221;, one of the items should be &#8220;MountedDevices&#8221;.
+  </li>
+  <li>
+    Enter it by typing &#8220;cd MountedDevices&#8221;.
+  </li>
+  <li>
+    Again if you &#8220;ls&#8221;, a number of entries should appear, including all your drive letter mappings (we&#8217;re almost there!).
+  </li>
+  <li>
+    Now, I had no success actually <em>changing</em> the mappings so I ended up simply removing all the mappings and letting Windows remapping on the next boot. To do so type &#8221; dv \DosDevices\C:&#8221; and repeat this command for all the mapped letters in your computer.
+  </li>
+  <li>
+    Do &#8220;ls&#8221; one more time to confirm the mappings have been deleted.
+  </li>
+  <li>
+    Choose option &#8220;q&#8221; to quit chntpw followed by &#8220;y&#8221; to confirm writing the registry hive file.
+  </li>
+  <li>
+    TADA! You&#8217;re done! Boot into Windows and it should finally boot correctly.
+  </li>
+&lt;/ol&gt;
+
+<p style="text-align: justify;">
+  Let me know in the comments if you&#8217;re stuck in some step and I&#8217;ll gladly give a hand!
+</p>
+
+<p style="text-align: justify;">
+  Till the next time!
+</p>
+
+<p style="text-align: justify;">
+  [<a href="http://members.iinet.net/~herman546/Hacking%20the%20Windows%20Registry%20with%20chntpw.html" target="_blank">Credit</a>]
+</p>
+</WindowsPartition></li></WindowsPartition></li></ol>
+</div>
+    <hr />
+    <div class="share-page">
+    Share this on &rarr;
+ <a href="https://twitter.com/share" class="twitter-share-button" data-via="\#">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Google + -->
+<div class="g-plus" data-action="share" data-annotation="bubble"></div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Facebook -->
+<div class="fb-share-button" data-href="http://aboutashu.com/hcz-jekyll-blog/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</article>
+<hr />
+
+
+    
+    
+        
+            
+                
+                <div class="panel-body">
+                <h4>Related Posts</h4>
+                <ul>
+                
+                <li class="relatedPost">
+                    <a href="http://aboutashu.com/hcz-jekyll-blog/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/">Why I started using emacs (and why you shouldn&#8217;t)</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="http://aboutashu.com/hcz-jekyll-blog/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/">Disable power management for the 8188eu driver in Raspbian</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>, <a href="/category/Technology">Technology</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="http://aboutashu.com/hcz-jekyll-blog/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/">[Project] How to easily monitor your plants&#8217; soil humidity</a>
+                    
+                        <small>(Categories: <a href="/category/DIY">DIY</a>, <a href="/category/Hardware">Hardware</a>, <a href="/category/Raspberry Pi">Raspberry Pi</a>, <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="http://aboutashu.com/hcz-jekyll-blog/2013/10/automatic-recovery-of-rest-interfaces/">Automatic Recovery of REST Interfaces</a>
+                    
+                        <small>(Categories: <a href="/category/SOA">SOA</a>, <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="http://aboutashu.com/hcz-jekyll-blog/2013/08/wechat-pebble-wechat-notifications-on-your-pebble/">WeChat Pebble &#8211; WeChat notifications on your Pebble!</a>
+                    
+                        <small>(Categories: <a href="/category/Android">Android</a>, <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="http://aboutashu.com/hcz-jekyll-blog/2013/05/silicon-valley-and-mozilla-or-the-story-of-how-i-started-using-firefox-again/">Silicon Valley and Mozilla (or The Story of How I started Using Firefox Again)</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+    </div>
+
+
+<div class="PageNavigation">
+  
+    <a class="prev pull-left" href="/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/">&laquo; Disable power management for the 8188eu driver in Raspbian</a>
+  
+  
+    <a class="next pull-right" href="/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/">Why I started using emacs (and why you shouldn&#8217;t) &raquo;</a>
+  
+</div>
+
+
+<div class="disqus-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+
+        var disqus_shortname = "aboutashu";
+        var disqus_identifier = "http://aboutashu.com/hcz-jekyll-blog_Stuck at &#8220;Preparing your Desktop&#8221; After Migrating Windows Partition to SSD?";
+        var disqus_title = "Stuck at &#8220;Preparing your Desktop&#8221; After Migrating Windows Partition to SSD?";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    /* ]]> */
+    </script>
+</div>
+</div>
+
+                <div class="row">
+                  <div class="col-md-12 col-xs-12 footer">
+                <footer>
+                    © Copyright text here
+                     
+                    - <a href="#">Privacy link</a> - Powered by Jekyll.
+                    
+                </footer>
+                <div align="center">
+                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                  <!-- hcz-jekyll -->
+                  <ins class="adsbygoogle"
+                       style="display:block"
+                       data-ad-client="ca-pub-0776433630785969"
+                       data-ad-slot="9690958902"
+                       data-ad-format="auto"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+            </div>
+                </div>
+            </div> <!-- end /.col-md-9 -->
+        </div> <!-- end /.row -->
+
+    </div> <!-- end /.container -->
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <script src="http://aboutashu.com/hcz-jekyll-blog/static/js/thickbox-compressed.js"></script>
+        <script src="http://aboutashu.com/hcz-jekyll-blog/static/js/material.min.js"></script>
+        <script src="http://aboutashu.com/hcz-jekyll-blog/static/js/main.js"></script>
+        <script src="http://aboutashu.com/hcz-jekyll-blog/static/js/projects.js"></script>
+    </body>
+</html>
