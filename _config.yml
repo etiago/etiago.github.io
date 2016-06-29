@@ -20,7 +20,7 @@ urls:
     - text: Resume
       url: '#'
       icon: fa-graduation-cap
-    - text: Github
+    - text: GitHub
       url: https://github.com/etiago
       icon: fa-github
     - text: XML Feed
