@@ -1,7 +1,7 @@
 title: Tiago Espinha
 description: My Personal Blog
 author: Tiago Espinha
-logo: http://aboutashu.com/hcz-jekyll-blog/static/img/avatar.png
+logo: http://etiago.github.io/static/img/avatar.png
 github: https://github.com/etiago
 about: "Tiago's Tech Blog"
 disqus_shortname: aboutashu
@@ -47,7 +47,7 @@ share:
 enableTags: true
 tagarray: []
 
-url: "http://aboutashu.com/hcz-jekyll-blog"
+url: "https://etiago.github.io"
 paginate: 20
 per_page: 20
 paginate_path: "/page:num/"

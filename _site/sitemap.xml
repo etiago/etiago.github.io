@@ -3,10 +3,10 @@
   <channel>
     <title>Tiago Espinha</title>
     <description>My Personal Blog</description>
-    <link>http://aboutashu.com/hcz-jekyll-blog/</link>
-    <atom:link href="http://aboutashu.com/hcz-jekyll-blog/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Jun 2016 17:07:16 +0200</pubDate>
-    <lastBuildDate>Wed, 29 Jun 2016 17:07:16 +0200</lastBuildDate>
+    <link>https://etiago.github.io/</link>
+    <atom:link href="https://etiago.github.io/sitemap.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 29 Jun 2016 20:16:03 +0200</pubDate>
+    <lastBuildDate>Wed, 29 Jun 2016 20:16:03 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -67,8 +67,8 @@
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 08 May 2016 18:03:33 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</guid>
+        <link>https://etiago.github.io/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</guid>
         
         <category>editor</category>
         
@@ -176,8 +176,8 @@
 &lt;/WindowsPartition&gt;&lt;/li&gt;&lt;/WindowsPartition&gt;&lt;/li&gt;&lt;/ol&gt;
 </description>
         <pubDate>Tue, 08 Sep 2015 22:52:59 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</guid>
+        <link>https://etiago.github.io/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</guid>
         
         <category>HDD</category>
         
@@ -213,8 +213,8 @@
 &lt;p&gt; &lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Apr 2015 22:46:20 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</guid>
+        <link>https://etiago.github.io/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</guid>
         
         <category>8188eu</category>
         
@@ -278,8 +278,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 06 Oct 2014 20:02:34 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2014/10/photo-jupiter-and-its-4-largest-moons/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2014/10/photo-jupiter-and-its-4-largest-moons/</guid>
+        <link>https://etiago.github.io/2014/10/photo-jupiter-and-its-4-largest-moons/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2014/10/photo-jupiter-and-its-4-largest-moons/</guid>
         
         <category>astronomy</category>
         
@@ -351,8 +351,8 @@
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 28 Sep 2014 09:29:58 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</guid>
+        <link>https://etiago.github.io/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</guid>
         
         
         <category>Life hacks</category>
@@ -400,8 +400,8 @@
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jun 2014 10:14:14 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2014/06/how-to-see-the-international-space-station-iss/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2014/06/how-to-see-the-international-space-station-iss/</guid>
+        <link>https://etiago.github.io/2014/06/how-to-see-the-international-space-station-iss/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2014/06/how-to-see-the-international-space-station-iss/</guid>
         
         <category>astronomy</category>
         
@@ -608,8 +608,8 @@
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 13 May 2014 22:02:06 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</guid>
+        <link>https://etiago.github.io/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</guid>
         
         <category>Arduino</category>
         
@@ -840,8 +840,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/ssid&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Apr 2014 23:22:57 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</guid>
+        <link>https://etiago.github.io/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</guid>
         
         <category>Dongle</category>
         
@@ -901,8 +901,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 11 Oct 2013 18:09:39 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2013/10/chronopost-portugal-servico-enganador/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2013/10/chronopost-portugal-servico-enganador/</guid>
+        <link>https://etiago.github.io/2013/10/chronopost-portugal-servico-enganador/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2013/10/chronopost-portugal-servico-enganador/</guid>
         
         <category>chronopost</category>
         
@@ -965,8 +965,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Oct 2013 16:46:53 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2013/10/automatic-recovery-of-rest-interfaces/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2013/10/automatic-recovery-of-rest-interfaces/</guid>
+        <link>https://etiago.github.io/2013/10/automatic-recovery-of-rest-interfaces/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2013/10/automatic-recovery-of-rest-interfaces/</guid>
         
         
         <category>SOA</category>
@@ -1040,8 +1040,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 20 Sep 2013 10:45:32 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2013/09/ok-i-got-some-kefir-now-what-or-kefir-quickstart-guide/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2013/09/ok-i-got-some-kefir-now-what-or-kefir-quickstart-guide/</guid>
+        <link>https://etiago.github.io/2013/09/ok-i-got-some-kefir-now-what-or-kefir-quickstart-guide/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2013/09/ok-i-got-some-kefir-now-what-or-kefir-quickstart-guide/</guid>
         
         <category>how to make kefir</category>
         
@@ -1125,8 +1125,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Sep 2013 09:02:29 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2013/09/would-you-like-some-kefir-like-some-what/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2013/09/would-you-like-some-kefir-like-some-what/</guid>
+        <link>https://etiago.github.io/2013/09/would-you-like-some-kefir-like-some-what/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2013/09/would-you-like-some-kefir-like-some-what/</guid>
         
         <category>health</category>
         
@@ -1202,8 +1202,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;p&gt;The source code is available for free on GitHub: &lt;a href=&quot;https://github.com/etiago/WeChatPebble&quot;&gt;https://github.com/etiago/WeChatPebble&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 12 Aug 2013 19:04:38 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2013/08/wechat-pebble-wechat-notifications-on-your-pebble/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2013/08/wechat-pebble-wechat-notifications-on-your-pebble/</guid>
+        <link>https://etiago.github.io/2013/08/wechat-pebble-wechat-notifications-on-your-pebble/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2013/08/wechat-pebble-wechat-notifications-on-your-pebble/</guid>
         
         <category>Android</category>
         
@@ -1265,8 +1265,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 12 Aug 2013 12:59:41 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2013/08/now-running-off-a-raspberry-pi/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2013/08/now-running-off-a-raspberry-pi/</guid>
+        <link>https://etiago.github.io/2013/08/now-running-off-a-raspberry-pi/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2013/08/now-running-off-a-raspberry-pi/</guid>
         
         
         <category>Hardware</category>
@@ -1302,8 +1302,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 26 May 2013 18:41:16 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2013/05/silicon-valley-and-mozilla-or-the-story-of-how-i-started-using-firefox-again/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2013/05/silicon-valley-and-mozilla-or-the-story-of-how-i-started-using-firefox-again/</guid>
+        <link>https://etiago.github.io/2013/05/silicon-valley-and-mozilla-or-the-story-of-how-i-started-using-firefox-again/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2013/05/silicon-valley-and-mozilla-or-the-story-of-how-i-started-using-firefox-again/</guid>
         
         <category>Firefox</category>
         
@@ -1347,8 +1347,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 07 Nov 2012 22:48:27 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2012/11/libgdx-and-vector2-mutability/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2012/11/libgdx-and-vector2-mutability/</guid>
+        <link>https://etiago.github.io/2012/11/libgdx-and-vector2-mutability/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2012/11/libgdx-and-vector2-mutability/</guid>
         
         <category>game development</category>
         
@@ -1390,8 +1390,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Sep 2012 11:21:06 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2012/09/turmeric-soa-lessons-learned/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2012/09/turmeric-soa-lessons-learned/</guid>
+        <link>https://etiago.github.io/2012/09/turmeric-soa-lessons-learned/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2012/09/turmeric-soa-lessons-learned/</guid>
         
         <category>eBay</category>
         
@@ -1451,8 +1451,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jul 2012 17:22:03 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2012/07/the-cross-discipline-conundrum-or-how-we-cant-always-learn-from-other-disciplines/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2012/07/the-cross-discipline-conundrum-or-how-we-cant-always-learn-from-other-disciplines/</guid>
+        <link>https://etiago.github.io/2012/07/the-cross-discipline-conundrum-or-how-we-cant-always-learn-from-other-disciplines/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2012/07/the-cross-discipline-conundrum-or-how-we-cant-always-learn-from-other-disciplines/</guid>
         
         
         <category>Research</category>
@@ -1498,8 +1498,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Jul 2012 12:58:46 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2012/07/changing-the-way-i-use-my-mac/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2012/07/changing-the-way-i-use-my-mac/</guid>
+        <link>https://etiago.github.io/2012/07/changing-the-way-i-use-my-mac/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2012/07/changing-the-way-i-use-my-mac/</guid>
         
         
         <category>Software</category>
@@ -1519,8 +1519,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;p&gt;Hope that helps anyone who’s ever asked Google this question!&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Jan 2012 15:56:59 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2012/01/quickies-why-cant-i-move-certain-applications-to-the-sd-card/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2012/01/quickies-why-cant-i-move-certain-applications-to-the-sd-card/</guid>
+        <link>https://etiago.github.io/2012/01/quickies-why-cant-i-move-certain-applications-to-the-sd-card/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2012/01/quickies-why-cant-i-move-certain-applications-to-the-sd-card/</guid>
         
         <category>Android</category>
         
@@ -1568,8 +1568,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 03 Jan 2012 23:29:39 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/</guid>
+        <link>https://etiago.github.io/2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/</guid>
         
         <category>Camera FC</category>
         
@@ -1725,8 +1725,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/WSF_sources&gt;&lt;/p&gt;&lt;/path_to_php&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 13 Sep 2011 11:48:27 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/</guid>
+        <link>https://etiago.github.io/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/</guid>
         
         <category>PHP</category>
         
@@ -1787,8 +1787,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 11 Sep 2011 21:47:50 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2011/09/black-and-white-icons-for-caffeine/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2011/09/black-and-white-icons-for-caffeine/</guid>
+        <link>https://etiago.github.io/2011/09/black-and-white-icons-for-caffeine/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2011/09/black-and-white-icons-for-caffeine/</guid>
         
         <category>Apple Caffeine</category>
         
@@ -1904,8 +1904,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 01 Sep 2011 00:32:37 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2011/08/on-turmeric-soa-open-source-and-the-apache-software-foundation/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2011/08/on-turmeric-soa-open-source-and-the-apache-software-foundation/</guid>
+        <link>https://etiago.github.io/2011/08/on-turmeric-soa-open-source-and-the-apache-software-foundation/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2011/08/on-turmeric-soa-open-source-and-the-apache-software-foundation/</guid>
         
         <category>Apache</category>
         
@@ -1975,8 +1975,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 23 Mar 2011 23:17:37 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2011/03/idea-for-googlebing/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2011/03/idea-for-googlebing/</guid>
+        <link>https://etiago.github.io/2011/03/idea-for-googlebing/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2011/03/idea-for-googlebing/</guid>
         
         <category>Bing</category>
         
@@ -2020,8 +2020,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 23 Oct 2010 20:57:52 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/10/adobe-starts-including-spyware-with-acrobat-reader/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/10/adobe-starts-including-spyware-with-acrobat-reader/</guid>
+        <link>https://etiago.github.io/2010/10/adobe-starts-including-spyware-with-acrobat-reader/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/10/adobe-starts-including-spyware-with-acrobat-reader/</guid>
         
         <category>Adobe</category>
         
@@ -2095,8 +2095,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Sep 2010 12:14:12 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/09/how-to-seal-a-bag-airtight-with-a-plastic-bottle/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/09/how-to-seal-a-bag-airtight-with-a-plastic-bottle/</guid>
+        <link>https://etiago.github.io/2010/09/how-to-seal-a-bag-airtight-with-a-plastic-bottle/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/09/how-to-seal-a-bag-airtight-with-a-plastic-bottle/</guid>
         
         <category>Airtight</category>
         
@@ -2138,8 +2138,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Sep 2010 02:40:21 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/09/free-storage-with-dropbox-free-online-backups/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/09/free-storage-with-dropbox-free-online-backups/</guid>
+        <link>https://etiago.github.io/2010/09/free-storage-with-dropbox-free-online-backups/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/09/free-storage-with-dropbox-free-online-backups/</guid>
         
         <category>Backups</category>
         
@@ -2183,8 +2183,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Sep 2010 02:24:33 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/09/android-rooting-for-dummies-what-is-rooting/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/09/android-rooting-for-dummies-what-is-rooting/</guid>
+        <link>https://etiago.github.io/2010/09/android-rooting-for-dummies-what-is-rooting/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/09/android-rooting-for-dummies-what-is-rooting/</guid>
         
         <category>Android</category>
         
@@ -2226,8 +2226,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.tiagoespinha.net/wp-content/uploads/2010/09/angrybirds.png&quot; rel=&quot;lightbox[391]&quot; title=&quot;angrybirds&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-392&quot; title=&quot;angrybirds&quot; src=&quot;http://www.tiagoespinha.net/wp-content/uploads/2010/09/angrybirds.png&quot; alt=&quot;&quot; width=&quot;175&quot; height=&quot;175&quot; /&gt;&lt;/a&gt;(Don’t know what this is? Download an app called “Barcode Scanner” and scan this code to download “Angry Birds” right away!)&lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Sep 2010 19:51:16 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/09/angry-birds-for-android-now-in-the-android-market/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/09/angry-birds-for-android-now-in-the-android-market/</guid>
+        <link>https://etiago.github.io/2010/09/angry-birds-for-android-now-in-the-android-market/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/09/angry-birds-for-android-now-in-the-android-market/</guid>
         
         <category>Android</category>
         
@@ -2261,8 +2261,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Sep 2010 15:22:30 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/09/ipad-gets-the-ios-4-2-in-november-iphones-get-ios-4-1-now/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/09/ipad-gets-the-ios-4-2-in-november-iphones-get-ios-4-1-now/</guid>
+        <link>https://etiago.github.io/2010/09/ipad-gets-the-ios-4-2-in-november-iphones-get-ios-4-1-now/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/09/ipad-gets-the-ios-4-2-in-november-iphones-get-ios-4-1-now/</guid>
         
         <category>Apple iPad</category>
         
@@ -2328,8 +2328,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Sep 2010 22:05:02 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/09/apples-new-ipod-line-up-ios-4-2-and-itunes-10/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/09/apples-new-ipod-line-up-ios-4-2-and-itunes-10/</guid>
+        <link>https://etiago.github.io/2010/09/apples-new-ipod-line-up-ios-4-2-and-itunes-10/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/09/apples-new-ipod-line-up-ios-4-2-and-itunes-10/</guid>
         
         <category>Apple</category>
         
@@ -2377,8 +2377,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 30 Aug 2010 13:44:29 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/08/cyanogenmod-6-0-released-still-no-galaxy-s-support/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/08/cyanogenmod-6-0-released-still-no-galaxy-s-support/</guid>
+        <link>https://etiago.github.io/2010/08/cyanogenmod-6-0-released-still-no-galaxy-s-support/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/08/cyanogenmod-6-0-released-still-no-galaxy-s-support/</guid>
         
         <category>Android</category>
         
@@ -2493,8 +2493,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Aug 2010 13:42:15 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/08/samsung-galaxy-s-gets-android-2-2-froyo-beta/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/08/samsung-galaxy-s-gets-android-2-2-froyo-beta/</guid>
+        <link>https://etiago.github.io/2010/08/samsung-galaxy-s-gets-android-2-2-froyo-beta/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/08/samsung-galaxy-s-gets-android-2-2-froyo-beta/</guid>
         
         <category>Android</category>
         
@@ -2554,8 +2554,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 24 Aug 2010 00:16:42 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/08/tiago-is-now-officially-an-asf-committer/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/08/tiago-is-now-officially-an-asf-committer/</guid>
+        <link>https://etiago.github.io/2010/08/tiago-is-now-officially-an-asf-committer/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/08/tiago-is-now-officially-an-asf-committer/</guid>
         
         <category>Apache</category>
         
@@ -2585,8 +2585,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
         <description>&lt;p&gt;&lt;a href=&quot;http://www.tiagoespinha.net/wp-content/uploads/2010/08/46190_421669956860_586946860_5530928_7185433_n.jpg&quot; rel=&quot;lightbox[350]&quot; title=&quot;Check it out guys! &amp;quot;sig 3 B00BB00B 2100-12-21   Keanu Charles Reeves &amp;lt;theone@thematrix.com&amp;gt;&amp;quot;&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-351&quot; title=&quot;Check it out guys! &amp;quot;sig 3 B00BB00B 2100-12-21   Keanu Charles Reeves &amp;lt;theone@thematrix.com&amp;gt;&amp;quot;&quot; src=&quot;http://www.tiagoespinha.net/wp-content/uploads/2010/08/46190_421669956860_586946860_5530928_7185433_n.jpg&quot; alt=&quot;&quot; width=&quot;640&quot; height=&quot;480&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Aug 2010 23:28:34 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/08/comics-autographs-in-the-future/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/08/comics-autographs-in-the-future/</guid>
+        <link>https://etiago.github.io/2010/08/comics-autographs-in-the-future/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/08/comics-autographs-in-the-future/</guid>
         
         <category>Comics</category>
         
@@ -2675,8 +2675,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 20 Aug 2010 22:26:31 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/08/samsung-galaxy-s-lag-issue-and-how-to-fix-it/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/08/samsung-galaxy-s-lag-issue-and-how-to-fix-it/</guid>
+        <link>https://etiago.github.io/2010/08/samsung-galaxy-s-lag-issue-and-how-to-fix-it/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/08/samsung-galaxy-s-lag-issue-and-how-to-fix-it/</guid>
         
         <category>Android</category>
         
@@ -2732,8 +2732,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 26 Jul 2010 20:16:28 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/07/samsung-galaxy-s-and-the-iphone-4s-amazing-screen/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/07/samsung-galaxy-s-and-the-iphone-4s-amazing-screen/</guid>
+        <link>https://etiago.github.io/2010/07/samsung-galaxy-s-and-the-iphone-4s-amazing-screen/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/07/samsung-galaxy-s-and-the-iphone-4s-amazing-screen/</guid>
         
         <category>Apple</category>
         
@@ -2791,8 +2791,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jul 2010 02:12:47 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/07/why-apples-argument-is-simply-flawed/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/07/why-apples-argument-is-simply-flawed/</guid>
+        <link>https://etiago.github.io/2010/07/why-apples-argument-is-simply-flawed/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/07/why-apples-argument-is-simply-flawed/</guid>
         
         <category>antenna problems</category>
         
@@ -2844,8 +2844,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 08 May 2010 13:00:46 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/05/pie-chart-yourself-into-a-diet/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/05/pie-chart-yourself-into-a-diet/</guid>
+        <link>https://etiago.github.io/2010/05/pie-chart-yourself-into-a-diet/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/05/pie-chart-yourself-into-a-diet/</guid>
         
         <category>Diet</category>
         
@@ -2883,8 +2883,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 22 Apr 2010 19:34:16 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/04/lufthansa-offers-gray-powell-flight-to-germany/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/04/lufthansa-offers-gray-powell-flight-to-germany/</guid>
+        <link>https://etiago.github.io/2010/04/lufthansa-offers-gray-powell-flight-to-germany/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/04/lufthansa-offers-gray-powell-flight-to-germany/</guid>
         
         <category>Germany</category>
         
@@ -2938,8 +2938,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Apr 2010 16:11:06 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/04/imagine-cup-and-volcano-ash/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/04/imagine-cup-and-volcano-ash/</guid>
+        <link>https://etiago.github.io/2010/04/imagine-cup-and-volcano-ash/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/04/imagine-cup-and-volcano-ash/</guid>
         
         <category>Eyjafjallajoekull</category>
         
@@ -3011,8 +3011,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 27 Jan 2010 21:10:40 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2010/01/apple-tablet-the-ipad-is-meh/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2010/01/apple-tablet-the-ipad-is-meh/</guid>
+        <link>https://etiago.github.io/2010/01/apple-tablet-the-ipad-is-meh/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2010/01/apple-tablet-the-ipad-is-meh/</guid>
         
         <category>Apple</category>
         
@@ -3054,8 +3054,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 30 Dec 2009 00:08:27 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/12/imacs-and-the-yellow-tinted-screen/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/12/imacs-and-the-yellow-tinted-screen/</guid>
+        <link>https://etiago.github.io/2009/12/imacs-and-the-yellow-tinted-screen/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/12/imacs-and-the-yellow-tinted-screen/</guid>
         
         <category>Apple</category>
         
@@ -3087,8 +3087,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 28 Dec 2009 15:06:19 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/12/10-google-wave-invites/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/12/10-google-wave-invites/</guid>
+        <link>https://etiago.github.io/2009/12/10-google-wave-invites/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/12/10-google-wave-invites/</guid>
         
         <category>Google</category>
         
@@ -3120,8 +3120,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;Tiago&lt;/p&gt;
 </description>
         <pubDate>Mon, 28 Dec 2009 11:57:24 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/12/out-with-the-old-in-with-the-new/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/12/out-with-the-old-in-with-the-new/</guid>
+        <link>https://etiago.github.io/2009/12/out-with-the-old-in-with-the-new/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/12/out-with-the-old-in-with-the-new/</guid>
         
         <category>2010</category>
         
@@ -3149,8 +3149,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.tiagoespinha.net/wp-content/uploads/2009/11/iphone-flash-message.jpg&quot; rel=&quot;lightbox[284]&quot; title=&quot;iphone-flash-message&quot;&gt;&lt;img class=&quot;alignleft size-full wp-image-285&quot; title=&quot;iphone-flash-message&quot; src=&quot;http://www.tiagoespinha.net/wp-content/uploads/2009/11/iphone-flash-message.jpg&quot; alt=&quot;iphone-flash-message&quot; width=&quot;315&quot; height=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Nov 2009 11:29:15 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/11/adobe-and-the-slap-on-apple/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/11/adobe-and-the-slap-on-apple/</guid>
+        <link>https://etiago.github.io/2009/11/adobe-and-the-slap-on-apple/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/11/adobe-and-the-slap-on-apple/</guid>
         
         <category>Adobe</category>
         
@@ -3214,8 +3214,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Thu, 15 Oct 2009 15:58:48 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/10/sidekick-data-recovered-most-of-it-maybe-all/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/10/sidekick-data-recovered-most-of-it-maybe-all/</guid>
+        <link>https://etiago.github.io/2009/10/sidekick-data-recovered-most-of-it-maybe-all/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/10/sidekick-data-recovered-most-of-it-maybe-all/</guid>
         
         
         <category>Uncategorized</category>
@@ -3237,8 +3237,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 10 Oct 2009 23:53:13 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/10/t-mobile-sidekick-in-danger/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/10/t-mobile-sidekick-in-danger/</guid>
+        <link>https://etiago.github.io/2009/10/t-mobile-sidekick-in-danger/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/10/t-mobile-sidekick-in-danger/</guid>
         
         <category>Danger</category>
         
@@ -3290,8 +3290,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 26 Sep 2009 19:27:28 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/09/ay-up-me-duck/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/09/ay-up-me-duck/</guid>
+        <link>https://etiago.github.io/2009/09/ay-up-me-duck/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/09/ay-up-me-duck/</guid>
         
         <category>Leicester</category>
         
@@ -3361,8 +3361,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;img style=&quot;border:0&quot; usemap=&quot;#map3751&quot; src=&quot;http://socialspark.com/metrics/view/post?slot_id=46011&amp;amp;url=http%3A%2F%2Fsocialspark.com%2Fimages%2Fdisclosure_badges%2Fdisclosure_badge_blue.png&quot; border=&quot;0&quot; alt=&quot;Post?slot_id=46011&amp;amp;url=http%3a%2f%2fsocialspark&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Sep 2009 00:20:13 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/09/a-day-in-the-life-of-a-presario-cq60/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/09/a-day-in-the-life-of-a-presario-cq60/</guid>
+        <link>https://etiago.github.io/2009/09/a-day-in-the-life-of-a-presario-cq60/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/09/a-day-in-the-life-of-a-presario-cq60/</guid>
         
         <category>Compaq Presario</category>
         
@@ -3414,8 +3414,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 07 Aug 2009 19:07:05 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/08/windows-7-adjust-aero-peek-delay/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/08/windows-7-adjust-aero-peek-delay/</guid>
+        <link>https://etiago.github.io/2009/08/windows-7-adjust-aero-peek-delay/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/08/windows-7-adjust-aero-peek-delay/</guid>
         
         <category>Aero Peek</category>
         
@@ -3456,8 +3456,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 30 Jul 2009 20:22:03 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/07/iphone-virus-avast/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/07/iphone-virus-avast/</guid>
+        <link>https://etiago.github.io/2009/07/iphone-virus-avast/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/07/iphone-virus-avast/</guid>
         
         <category>3GS</category>
         
@@ -3529,8 +3529,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Jul 2009 15:11:34 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/07/iphone-os-3-0-spam-exploit/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/07/iphone-os-3-0-spam-exploit/</guid>
+        <link>https://etiago.github.io/2009/07/iphone-os-3-0-spam-exploit/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/07/iphone-os-3-0-spam-exploit/</guid>
         
         <category>Apple</category>
         
@@ -3566,8 +3566,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;For the whole release schedule, hit up the &lt;a href=&quot;http://windowsteamblog.com/blogs/windows7/archive/2009/07/21/when-will-you-get-windows-7-rtm.aspx&quot; target=&quot;_blank&quot;&gt;Windows Team Blog&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Jul 2009 10:10:22 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/07/windows-7-rtmed/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/07/windows-7-rtmed/</guid>
+        <link>https://etiago.github.io/2009/07/windows-7-rtmed/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/07/windows-7-rtmed/</guid>
         
         <category>microsoft</category>
         
@@ -3605,8 +3605,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Jul 2009 09:31:42 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/07/imageshack-hacked-yes/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/07/imageshack-hacked-yes/</guid>
+        <link>https://etiago.github.io/2009/07/imageshack-hacked-yes/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/07/imageshack-hacked-yes/</guid>
         
         <category>image shack hacked</category>
         
@@ -3674,8 +3674,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 09 Jul 2009 12:53:43 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/07/google-chrome-os-first-screenshots/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/07/google-chrome-os-first-screenshots/</guid>
+        <link>https://etiago.github.io/2009/07/google-chrome-os-first-screenshots/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/07/google-chrome-os-first-screenshots/</guid>
         
         <category>Google</category>
         
@@ -3723,8 +3723,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 08 Jul 2009 10:19:42 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/07/google-chrome-os-googles-bing-retaliation/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/07/google-chrome-os-googles-bing-retaliation/</guid>
+        <link>https://etiago.github.io/2009/07/google-chrome-os-googles-bing-retaliation/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/07/google-chrome-os-googles-bing-retaliation/</guid>
         
         <category>Chrome OS</category>
         
@@ -3762,8 +3762,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Jul 2009 13:28:37 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/07/musical-tesla-coil-plans/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/07/musical-tesla-coil-plans/</guid>
+        <link>https://etiago.github.io/2009/07/musical-tesla-coil-plans/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/07/musical-tesla-coil-plans/</guid>
         
         <category>Musical Tesla Coil</category>
         
@@ -3798,8 +3798,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Jul 2009 11:25:51 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/07/staples-leiria-july-6th-2009/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/07/staples-leiria-july-6th-2009/</guid>
+        <link>https://etiago.github.io/2009/07/staples-leiria-july-6th-2009/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/07/staples-leiria-july-6th-2009/</guid>
         
         <category>People</category>
         
@@ -3853,8 +3853,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Jul 2009 11:08:51 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/07/the-end-of-the-ubuntu-vs-windows-war/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/07/the-end-of-the-ubuntu-vs-windows-war/</guid>
+        <link>https://etiago.github.io/2009/07/the-end-of-the-ubuntu-vs-windows-war/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/07/the-end-of-the-ubuntu-vs-windows-war/</guid>
         
         <category>Software</category>
         
@@ -3922,8 +3922,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 26 Jun 2009 15:15:45 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/06/story-of-my-life/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/06/story-of-my-life/</guid>
+        <link>https://etiago.github.io/2009/06/story-of-my-life/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/06/story-of-my-life/</guid>
         
         <category>Advanced Software Engineering</category>
         
@@ -3974,8 +3974,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/username&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 24 Jun 2009 10:37:15 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/06/iphone-30-jailbreak-and-ultrasn0w-it-is-out/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/06/iphone-30-jailbreak-and-ultrasn0w-it-is-out/</guid>
+        <link>https://etiago.github.io/2009/06/iphone-30-jailbreak-and-ultrasn0w-it-is-out/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/06/iphone-30-jailbreak-and-ultrasn0w-it-is-out/</guid>
         
         <category>3GS</category>
         
@@ -4027,8 +4027,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 08 Jun 2009 18:38:10 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/06/was-windows-vista-a-mistake-not-really/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/06/was-windows-vista-a-mistake-not-really/</guid>
+        <link>https://etiago.github.io/2009/06/was-windows-vista-a-mistake-not-really/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/06/was-windows-vista-a-mistake-not-really/</guid>
         
         <category>microsoft</category>
         
@@ -4066,8 +4066,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.tiagoespinha.net/wp-content/uploads/2009/05/dsc02430.jpg&quot; rel=&quot;lightbox[202]&quot; title=&quot;Last but not least, my VISA&quot;&gt;&lt;img class=&quot;alignnone size-thumbnail wp-image-206&quot; title=&quot;Last but not least, my VISA&quot; src=&quot;http://www.tiagoespinha.net/wp-content/uploads/2009/05/dsc02430-150x150.jpg&quot; alt=&quot;Last but not least, my VISA&quot; width=&quot;150&quot; height=&quot;150&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 May 2009 15:02:04 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/05/google-summer-of-code-payments-rolling-in/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/05/google-summer-of-code-payments-rolling-in/</guid>
+        <link>https://etiago.github.io/2009/05/google-summer-of-code-payments-rolling-in/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/05/google-summer-of-code-payments-rolling-in/</guid>
         
         <category>2009</category>
         
@@ -4097,8 +4097,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;‘Till the next time!&lt;/p&gt;
 </description>
         <pubDate>Mon, 25 May 2009 22:04:22 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/05/the-mozilla-mystery/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/05/the-mozilla-mystery/</guid>
+        <link>https://etiago.github.io/2009/05/the-mozilla-mystery/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/05/the-mozilla-mystery/</guid>
         
         <category>Firefox</category>
         
@@ -4134,8 +4134,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 25 May 2009 18:19:34 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/05/masters-degree/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/05/masters-degree/</guid>
+        <link>https://etiago.github.io/2009/05/masters-degree/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/05/masters-degree/</guid>
         
         <category>Advanced Software Engineering</category>
         
@@ -4167,8 +4167,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;My bottom-line is: who is to decide whether a standard should be implemented in a strict manner or not? And to which extent should interop efforts be made? All in all, if Microsoft designs interoperability towards OpenOffice, it might just break things with another Office Suite that decided to implement things differently.&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 May 2009 18:13:20 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/05/office-2007-sp2-reduces-interoperability-tough-luck/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/05/office-2007-sp2-reduces-interoperability-tough-luck/</guid>
+        <link>https://etiago.github.io/2009/05/office-2007-sp2-reduces-interoperability-tough-luck/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/05/office-2007-sp2-reduces-interoperability-tough-luck/</guid>
         
         <category>microsoft</category>
         
@@ -4202,8 +4202,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;Have a good one.&lt;/p&gt;
 </description>
         <pubDate>Wed, 06 May 2009 23:14:31 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/05/the-first-flaw-in-windows-7/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/05/the-first-flaw-in-windows-7/</guid>
+        <link>https://etiago.github.io/2009/05/the-first-flaw-in-windows-7/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/05/the-first-flaw-in-windows-7/</guid>
         
         <category>flaw</category>
         
@@ -4291,8 +4291,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&quot;http://ad.doubleclick.net/ad/N5654.139913.9527099420421/B3455931;sz=1x1&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 27 Apr 2009 21:38:33 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/04/ethical-hacking/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/04/ethical-hacking/</guid>
+        <link>https://etiago.github.io/2009/04/ethical-hacking/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/04/ethical-hacking/</guid>
         
         <category>#CEH</category>
         
@@ -4332,8 +4332,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;is just doomed to extinction and failure. I know I wouldn’t buy anything outside that. (I am a proud owner of an iPhone 3G by the way)&lt;/p&gt;
 </description>
         <pubDate>Mon, 27 Apr 2009 00:46:43 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/04/lg-km900-youre-doing-it-wrong/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/04/lg-km900-youre-doing-it-wrong/</guid>
+        <link>https://etiago.github.io/2009/04/lg-km900-youre-doing-it-wrong/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/04/lg-km900-youre-doing-it-wrong/</guid>
         
         <category>KM900</category>
         
@@ -4359,8 +4359,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;This will be my smallest post ever but that is all I have to say 🙂 I am friggin’ ecstatic!&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Apr 2009 22:58:59 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/04/google-summer-of-code-2009-part-2/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/04/google-summer-of-code-2009-part-2/</guid>
+        <link>https://etiago.github.io/2009/04/google-summer-of-code-2009-part-2/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/04/google-summer-of-code-2009-part-2/</guid>
         
         <category>Google</category>
         
@@ -4396,8 +4396,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 19 Apr 2009 14:34:32 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/04/windows-7-rc-out-maybe/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/04/windows-7-rc-out-maybe/</guid>
+        <link>https://etiago.github.io/2009/04/windows-7-rc-out-maybe/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/04/windows-7-rc-out-maybe/</guid>
         
         <category>May 5th</category>
         
@@ -4429,8 +4429,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;So, the application period is over and my application is submitted. The results should be out on April 20th and I have my fingers crossed for me to get picked 🙂&lt;/p&gt;
 </description>
         <pubDate>Fri, 10 Apr 2009 23:29:43 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/04/google-summer-of-code-2009/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/04/google-summer-of-code-2009/</guid>
+        <link>https://etiago.github.io/2009/04/google-summer-of-code-2009/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/04/google-summer-of-code-2009/</guid>
         
         <category>Apache</category>
         
@@ -4472,8 +4472,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;img class=&quot;alignnone size-medium wp-image-165&quot; title=&quot;vistabuntu&quot; src=&quot;http://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-300x168.jpg&quot; alt=&quot;vistabuntu&quot; width=&quot;300&quot; height=&quot;168&quot; srcset=&quot;https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-300x168.jpg 300w, https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-1024x575.jpg 1024w, https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu.jpg 1366w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 24 Mar 2009 19:46:09 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/03/vmware-unity-the-ultimate-virtualization/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/03/vmware-unity-the-ultimate-virtualization/</guid>
+        <link>https://etiago.github.io/2009/03/vmware-unity-the-ultimate-virtualization/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/03/vmware-unity-the-ultimate-virtualization/</guid>
         
         
         <category>Uncategorized</category>
@@ -4499,8 +4499,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;And that’s all folks! I better go get some sle…..get back to work I mean! 😉&lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Mar 2009 01:14:14 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/03/whats-hot/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/03/whats-hot/</guid>
+        <link>https://etiago.github.io/2009/03/whats-hot/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/03/whats-hot/</guid>
         
         <category>Google</category>
         
@@ -4546,8 +4546,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;So if you still needed any proof that this is the cooler for you, look no further. This will solve ALL your temperature problems and I advocate that this graphics card should actually come with one of these coolers by default.&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 Mar 2009 22:40:01 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/03/accelero-twin-turbo-by-artic-cooling-review/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/03/accelero-twin-turbo-by-artic-cooling-review/</guid>
+        <link>https://etiago.github.io/2009/03/accelero-twin-turbo-by-artic-cooling-review/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/03/accelero-twin-turbo-by-artic-cooling-review/</guid>
         
         <category>Accelero</category>
         
@@ -4583,8 +4583,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;Clearly, part of the code has already been rolled out, but not all of it. The why is yet to be known, as Google won’t give anything more than “soon, Themes will come to Google Apps”. But how soon, Google?&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Feb 2009 20:37:30 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/02/gmail-now-has-customizable-themes-but-what-about-us/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/02/gmail-now-has-customizable-themes-but-what-about-us/</guid>
+        <link>https://etiago.github.io/2009/02/gmail-now-has-customizable-themes-but-what-about-us/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/02/gmail-now-has-customizable-themes-but-what-about-us/</guid>
         
         <category>GMail</category>
         
@@ -4670,8 +4670,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 03 Jan 2009 13:33:24 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2009/01/pastebins-usenet-20/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2009/01/pastebins-usenet-20/</guid>
+        <link>https://etiago.github.io/2009/01/pastebins-usenet-20/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2009/01/pastebins-usenet-20/</guid>
         
         <category>HaxTools</category>
         
@@ -4729,8 +4729,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 18 Dec 2008 18:04:16 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/12/what-apple-could-do-and-doesnt-to-have-the-upper-hand-at-microsoft/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/12/what-apple-could-do-and-doesnt-to-have-the-upper-hand-at-microsoft/</guid>
+        <link>https://etiago.github.io/2008/12/what-apple-could-do-and-doesnt-to-have-the-upper-hand-at-microsoft/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/12/what-apple-could-do-and-doesnt-to-have-the-upper-hand-at-microsoft/</guid>
         
         <category>Apple</category>
         
@@ -4776,8 +4776,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Nov 2008 13:20:40 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/11/gmail-has-a-new-security-flaw/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/11/gmail-has-a-new-security-flaw/</guid>
+        <link>https://etiago.github.io/2008/11/gmail-has-a-new-security-flaw/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/11/gmail-has-a-new-security-flaw/</guid>
         
         <category>GMail</category>
         
@@ -4815,8 +4815,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 13 Nov 2008 15:35:14 +0100</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/11/msdn-premium-subscription/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/11/msdn-premium-subscription/</guid>
+        <link>https://etiago.github.io/2008/11/msdn-premium-subscription/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/11/msdn-premium-subscription/</guid>
         
         <category>microsoft</category>
         
@@ -4838,8 +4838,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.tiagoespinha.net/wp-content/uploads/2008/10/vogelzang-newmac-3574.jpg&quot; rel=&quot;lightbox[137]&quot; title=&quot;vogelzang-newmac-3574&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-139&quot; title=&quot;vogelzang-newmac-3574&quot; src=&quot;http://www.tiagoespinha.net/wp-content/uploads/2008/10/vogelzang-newmac-3574-300x225.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;https://www.tiagoespinha.net/wp-content/uploads/2008/10/vogelzang-newmac-3574-300x225.jpg 300w, https://www.tiagoespinha.net/wp-content/uploads/2008/10/vogelzang-newmac-3574.jpg 600w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 22 Oct 2008 21:48:53 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/10/apples-quality-center-puts-the-b-in-dumn/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/10/apples-quality-center-puts-the-b-in-dumn/</guid>
+        <link>https://etiago.github.io/2008/10/apples-quality-center-puts-the-b-in-dumn/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/10/apples-quality-center-puts-the-b-in-dumn/</guid>
         
         <category>Apple</category>
         
@@ -4861,8 +4861,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;Another &lt;a href=&quot;http://www.internetnews.com/bus-news/article.php/3777686&quot; target=&quot;_blank&quot;&gt;source&lt;/a&gt; tells us that a pre-beta version of this new Windows will be distributed at the Professional Developer Conference, set to take place on Los Angeles on October 27th.&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Oct 2008 12:35:25 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/10/windows-7-goes-official/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/10/windows-7-goes-official/</guid>
+        <link>https://etiago.github.io/2008/10/windows-7-goes-official/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/10/windows-7-goes-official/</guid>
         
         <category>microsoft</category>
         
@@ -4968,8 +4968,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Oct 2008 00:32:10 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/10/a-personal-view-at-firefox-vs-chrome/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/10/a-personal-view-at-firefox-vs-chrome/</guid>
+        <link>https://etiago.github.io/2008/10/a-personal-view-at-firefox-vs-chrome/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/10/a-personal-view-at-firefox-vs-chrome/</guid>
         
         <category>Browsers</category>
         
@@ -5047,8 +5047,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 04 Oct 2008 15:06:35 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/10/microsoft-dreamway-2008-steve-ballmer/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/10/microsoft-dreamway-2008-steve-ballmer/</guid>
+        <link>https://etiago.github.io/2008/10/microsoft-dreamway-2008-steve-ballmer/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/10/microsoft-dreamway-2008-steve-ballmer/</guid>
         
         <category>Ballmer</category>
         
@@ -5092,8 +5092,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 25 Sep 2008 00:48:50 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/09/microsoft-dreamway-2008/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/09/microsoft-dreamway-2008/</guid>
+        <link>https://etiago.github.io/2008/09/microsoft-dreamway-2008/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/09/microsoft-dreamway-2008/</guid>
         
         <category>Dreamway</category>
         
@@ -5141,8 +5141,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 23 Sep 2008 22:22:16 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/09/msp-team-building-2009/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/09/msp-team-building-2009/</guid>
+        <link>https://etiago.github.io/2008/09/msp-team-building-2009/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/09/msp-team-building-2009/</guid>
         
         <category>microsoft</category>
         
@@ -5190,8 +5190,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 07 Sep 2008 01:16:37 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/09/solid-state-musical-tesla-coil/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/09/solid-state-musical-tesla-coil/</guid>
+        <link>https://etiago.github.io/2008/09/solid-state-musical-tesla-coil/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/09/solid-state-musical-tesla-coil/</guid>
         
         <category>Musical Tesla Coil</category>
         
@@ -5237,8 +5237,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 02 Sep 2008 23:14:26 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/09/google-chrome-released/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/09/google-chrome-released/</guid>
+        <link>https://etiago.github.io/2008/09/google-chrome-released/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/09/google-chrome-released/</guid>
         
         <category>Browsers</category>
         
@@ -5432,8 +5432,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 30 Aug 2008 13:35:29 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/photos-from-the-msp-field-trip/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/photos-from-the-msp-field-trip/</guid>
+        <link>https://etiago.github.io/2008/08/photos-from-the-msp-field-trip/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/photos-from-the-msp-field-trip/</guid>
         
         <category>microsoft</category>
         
@@ -5477,8 +5477,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 30 Aug 2008 13:22:28 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/my-first-msp-experience/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/my-first-msp-experience/</guid>
+        <link>https://etiago.github.io/2008/08/my-first-msp-experience/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/my-first-msp-experience/</guid>
         
         <category>microsoft</category>
         
@@ -5528,8 +5528,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 30 Aug 2008 12:08:59 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/the-birthday-gift/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/the-birthday-gift/</guid>
+        <link>https://etiago.github.io/2008/08/the-birthday-gift/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/the-birthday-gift/</guid>
         
         <category>birthday</category>
         
@@ -5559,8 +5559,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 27 Aug 2008 22:49:58 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/nasa-found-life-out-there/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/nasa-found-life-out-there/</guid>
+        <link>https://etiago.github.io/2008/08/nasa-found-life-out-there/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/nasa-found-life-out-there/</guid>
         
         <category>ISS</category>
         
@@ -5614,8 +5614,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Aug 2008 22:35:47 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/stargate-atlantis-comes-to-an-end/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/stargate-atlantis-comes-to-an-end/</guid>
+        <link>https://etiago.github.io/2008/08/stargate-atlantis-comes-to-an-end/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/stargate-atlantis-comes-to-an-end/</guid>
         
         <category>my life</category>
         
@@ -5655,8 +5655,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Aug 2008 20:53:43 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/chococlock/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/chococlock/</guid>
+        <link>https://etiago.github.io/2008/08/chococlock/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/chococlock/</guid>
         
         <category>Chocolate</category>
         
@@ -5680,8 +5680,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Aug 2008 15:35:34 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/microsoft-student-partner-the-outcome/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/microsoft-student-partner-the-outcome/</guid>
+        <link>https://etiago.github.io/2008/08/microsoft-student-partner-the-outcome/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/microsoft-student-partner-the-outcome/</guid>
         
         <category>microsoft</category>
         
@@ -5719,8 +5719,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 21 Aug 2008 12:04:42 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/amd-acts-intel-reacts-atom-dual-core/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/amd-acts-intel-reacts-atom-dual-core/</guid>
+        <link>https://etiago.github.io/2008/08/amd-acts-intel-reacts-atom-dual-core/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/amd-acts-intel-reacts-atom-dual-core/</guid>
         
         <category>Amd</category>
         
@@ -5754,8 +5754,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Aug 2008 12:55:53 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/amd-is-dead-think-again/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/amd-is-dead-think-again/</guid>
+        <link>https://etiago.github.io/2008/08/amd-is-dead-think-again/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/amd-is-dead-think-again/</guid>
         
         <category>Amd</category>
         
@@ -5795,8 +5795,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 19 Aug 2008 16:49:43 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/iposture-the-ultimate-solution-for-your-back/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/iposture-the-ultimate-solution-for-your-back/</guid>
+        <link>https://etiago.github.io/2008/08/iposture-the-ultimate-solution-for-your-back/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/iposture-the-ultimate-solution-for-your-back/</guid>
         
         <category>gadget</category>
         
@@ -5914,8 +5914,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 19 Aug 2008 01:13:59 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/pay-to-click-is-it-really-worth-it/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/pay-to-click-is-it-really-worth-it/</guid>
+        <link>https://etiago.github.io/2008/08/pay-to-click-is-it-really-worth-it/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/pay-to-click-is-it-really-worth-it/</guid>
         
         <category>crewbux</category>
         
@@ -5950,8 +5950,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/div&gt;
 </description>
         <pubDate>Wed, 13 Aug 2008 11:03:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/microsoft-student-partner-pt-2/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/microsoft-student-partner-pt-2/</guid>
+        <link>https://etiago.github.io/2008/08/microsoft-student-partner-pt-2/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/microsoft-student-partner-pt-2/</guid>
         
         
         <category>microsoft</category>
@@ -5983,8 +5983,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 08 Aug 2008 16:59:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/microsoft-student-partner/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/microsoft-student-partner/</guid>
+        <link>https://etiago.github.io/2008/08/microsoft-student-partner/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/microsoft-student-partner/</guid>
         
         
         <category>my life</category>
@@ -6018,8 +6018,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 06 Aug 2008 11:56:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/08/update/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/08/update/</guid>
+        <link>https://etiago.github.io/2008/08/update/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/08/update/</guid>
         
         
         <category>my life</category>
@@ -6045,8 +6045,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 30 Jul 2008 08:44:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/teddybearnotes-v120-0/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/teddybearnotes-v120-0/</guid>
+        <link>https://etiago.github.io/2008/07/teddybearnotes-v120-0/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/teddybearnotes-v120-0/</guid>
         
         
         <category>tbn releases</category>
@@ -6101,8 +6101,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 29 Jul 2008 06:09:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/how-teddybear-notes-will-change-your-life/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/how-teddybear-notes-will-change-your-life/</guid>
+        <link>https://etiago.github.io/2008/07/how-teddybear-notes-will-change-your-life/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/how-teddybear-notes-will-change-your-life/</guid>
         
         
         <category>teddybearnotes</category>
@@ -6123,8 +6123,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 29 Jul 2008 05:03:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/teddybearnotes-v111-5/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/teddybearnotes-v111-5/</guid>
+        <link>https://etiago.github.io/2008/07/teddybearnotes-v111-5/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/teddybearnotes-v111-5/</guid>
         
         
         <category>tbn releases</category>
@@ -6179,8 +6179,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 28 Jul 2008 15:59:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/teddybearnotes-v111-0/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/teddybearnotes-v111-0/</guid>
+        <link>https://etiago.github.io/2008/07/teddybearnotes-v111-0/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/teddybearnotes-v111-0/</guid>
         
         
         <category>tbn releases</category>
@@ -6204,8 +6204,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 28 Jul 2008 08:52:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/google-code-jam-part-2/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/google-code-jam-part-2/</guid>
+        <link>https://etiago.github.io/2008/07/google-code-jam-part-2/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/google-code-jam-part-2/</guid>
         
         
         <category>code jam</category>
@@ -6232,8 +6232,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 28 Jul 2008 08:46:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/todo-list/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/todo-list/</guid>
+        <link>https://etiago.github.io/2008/07/todo-list/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/todo-list/</guid>
         
         
         <category>teddybearnotes</category>
@@ -6254,8 +6254,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;And also the link for the project in SourceForge: &lt;a href=&quot;http://sourceforge.net/projects/teddybearnotes/&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 27 Jul 2008 09:11:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/links-updated/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/links-updated/</guid>
+        <link>https://etiago.github.io/2008/07/links-updated/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/links-updated/</guid>
         
         
         <category>teddybearnotes</category>
@@ -6277,8 +6277,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 27 Jul 2008 08:38:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/teddybearnotes-note-for-the-readers/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/teddybearnotes-note-for-the-readers/</guid>
+        <link>https://etiago.github.io/2008/07/teddybearnotes-note-for-the-readers/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/teddybearnotes-note-for-the-readers/</guid>
         
         
         <category>teddybearnotes</category>
@@ -6300,8 +6300,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 26 Jul 2008 16:45:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/google-code-jam-part-1/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/google-code-jam-part-1/</guid>
+        <link>https://etiago.github.io/2008/07/google-code-jam-part-1/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/google-code-jam-part-1/</guid>
         
         
         <category>code jam</category>
@@ -6330,8 +6330,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/div&gt;
 </description>
         <pubDate>Sat, 26 Jul 2008 12:09:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/net-framework-35/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/net-framework-35/</guid>
+        <link>https://etiago.github.io/2008/07/net-framework-35/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/net-framework-35/</guid>
         
         
         <category>teddybearnotes</category>
@@ -6384,8 +6384,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 22 Jul 2008 17:44:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/teddybearnotes-v110-4/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/teddybearnotes-v110-4/</guid>
+        <link>https://etiago.github.io/2008/07/teddybearnotes-v110-4/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/teddybearnotes-v110-4/</guid>
         
         
         <category>tbn releases</category>
@@ -6408,8 +6408,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 22 Jul 2008 17:40:00 +0200</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/2008/07/first-post/</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/2008/07/first-post/</guid>
+        <link>https://etiago.github.io/2008/07/first-post/</link>
+        <guid isPermaLink="true">https://etiago.github.io/2008/07/first-post/</guid>
         
         
         <category>Uncategorized</category>
