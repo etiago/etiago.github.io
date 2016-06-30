@@ -48,7 +48,7 @@ share:
 enableTags: true
 tagarray: []
 
-url: "https://etiago.github.io"
+url: "https://www.tiagoespinha.net"
 paginate: 20
 per_page: 20
 paginate_path: "/page:num/"

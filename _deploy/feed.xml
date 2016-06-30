@@ -3,10 +3,10 @@
   <channel>
     <title>Tiago Espinha</title>
     <description>My Personal Blog</description>
-    <link>https://etiago.github.io/</link>
-    <atom:link href="https://etiago.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Jun 2016 19:59:26 +0200</pubDate>
-    <lastBuildDate>Thu, 30 Jun 2016 19:59:26 +0200</lastBuildDate>
+    <link>https://www.tiagoespinha.net/</link>
+    <atom:link href="https://www.tiagoespinha.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 30 Jun 2016 23:04:36 +0200</pubDate>
+    <lastBuildDate>Thu, 30 Jun 2016 23:04:36 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -67,8 +67,8 @@
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 08 May 2016 18:03:33 +0200</pubDate>
-        <link>https://etiago.github.io/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</link>
-        <guid isPermaLink="true">https://etiago.github.io/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</guid>
+        <link>https://www.tiagoespinha.net/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</guid>
         
         <category>editor</category>
         
@@ -176,8 +176,8 @@
 &lt;/WindowsPartition&gt;&lt;/li&gt;&lt;/WindowsPartition&gt;&lt;/li&gt;&lt;/ol&gt;
 </description>
         <pubDate>Tue, 08 Sep 2015 22:52:59 +0200</pubDate>
-        <link>https://etiago.github.io/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</link>
-        <guid isPermaLink="true">https://etiago.github.io/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</guid>
+        <link>https://www.tiagoespinha.net/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</guid>
         
         <category>HDD</category>
         
@@ -213,8 +213,8 @@
 &lt;p&gt; &lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Apr 2015 22:46:20 +0200</pubDate>
-        <link>https://etiago.github.io/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</link>
-        <guid isPermaLink="true">https://etiago.github.io/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</guid>
+        <link>https://www.tiagoespinha.net/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</guid>
         
         <category>8188eu</category>
         
@@ -278,8 +278,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 06 Oct 2014 20:02:34 +0200</pubDate>
-        <link>https://etiago.github.io/2014/10/photo-jupiter-and-its-4-largest-moons/</link>
-        <guid isPermaLink="true">https://etiago.github.io/2014/10/photo-jupiter-and-its-4-largest-moons/</guid>
+        <link>https://www.tiagoespinha.net/2014/10/photo-jupiter-and-its-4-largest-moons/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2014/10/photo-jupiter-and-its-4-largest-moons/</guid>
         
         <category>astronomy</category>
         
@@ -351,8 +351,8 @@
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 28 Sep 2014 09:29:58 +0200</pubDate>
-        <link>https://etiago.github.io/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</link>
-        <guid isPermaLink="true">https://etiago.github.io/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</guid>
+        <link>https://www.tiagoespinha.net/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</guid>
         
         
         <category>Life hacks</category>
@@ -400,8 +400,8 @@
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jun 2014 10:14:14 +0200</pubDate>
-        <link>https://etiago.github.io/2014/06/how-to-see-the-international-space-station-iss/</link>
-        <guid isPermaLink="true">https://etiago.github.io/2014/06/how-to-see-the-international-space-station-iss/</guid>
+        <link>https://www.tiagoespinha.net/2014/06/how-to-see-the-international-space-station-iss/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2014/06/how-to-see-the-international-space-station-iss/</guid>
         
         <category>astronomy</category>
         
@@ -608,8 +608,8 @@
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 13 May 2014 22:02:06 +0200</pubDate>
-        <link>https://etiago.github.io/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</link>
-        <guid isPermaLink="true">https://etiago.github.io/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</guid>
+        <link>https://www.tiagoespinha.net/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</guid>
         
         <category>Arduino</category>
         
@@ -840,8 +840,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/ssid&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Apr 2014 23:22:57 +0200</pubDate>
-        <link>https://etiago.github.io/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</link>
-        <guid isPermaLink="true">https://etiago.github.io/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</guid>
+        <link>https://www.tiagoespinha.net/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</guid>
         
         <category>Dongle</category>
         
@@ -901,8 +901,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 11 Oct 2013 18:09:39 +0200</pubDate>
-        <link>https://etiago.github.io/2013/10/chronopost-portugal-servico-enganador/</link>
-        <guid isPermaLink="true">https://etiago.github.io/2013/10/chronopost-portugal-servico-enganador/</guid>
+        <link>https://www.tiagoespinha.net/2013/10/chronopost-portugal-servico-enganador/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2013/10/chronopost-portugal-servico-enganador/</guid>
         
         <category>chronopost</category>
         
@@ -965,8 +965,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Oct 2013 16:46:53 +0200</pubDate>
-        <link>https://etiago.github.io/2013/10/automatic-recovery-of-rest-interfaces/</link>
-        <guid isPermaLink="true">https://etiago.github.io/2013/10/automatic-recovery-of-rest-interfaces/</guid>
+        <link>https://www.tiagoespinha.net/2013/10/automatic-recovery-of-rest-interfaces/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2013/10/automatic-recovery-of-rest-interfaces/</guid>
         
         
         <category>SOA</category>
