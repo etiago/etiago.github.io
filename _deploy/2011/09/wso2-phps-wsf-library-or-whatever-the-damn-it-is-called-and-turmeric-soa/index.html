@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+        <title>WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA - Tiago Espinha</title>
+        <meta name="author" content="Tiago Espinha" />
+        <meta name="description" content="WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA" />
+        <meta name="keywords" content="WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA, Tiago Espinha, SOA, Uncategorized" />
+
+        <meta content="0" property="fb:app_id">
+        <meta content="Tiago Espinha" property="og:site_name">
+        
+          <meta content="WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA" property="og:title">
+        
+        
+          <meta content="article" property="og:type">
+        
+        
+          <meta content="My Personal Blog" property="og:description">
+        
+        
+          <meta content="https://etiago.github.io/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/" property="og:url">
+        
+        
+          <meta content="2011-09-13T11:48:27+02:00" property="article:published_time">
+          <meta content="https://etiago.github.io/about/" property="article:author">
+        
+        
+          <meta content="http://aboutashu.com/static/img/logo-high-resolution.png" property="og:image">
+        
+        
+          
+          <meta content="SOA" property="article:section">
+          
+        
+        
+          
+          <meta content="PHP" property="article:tag">
+          
+          <meta content="PHP SOAP" property="article:tag">
+          
+          <meta content="PHP WSF" property="article:tag">
+          
+          <meta content="SOAP" property="article:tag">
+          
+          <meta content="WSF" property="article:tag">
+          
+          <meta content="WSF-PHP" property="article:tag">
+          
+          <meta content="wsfphp" property="article:tag">
+          
+          <meta content="WSO2" property="article:tag">
+          
+          <meta content="WSO2 PHP" property="article:tag">
+          
+          <meta content="WSO2 WSF" property="article:tag">
+          
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@\#">
+        <meta name="twitter:creator" content="@\#">
+        
+          <meta name="twitter:title" content="WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA">
+        
+        
+          <meta name="twitter:url" content="https://etiago.github.io/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/">
+        
+        
+          <meta name="twitter:description" content="My Personal Blog">
+        
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+
+        <!-- Core BootStrap CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Material Design CSS -->
+        <link rel="stylesheet" href="https://etiago.github.io/static/css/bootstrap-material-design.min.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="https://etiago.github.io/static/css/syntax.css">
+
+        <!-- Custom CSS -->        
+        <link rel="stylesheet" href="https://etiago.github.io/static/css/thickbox.css">
+        <link rel="stylesheet" href="https://etiago.github.io/static/css/main.css">
+        <link rel="stylesheet" href="https://etiago.github.io/static/css/projects.css">
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5075580-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </head>
+
+    <body class="home overflow-hidden">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="header-panel shadow-z-2">
+    <div class="container">
+    <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="row-picture">
+        <img id="about" class="logo-img" src="http://etiago.github.io/static/img/avatar.png" height="75px" width="75px">
+      </div>
+      <div class="row-details">
+      <h4 class="list-group-item-heading">Tiago Espinha</h4>
+      <p class="list-group-item-text">Tiago's Tech Blog</p>
+      <div class="social-icons">
+	
+        <a class="icon" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-skype"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-stack-exchange"></i></a>
+    
+</div>
+      </div>
+        <div class="navbar-header pull-right">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-2x fa-bars"></i>
+            </button>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-8 col-xs-12">
+      <h2 class="blog-title-pro">WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA</h2>
+      <p class="info">
+      
+      <span class="time">13 Sep 2011</span>
+      
+      
+    <span class="categories">
+        &raquo; <a href="/category/SOA">SOA</a>, <a href="/category/Uncategorized">Uncategorized</a>
+    </span>
+    
+      </p>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="container main outer">
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                    <nav class="menu">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="list-separator nav navbar-nav well well-primary post">
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 current-menu-item wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="/about/"><i class="fa fa-comments"></i> About</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="/projects/"><i class="fa fa-desktop"></i> Projects</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="#"><i class="fa fa-graduation-cap"></i> Resume</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="https://github.com/etiago"><i class="fa fa-github"></i> GitHub</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="/feed.xml"><i class="fa fa-feed"></i> XML Feed</a></li>
+
+</ul>
+    </div>
+    </nav>
+
+            </div> <!-- end /.col-md-3 -->
+
+            <div class="col-md-9 col-xs-12 full">
+                <div class="post-content well">
+<article class="content">
+    <div class="post"><p style="text-align: justify;">
+  <a href="http://www.tiagoespinha.net/wp-content/uploads/2011/09/762791717WSO2pic.jpg" rel="lightbox[519]" title="762791717WSO2pic"><img class="alignleft size-full wp-image-523" title="762791717WSO2pic" src="http://www.tiagoespinha.net/wp-content/uploads/2011/09/762791717WSO2pic.jpg" alt="" width="250" height="102" /></a>The title of this post is verbose enough about the feelings I have regarding the naming of this library. It&#8217;s as if WSO2 took a page from Microsoft&#8217;s book regarding names. What&#8217;s next? A Home Edition? Maybe throw in Professional, Business and Ultimate versions too for good measure.
+</p>
+
+<p style="text-align: justify;">
+  Don&#8217;t take me wrong, I have no special feelings towards names themselves, it&#8217;s just how difficult it makes to search for people working on the same things and facing the same problems. What do I Google for? WSO2? WSF? PHP? Any combination of these? It&#8217;s only made worse by these guys developing frameworks in several platforms, which means I end up finding completely unrelated results from a different implementation, in a different technology.
+</p>
+
+<p style="text-align: justify;">
+  But, naming rants aside, I thought it would be a good idea to share my experience with getting this library up and running on PHP. I came across this library when converting Apache Stonehenge&#8217;s web application to use Turmeric&#8217;s instances of Stonehenge&#8217;s web services, and it gave me quite some headaches. For this reason, and so that other people in the future don&#8217;t have to go through the same painful experiences, I decided to write this blog post. Keep reading if I got your attention&#8230;<!--more-->
+</p>
+
+<p style="text-align: justify;">
+  First and foremost, I should warn that I&#8217;m also gonna write the Linux walkthrough and it does expect you to have some basic Linux knowledge. Nothing too advanced, you just need to know your way around a Linux system in a command line. If you meet this criterion, this walkthrough should be a walk in the park (no pun intended there).
+</p>
+
+<h3 style="text-align: justify;">
+  Setting up the library
+</h3>
+
+<p style="text-align: justify;">
+  To begin with, you must download the WSF PHP library <strong>sources</strong>. You should be able to find it <a href="http://wso2.com/products/web-services-framework/php/">here</a> somewhere. At the time of writing, the latest version is 2.1.0. Make sure you download the <strong>sources</strong>. Sadly, the binaries only include DLL&#8217;s for the Windows installation, which means that us, Linux users, must compile our own binaries by hand. No biggie though, it&#8217;s easier than it sounds.
+</p>
+
+<p style="text-align: justify;">
+  After you&#8217;ve downloaded the library, the next thing you should do is &#8220;cd&#8221; into the directory. Then, normally you&#8217;d just do ./configure followed by a make and make install, but there&#8217;s a caveat: it&#8217;s VERY recommended that you specify a prefix when you do ./configure. The prefix will tell WSO2 where to place the binaries after you compile and &#8220;install&#8221;, and this is extremely useful for WSF as you&#8217;ll need a clean directory featuring only the binary files of this library. You&#8217;ll understand why in a minute.
+</p>
+
+<p style="text-align: justify;">
+  In sum, you should do:
+</p>
+
+<blockquote>
+  <pre>./configure --prefix=/usr/local/bin/apache2/php/wsf-php/
+ make
+ [sudo] make install</pre>
+</blockquote>
+
+<p style="text-align: justify;">
+  In my example you&#8217;ll see that I&#8217;m telling &#8220;make&#8221; to install the library in /usr/local/bin/apache2/php/wsf-php/ and in the last step I&#8217;ve also accounted for those of you who, like me, use Ubuntu. If you use Ubuntu, make sure you add the sudo before the make install command (without brackets).
+</p>
+
+<p style="text-align: justify;">
+  <strong>Troubleshooting: </strong>If you installed PHP through Ubuntu&#8217;s packages, it is possible that everything went fine at this point. If it did (i.e. if you got no errors in neither of the stages) then excellent. Move on. Skip this section. If, on the other hand, you got an error about a missing php-config, then you need to specify the path to this binary in the ./configure step. First you should know where your PHP installation lies (and you&#8217;re entirely on your own for this one) and once you know where it is, your php-config binary is inside <path_to_php>/bin/. Once you figured out where that is, you should go back to those three steps above, except your ./configure should look like:
+&lt;/p&gt;
+
+&gt; <pre>./configure --prefix=/usr/local/bin/apache2/php/wsf-php/ --with-php-config=&lt;path_to_php&gt;/bin/php-config</pre>
+
+<p style="text-align: justify;">
+  After this, don&#8217;t forget of course, to do the make and make install steps.
+</p>
+
+<p style="text-align: justify;">
+  With that done, you should now have the compiled library in /usr/local/bin/apache2/php/wsf/ (or in whichever folder you specified as prefix). You also want to have a look at the final lines of the &#8220;make install&#8221; step and look for a reference to a wsf.so file. That&#8217;s THE library that PHP will load and you&#8217;ll need to know exactly where it is. In my case, the library sits in /usr/local/bin/apache2/php/lib/php/extensions/no-debug-non-zts-20090626/wsf.so . My guess is that the make install step is smart enough to put it in the equivalent folder inside your PHP&#8217;s installation. Anyhow, copy this directory.
+</p>
+
+<p style="text-align: justify;">
+  The next step involves editing your php.ini file. Again, you should know where this is. After you found it, add the following lines to it:
+</p>
+
+&gt; <pre>extension=/usr/local/bin/apache2/php/lib/php/extensions/no-debug-non-zts-20090626/wsf.so
+wsf.home="/usr/local/bin/apache2/php/wsf-php/"</pre>
+
+<p style="text-align: justify;">
+  From that you can see that I put the path to the .so file as an extension that PHP must load, and I specified an entry called &#8220;wsf.home&#8221; that will tell WSF where its &#8220;auxiliary&#8221; files are. This is the path you used as the prefix during the compiling process. These are the two most essential parameters that need to be configured to get WSF up and running, there&#8217;s more but I&#8217;m aiming at the quickest way possible to get it running, with as little configuration as possible.
+</p>
+
+<p style="text-align: justify;">
+  After you&#8217;ve added those lines, you should restart your Apache et voilà! Your PHP installation should now have loaded the WSF library. If you want to be sure that everything is up and running, you can check the contents of /tmp/wsf_php_server.log . If everything went well, this log should have no errors.
+</p>
+
+<h3 style="text-align: justify;">
+  Creating a client and using it
+</h3>
+
+<p style="text-align: justify;">
+  Now comes another <strong>tricky part</strong>. Great, now your library is up and running, but how do you <strong>use it</strong>?
+</p>
+
+<p style="text-align: justify;">
+  I&#8217;m gonna provide another quick and simple explanation of how to get a client up and running for an existing service. This assumes, of course, that you already have a service running somewhere which provides you with a WSDL file and SOAP ports that you can invoke.
+</p>
+
+<p style="text-align: justify;">
+  Provided you have that, you need to copy a folder in the WSF sources to somewhere safe and accessible by PHP (by accessible, I mean, PHP/Apache should have at least read and execute permissions). The folder you need is <WSF_sources>/scripts/. Copy it somewhere you know it won&#8217;t get deleted by an overzealous system administrator and keep it accessible. I would keep it out of public access via Apache but that&#8217;s entirely up to you. It&#8217;s the next step that is <strong>important</strong>.
+&lt;/p&gt;
+
+<p style="text-align: justify;">
+  Now that you copied this folder (and all its contents) to somewhere safe, you need to go back to your php.ini and add the folder to its include_path definition. In my case, I just uncommented the already existing line and added my scripts folder to it. In the end it looked like:
+</p>
+
+&gt; <pre>include_path = ".:/php/includes:/usr/local/bin/apache2/php/scripts/"</pre>
+
+<p style="text-align: justify;">
+  After you&#8217;ve added/uncommented this line, be sure to restart Apache once more. This line will just tell PHP where it can find scripts that WSF will need whenever you&#8217;re using its libraries.
+</p>
+
+<p style="text-align: justify;">
+  With that out of the way, the next step consists of creating a PHP classmap of all the operations and types you have in your WSDL file. My advice is that you obtain the WSDL file in advance and store it somewhere in your hard-drive. After you&#8217;ve done this, just go to the scripts folder and do:
+</p>
+
+&gt; <pre>php wsdl2php.php &lt;path_to_your_wsdl_file&gt;</pre>
+
+<p style="text-align: justify;">
+  It can happen at this step that Linux will tell you it can&#8217;t find PHP. If that&#8217;s the case, instead of starting off with just &#8220;php&#8221;, use the full path instead.
+</p>
+
+<p style="text-align: justify;">
+  By doing this step, you&#8217;ll see a bunch of PHP code scrolling through your console. If that was the case, repeat the command and redirect the output to a file, e.g. &gt; somefile.php.
+</p>
+
+<p style="text-align: justify;">
+  This somefile.php is now your client. It includes a PHP class for every type in your WSDL and an action for every SOAP port. It also includes, at the very end, a sample of how you&#8217;d invoke every action. By looking at that you can probably get a good idea of how WSF works, and that&#8217;s pretty much it. I assume that if you&#8217;re messing around with PHP, you do have enough knowledge to get rid of these sample invokations and just use this file as something you import and use in your PHP application. That&#8217;s not going to be covered in this tutorial.
+</p>
+
+<p style="text-align: justify;">
+  If you do have questions or ran into trouble while following these steps, please do leave me a comment and I&#8217;ll try to answer as soon as possible. I hope this has somehow helped you, reader. I know I wish I had found something like this post when I first started messing around with WSF!
+</p>
+
+<p style="text-align: justify;">
+  Till the next post!
+</p>
+</WSF_sources></p></path_to_php></p>
+</div>
+    <hr />
+    <div class="share-page">
+    Share this on &rarr;
+ <a href="https://twitter.com/share" class="twitter-share-button" data-via="\#">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Google + -->
+<div class="g-plus" data-action="share" data-annotation="bubble"></div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Facebook -->
+<div class="fb-share-button" data-href="https://etiago.github.io/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</article>
+<hr />
+
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+                
+                <div class="panel-body">
+                <h4>Related Posts</h4>
+                <ul>
+                
+                <li class="relatedPost">
+                    <a href="https://etiago.github.io/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/">Wat is alcohol ketonatus? (What is alcohol ketonatus?)</a>
+                    
+                        <small>(Categories: <a href="/category/Life hacks">Life hacks</a>, <a href="/category/Uncategorized">Uncategorized</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://etiago.github.io/2013/10/automatic-recovery-of-rest-interfaces/">Automatic Recovery of REST Interfaces</a>
+                    
+                        <small>(Categories: <a href="/category/SOA">SOA</a>, <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://etiago.github.io/2012/09/turmeric-soa-lessons-learned/">Turmeric SOA &#8211; Lessons learned</a>
+                    
+                        <small>(Categories: <a href="/category/Open source">Open source</a>, <a href="/category/Research">Research</a>, <a href="/category/SOA">SOA</a>, <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://etiago.github.io/2012/07/the-cross-discipline-conundrum-or-how-we-cant-always-learn-from-other-disciplines/">The cross-discipline conundrum (or how we can&#8217;t always learn from other disciplines)</a>
+                    
+                        <small>(Categories: <a href="/category/Research">Research</a>, <a href="/category/SOA">SOA</a>, <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://etiago.github.io/2011/08/on-turmeric-soa-open-source-and-the-apache-software-foundation/">On Turmeric SOA, open-source and the Apache Software Foundation</a>
+                    
+                        <small>(Categories: <a href="/category/SOA">SOA</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://etiago.github.io/2009/10/sidekick-data-recovered-most-of-it-maybe-all/">Sidekick data recovered (most of it, maybe all)</a>
+                    
+                        <small>(Categories: <a href="/category/Uncategorized">Uncategorized</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+    </div>
+
+
+<div class="PageNavigation">
+  
+    <a class="prev pull-left" href="/2011/09/black-and-white-icons-for-caffeine/">&laquo; Black and white icons for Caffeine</a>
+  
+  
+    <a class="next pull-right" href="/2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/">[Quickies] Galaxy S2 MIUI 1.12.30 Camera Force Closes &raquo;</a>
+  
+</div>
+
+
+<div class="disqus-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+
+        var disqus_shortname = "tiagostechblog";
+        var disqus_identifier = "https://etiago.github.io_WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA";
+        var disqus_title = "WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    /* ]]> */
+    </script>
+</div>
+</div>
+
+                <div class="row">
+                  <div class="col-md-12 col-xs-12 footer">
+                <footer>
+                    © Copyright text here
+                     
+                    - <a href="#">Privacy link</a> - Powered by Jekyll.
+                    
+                </footer>
+                <div align="center">
+                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                  <!-- hcz-jekyll -->
+                  <ins class="adsbygoogle"
+                       style="display:block"
+                       data-ad-client="ca-pub-0776433630785969"
+                       data-ad-slot="9690958902"
+                       data-ad-format="auto"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+            </div>
+                </div>
+            </div> <!-- end /.col-md-9 -->
+        </div> <!-- end /.row -->
+
+    </div> <!-- end /.container -->
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <script src="https://etiago.github.io/static/js/thickbox-compressed.js"></script>
+        <script src="https://etiago.github.io/static/js/material.min.js"></script>
+        <script src="https://etiago.github.io/static/js/main.js"></script>
+        <script src="https://etiago.github.io/static/js/projects.js"></script>
+    </body>
+</html>
