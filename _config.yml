@@ -4,6 +4,7 @@ author: Tiago Espinha
 logo: http://etiago.github.io/static/img/avatar.png
 github: https://github.com/etiago
 about: "Tiago's Tech Blog"
+destination: _deploy
 disqus_shortname: tiagostechblog
 google_analytics: UA-5075580-2
 urls:
