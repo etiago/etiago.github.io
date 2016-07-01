@@ -29,7 +29,7 @@ Finally, this release is more coherent with Ed Bott&#8217;s <a href="http://blog
  
 
 <div id="attachment_172" style="width: 430px" class="wp-caption alignnone">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2009/04/partner.png" rel="lightbox[171]" title="Microsoft Partners"><img class="size-full wp-image-172" title="Microsoft Partners" src="http://www.tiagoespinha.net/wp-content/uploads/2009/04/partner.png" alt="Courtesy of Neowin.net" width="420" height="403" srcset="https://www.tiagoespinha.net/wp-content/uploads/2009/04/partner.png 700w, https://www.tiagoespinha.net/wp-content/uploads/2009/04/partner-300x288.png 300w" sizes="(max-width: 420px) 100vw, 420px" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2009/04/partner.png" rel="lightbox[171]" title="Microsoft Partners"><img class="size-full wp-image-172" title="Microsoft Partners" src="https://www.tiagoespinha.net/wp-content/uploads/2009/04/partner.png" alt="Courtesy of Neowin.net" width="420" height="403" srcset="https://www.tiagoespinha.net/wp-content/uploads/2009/04/partner.png 700w, https://www.tiagoespinha.net/wp-content/uploads/2009/04/partner-300x288.png 300w" sizes="(max-width: 420px) 100vw, 420px" /></a>
   
   <p class="wp-caption-text">
     Courtesy of Neowin.net

@@ -23,4 +23,4 @@ I cannot begin to address the multitude of possibilities that this opens. It is 
 
 I&#8217;ll leave you with a printscreen since an image is worth a thousand words.
 
-<img class="alignnone size-medium wp-image-165" title="vistabuntu" src="http://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-300x168.jpg" alt="vistabuntu" width="300" height="168" srcset="https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-300x168.jpg 300w, https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-1024x575.jpg 1024w, https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu.jpg 1366w" sizes="(max-width: 300px) 100vw, 300px" />
+<img class="alignnone size-medium wp-image-165" title="vistabuntu" src="https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-300x168.jpg" alt="vistabuntu" width="300" height="168" srcset="https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-300x168.jpg 300w, https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-1024x575.jpg 1024w, https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu.jpg 1366w" sizes="(max-width: 300px) 100vw, 300px" />

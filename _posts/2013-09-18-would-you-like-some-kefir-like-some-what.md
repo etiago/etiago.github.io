@@ -38,7 +38,7 @@ tags:
 </p>
 
 <div id="attachment_619" style="width: 338px" class="wp-caption aligncenter">
-  <img class="wp-image-619" alt="Kefir grains" src="http://www.tiagoespinha.net/wp-content/uploads/2013/09/Kefirpilze.jpg" width="328" height="218" />
+  <img class="wp-image-619" alt="Kefir grains" src="https://www.tiagoespinha.net/wp-content/uploads/2013/09/Kefirpilze.jpg" width="328" height="218" />
   
   <p class="wp-caption-text">
     Kefir grains &#8211; image courtesy of Wikipedia
@@ -46,7 +46,7 @@ tags:
 </div>
 
 <div id="attachment_618" style="width: 330px" class="wp-caption aligncenter">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2013/09/Kefir03.jpg" rel="lightbox[613]" title="Would you like some Kefir? Like some what?!"><img class="wp-image-618" alt="Kefir milk" src="http://www.tiagoespinha.net/wp-content/uploads/2013/09/Kefir03.jpg" width="320" height="250" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2013/09/Kefir03.jpg" rel="lightbox[613]" title="Would you like some Kefir? Like some what?!"><img class="wp-image-618" alt="Kefir milk" src="https://www.tiagoespinha.net/wp-content/uploads/2013/09/Kefir03.jpg" width="320" height="250" /></a>
   
   <p class="wp-caption-text">
     Finished kefir milk

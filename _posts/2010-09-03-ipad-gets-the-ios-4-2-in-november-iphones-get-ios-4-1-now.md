@@ -21,7 +21,7 @@ tags:
   - Technology
 ---
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2010/09/IOS_4.0.2_on_the_iPhone_4.png" rel="lightbox[387]" title="IOS_4.0.2_on_the_iPhone_4"><img class="alignright size-full wp-image-388" title="IOS_4.0.2_on_the_iPhone_4" src="http://www.tiagoespinha.net/wp-content/uploads/2010/09/IOS_4.0.2_on_the_iPhone_4.png" alt="" width="136" height="204" /></a>As per my previous coverage of the Apple event where several new iPods and a new iTunes was announced, I&#8217;m making this post so that iPad owners can sigh with relief regarding the iOS. Yes, we will get an update, yes it will have multi-tasking and make the iPad (even more) awesome.
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/09/IOS_4.0.2_on_the_iPhone_4.png" rel="lightbox[387]" title="IOS_4.0.2_on_the_iPhone_4"><img class="alignright size-full wp-image-388" title="IOS_4.0.2_on_the_iPhone_4" src="https://www.tiagoespinha.net/wp-content/uploads/2010/09/IOS_4.0.2_on_the_iPhone_4.png" alt="" width="136" height="204" /></a>As per my previous coverage of the Apple event where several new iPods and a new iTunes was announced, I&#8217;m making this post so that iPad owners can sigh with relief regarding the iOS. Yes, we will get an update, yes it will have multi-tasking and make the iPad (even more) awesome.
 </p>
 
 <p style="text-align: justify;">

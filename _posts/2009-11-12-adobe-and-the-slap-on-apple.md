@@ -27,4 +27,4 @@ tags:
   Below is the image that people will see when they try to download Flash on their iPhones (courtesy of <a href="http://www.engadget.com/2009/11/02/adobe-engages-apple-in-passive-aggressive-warfare-with-iphones/" target="_blank">Engadget</a>):
 </p>
 
-<a href="http://www.tiagoespinha.net/wp-content/uploads/2009/11/iphone-flash-message.jpg" rel="lightbox[284]" title="iphone-flash-message"><img class="alignleft size-full wp-image-285" title="iphone-flash-message" src="http://www.tiagoespinha.net/wp-content/uploads/2009/11/iphone-flash-message.jpg" alt="iphone-flash-message" width="315" height="474" /></a>
+<a href="https://www.tiagoespinha.net/wp-content/uploads/2009/11/iphone-flash-message.jpg" rel="lightbox[284]" title="iphone-flash-message"><img class="alignleft size-full wp-image-285" title="iphone-flash-message" src="https://www.tiagoespinha.net/wp-content/uploads/2009/11/iphone-flash-message.jpg" alt="iphone-flash-message" width="315" height="474" /></a>

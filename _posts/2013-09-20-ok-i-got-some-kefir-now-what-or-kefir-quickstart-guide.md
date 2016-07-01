@@ -22,7 +22,7 @@ tags:
 </p>
 
 <div id="attachment_625" style="width: 310px" class="wp-caption aligncenter">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2013/09/2013-09-18-21.29.31.jpg" rel="lightbox[623]" title="Ok, I got some kefir, now what? (or Kefir Quickstart Guide)"><img class="size-medium wp-image-625" alt="My own kefir grains!" src="http://www.tiagoespinha.net/wp-content/uploads/2013/09/2013-09-18-21.29.31-300x225.jpg" width="300" height="225" srcset="https://www.tiagoespinha.net/wp-content/uploads/2013/09/2013-09-18-21.29.31-300x225.jpg 300w, https://www.tiagoespinha.net/wp-content/uploads/2013/09/2013-09-18-21.29.31-1024x768.jpg 1024w, https://www.tiagoespinha.net/wp-content/uploads/2013/09/2013-09-18-21.29.31-500x375.jpg 500w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2013/09/2013-09-18-21.29.31.jpg" rel="lightbox[623]" title="Ok, I got some kefir, now what? (or Kefir Quickstart Guide)"><img class="size-medium wp-image-625" alt="My own kefir grains!" src="https://www.tiagoespinha.net/wp-content/uploads/2013/09/2013-09-18-21.29.31-300x225.jpg" width="300" height="225" srcset="https://www.tiagoespinha.net/wp-content/uploads/2013/09/2013-09-18-21.29.31-300x225.jpg 300w, https://www.tiagoespinha.net/wp-content/uploads/2013/09/2013-09-18-21.29.31-1024x768.jpg 1024w, https://www.tiagoespinha.net/wp-content/uploads/2013/09/2013-09-18-21.29.31-500x375.jpg 500w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     My own kefir grains!

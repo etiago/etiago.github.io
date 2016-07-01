@@ -15,7 +15,7 @@ tags:
   - Intel
   - Technology
 ---
-<img class="size-medium wp-image-46 alignright" style="margin: 5px; float: right;" title="AMD Athlon 64 Logo" src="http://www.tiagoespinha.net/wp-content/uploads/2008/08/amdcpu232.gif" alt="AMD Athlon 64 Logo" width="180" height="180" srcset="https://www.tiagoespinha.net/wp-content/uploads/2008/08/amdcpu232.gif 300w, https://www.tiagoespinha.net/wp-content/uploads/2008/08/amdcpu232-150x150.gif 150w" sizes="(max-width: 180px) 100vw, 180px" />
+<img class="size-medium wp-image-46 alignright" style="margin: 5px; float: right;" title="AMD Athlon 64 Logo" src="https://www.tiagoespinha.net/wp-content/uploads/2008/08/amdcpu232.gif" alt="AMD Athlon 64 Logo" width="180" height="180" srcset="https://www.tiagoespinha.net/wp-content/uploads/2008/08/amdcpu232.gif 300w, https://www.tiagoespinha.net/wp-content/uploads/2008/08/amdcpu232-150x150.gif 150w" sizes="(max-width: 180px) 100vw, 180px" />
 
 <p style="text-align: justify;">
   So you thought AMD was dead? Well that is not what <a href="http://www.tomshardware.com/reviews/Atom-Athlon-Efficient,1997.html" target="_blank">this</a> review by Tom&#8217;s Hardware shows us. It is true that the Core 2 platform has <a href="http://www.pcadvisor.co.uk/news/index.cfm?newsid=12061" target="_blank">smashed</a> the competition from AMD on pretty much every front of the market, but this tide might be about to turn.

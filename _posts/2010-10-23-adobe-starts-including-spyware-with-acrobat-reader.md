@@ -26,9 +26,9 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  What was not my surprise when I saw the following, without ANY user input at all:<br /> <a href="http://www.tiagoespinha.net/wp-content/uploads/2010/10/adobespyware.jpg" rel="lightbox[434]" title="adobespyware"><img class="size-full wp-image-435 alignnone" title="adobespyware" src="http://www.tiagoespinha.net/wp-content/uploads/2010/10/adobespyware.jpg" alt="" width="454" height="295" /></a>
+  What was not my surprise when I saw the following, without ANY user input at all:<br /> <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/10/adobespyware.jpg" rel="lightbox[434]" title="adobespyware"><img class="size-full wp-image-435 alignnone" title="adobespyware" src="https://www.tiagoespinha.net/wp-content/uploads/2010/10/adobespyware.jpg" alt="" width="454" height="295" /></a>
 </p>
 
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2010/10/adobespyware.jpg"></a>Yep, what you see there is Adobe&#8217;s downloader which has just installed McAfee Security Scan Plus. Without prompting me about it AT ALL. I was pretty annoyed with this situation because if this isn&#8217;t the definition of <a href="http://en.wikipedia.org/wiki/Privacy-invasive_software" target="_blank">ad/spyware</a>, then I don&#8217;t know what is. I just thought I&#8217;d write this as I&#8217;m not usually very happy with companies who think it&#8217;s OK to install software on my computer without my consent. It&#8217;s not OK. Adobe, you&#8217;re the one McAfee should be protecting me from.
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/10/adobespyware.jpg"></a>Yep, what you see there is Adobe&#8217;s downloader which has just installed McAfee Security Scan Plus. Without prompting me about it AT ALL. I was pretty annoyed with this situation because if this isn&#8217;t the definition of <a href="http://en.wikipedia.org/wiki/Privacy-invasive_software" target="_blank">ad/spyware</a>, then I don&#8217;t know what is. I just thought I&#8217;d write this as I&#8217;m not usually very happy with companies who think it&#8217;s OK to install software on my computer without my consent. It&#8217;s not OK. Adobe, you&#8217;re the one McAfee should be protecting me from.
 </p>

@@ -14,7 +14,7 @@ tags:
   - MSP
 ---
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2008/09/mspcard1.jpg" rel="lightbox[118]" title="mspcard1"><img class="alignnone size-medium wp-image-120" style="margin: 5px; float: right;" title="mspcard1" src="http://www.tiagoespinha.net/wp-content/uploads/2008/09/mspcard1.jpg" alt="" width="215" height="286" /></a>First off, my apologies for having gone for so long without posting anything, but the truth is that I have been too busy to think about my blog. I have had my vacations on Lagos and right after that, I went to the far North of Portugal with the rest of the Portuguese Microsoft Student Partners.
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2008/09/mspcard1.jpg" rel="lightbox[118]" title="mspcard1"><img class="alignnone size-medium wp-image-120" style="margin: 5px; float: right;" title="mspcard1" src="https://www.tiagoespinha.net/wp-content/uploads/2008/09/mspcard1.jpg" alt="" width="215" height="286" /></a>First off, my apologies for having gone for so long without posting anything, but the truth is that I have been too busy to think about my blog. I have had my vacations on Lagos and right after that, I went to the far North of Portugal with the rest of the Portuguese Microsoft Student Partners.
 </p>
 
 <p style="text-align: justify;">
@@ -30,7 +30,7 @@ tags:
 </p>
 
 <div id="attachment_121" style="width: 310px" class="wp-caption alignleft">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2008/09/msp_tb09_0220.jpg" rel="lightbox[118]" title="msp_tb09_0220"><img class="size-medium wp-image-121" title="msp_tb09_0220" src="http://www.tiagoespinha.net/wp-content/uploads/2008/09/msp_tb09_0220-300x200.jpg" alt="Me Giving The Keynote Speech" width="300" height="200" srcset="https://www.tiagoespinha.net/wp-content/uploads/2008/09/msp_tb09_0220-300x200.jpg 300w, https://www.tiagoespinha.net/wp-content/uploads/2008/09/msp_tb09_0220.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2008/09/msp_tb09_0220.jpg" rel="lightbox[118]" title="msp_tb09_0220"><img class="size-medium wp-image-121" title="msp_tb09_0220" src="https://www.tiagoespinha.net/wp-content/uploads/2008/09/msp_tb09_0220-300x200.jpg" alt="Me Giving The Keynote Speech" width="300" height="200" srcset="https://www.tiagoespinha.net/wp-content/uploads/2008/09/msp_tb09_0220-300x200.jpg 300w, https://www.tiagoespinha.net/wp-content/uploads/2008/09/msp_tb09_0220.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     Me Giving The Keynote Speech

@@ -18,7 +18,7 @@ tags:
   - Rooting
   - Technology
 ---
-<img class="alignright size-full wp-image-410" title="root Android" src="http://www.tiagoespinha.net/wp-content/uploads/2010/09/root-Android.gif" alt="" width="150" height="150" />
+<img class="alignright size-full wp-image-410" title="root Android" src="https://www.tiagoespinha.net/wp-content/uploads/2010/09/root-Android.gif" alt="" width="150" height="150" />
 
 <p style="text-align: justify;">
   One of the things I had a hard trouble finding an answer for after I got my first Android phone was: what is all this deal with rooting? I read a lot of articles on how to root my phone but I just couldn&#8217;t see what benefits I would get from it. I had had an iPhone and I knew the benefits I could get from jailbreaking, but I just didn&#8217;t know what I could get from rooting.

@@ -20,7 +20,7 @@ tags:
   - The Apache Software Foundation
 ---
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2010/08/derbylogo.jpg" rel="lightbox[357]" title="derbylogo"><img class="size-full wp-image-358 alignleft" title="derbylogo" src="http://www.tiagoespinha.net/wp-content/uploads/2010/08/derbylogo.jpg" alt="" width="206" height="143" /></a>True to the proverbial &#8220;feather in the cap&#8221;, I have been promoted to committer with the project I have been participating on during the last few months, <a href="http://db.apache.org/derby/" target="_blank">Apache Derby</a>. There&#8217;s not much to say except that it feels really good to have your hard work recognized 🙂
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/08/derbylogo.jpg" rel="lightbox[357]" title="derbylogo"><img class="size-full wp-image-358 alignleft" title="derbylogo" src="https://www.tiagoespinha.net/wp-content/uploads/2010/08/derbylogo.jpg" alt="" width="206" height="143" /></a>True to the proverbial &#8220;feather in the cap&#8221;, I have been promoted to committer with the project I have been participating on during the last few months, <a href="http://db.apache.org/derby/" target="_blank">Apache Derby</a>. There&#8217;s not much to say except that it feels really good to have your hard work recognized 🙂
 </p>
 
 <p style="text-align: justify;">

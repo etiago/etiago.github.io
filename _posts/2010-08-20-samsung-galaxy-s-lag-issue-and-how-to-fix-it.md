@@ -63,7 +63,7 @@ tags:
   The next steps are for <strong>ROOTING</strong> your Samsung Galaxy S (i9000):
 </p>
 
-  1. Download this file: [update](http://www.tiagoespinha.net/wp-content/uploads/2010/08/update.zip).zip
+  1. Download this file: [update](https://www.tiagoespinha.net/wp-content/uploads/2010/08/update.zip).zip
   2. Plug your phone to your computer and mount the memory cards through the notification bar.
   3. Place this update.zip in the root of your INTERNAL SD card. It should be the one with lots of folders. Just place it right in the card, outside any particular folder.
   4. Unmount the USB connection through the notification bar.
@@ -75,7 +75,7 @@ tags:
 The next steps are for **APPLYING THE LAG FIX** onto your Samsung Galaxy S (i9000):
 
 <p style="text-align: justify;">
-  Ok, so I cheated. I&#8217;m not going to give you steps for this because&#8230;. it&#8217;s the same as the steps above! So, <strong>if you have already rooted your phone</strong>, repeat the steps above <strong>BUT</strong> with this <a href="http://www.tiagoespinha.net/wp-content/uploads/2010/08/update1.zip">update</a>. <strong>WARNING: </strong> The name of this second file is update1.zip. You <strong>MUST</strong> take the &#8220;1&#8221; off before you copy it to your phone, otherwise it will NOT work! You also need to know that possibly you won&#8217;t see the &#8220;.zip&#8221; extension. This is fine! If you don&#8217;t see it, DON&#8217;T add it! It just means Windows is hiding it for you and that&#8217;s perfectly fine.
+  Ok, so I cheated. I&#8217;m not going to give you steps for this because&#8230;. it&#8217;s the same as the steps above! So, <strong>if you have already rooted your phone</strong>, repeat the steps above <strong>BUT</strong> with this <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/08/update1.zip">update</a>. <strong>WARNING: </strong> The name of this second file is update1.zip. You <strong>MUST</strong> take the &#8220;1&#8221; off before you copy it to your phone, otherwise it will NOT work! You also need to know that possibly you won&#8217;t see the &#8220;.zip&#8221; extension. This is fine! If you don&#8217;t see it, DON&#8217;T add it! It just means Windows is hiding it for you and that&#8217;s perfectly fine.
 </p>
 
 <p style="text-align: justify;">

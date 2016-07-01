@@ -24,7 +24,7 @@ categories:
 </p>
 
 <div id="attachment_592" style="width: 433px" class="wp-caption aligncenter">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2013/08/2013-08-12-11.26.22.jpg" rel="lightbox[589]" title="Now running off a Raspberry Pi!"><img class="wp-image-592" alt="The mint plant in the background goes hand in hand with the RPi's green nature at only 3.5W input!" src="http://www.tiagoespinha.net/wp-content/uploads/2013/08/2013-08-12-11.26.22.jpg" width="423" height="317" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2013/08/2013-08-12-11.26.22.jpg" rel="lightbox[589]" title="Now running off a Raspberry Pi!"><img class="wp-image-592" alt="The mint plant in the background goes hand in hand with the RPi's green nature at only 3.5W input!" src="https://www.tiagoespinha.net/wp-content/uploads/2013/08/2013-08-12-11.26.22.jpg" width="423" height="317" /></a>
   
   <p class="wp-caption-text">
     The mint plant in the background goes hand in hand with the RPi&#8217;s green nature at only 3.5W input!

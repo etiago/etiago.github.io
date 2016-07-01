@@ -22,7 +22,7 @@ tags:
   - WSO2 WSF
 ---
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2011/09/762791717WSO2pic.jpg" rel="lightbox[519]" title="762791717WSO2pic"><img class="alignleft size-full wp-image-523" title="762791717WSO2pic" src="http://www.tiagoespinha.net/wp-content/uploads/2011/09/762791717WSO2pic.jpg" alt="" width="250" height="102" /></a>The title of this post is verbose enough about the feelings I have regarding the naming of this library. It&#8217;s as if WSO2 took a page from Microsoft&#8217;s book regarding names. What&#8217;s next? A Home Edition? Maybe throw in Professional, Business and Ultimate versions too for good measure.
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2011/09/762791717WSO2pic.jpg" rel="lightbox[519]" title="762791717WSO2pic"><img class="alignleft size-full wp-image-523" title="762791717WSO2pic" src="https://www.tiagoespinha.net/wp-content/uploads/2011/09/762791717WSO2pic.jpg" alt="" width="250" height="102" /></a>The title of this post is verbose enough about the feelings I have regarding the naming of this library. It&#8217;s as if WSO2 took a page from Microsoft&#8217;s book regarding names. What&#8217;s next? A Home Edition? Maybe throw in Professional, Business and Ultimate versions too for good measure.
 </p>
 
 <p style="text-align: justify;">

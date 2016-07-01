@@ -17,7 +17,7 @@ tags:
 ---
 A great deal of people seem to land in my blog searching for the plans for building a Musical Tesla Coil. Therefore, I decided to do some researching myself and I am posting here my findings. I hope you find them useful 🙂
 
-[Tesla Construction Plans](http://www.tiagoespinha.net/wp-content/uploads/2009/07/259168-Tesla-Coil-Construction-Plans.pdf)
+[Tesla Construction Plans](https://www.tiagoespinha.net/wp-content/uploads/2009/07/259168-Tesla-Coil-Construction-Plans.pdf)
 
 <a href="http://www.uoguelph.ca/~antoon/circ/hv/ss-tesla/ss-tesla.html" target="_blank">Very Detailed Technical Plans</a> [Broken]
 

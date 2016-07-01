@@ -19,7 +19,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2008/11/msdncard.png" rel="lightbox[143]" title="msdncard"><img class="alignnone size-medium wp-image-144" title="msdncard" src="http://www.tiagoespinha.net/wp-content/uploads/2008/11/msdncard-300x225.png" alt="" width="300" height="225" srcset="https://www.tiagoespinha.net/wp-content/uploads/2008/11/msdncard-300x225.png 300w, https://www.tiagoespinha.net/wp-content/uploads/2008/11/msdncard.png 645w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2008/11/msdncard.png" rel="lightbox[143]" title="msdncard"><img class="alignnone size-medium wp-image-144" title="msdncard" src="https://www.tiagoespinha.net/wp-content/uploads/2008/11/msdncard-300x225.png" alt="" width="300" height="225" srcset="https://www.tiagoespinha.net/wp-content/uploads/2008/11/msdncard-300x225.png 300w, https://www.tiagoespinha.net/wp-content/uploads/2008/11/msdncard.png 645w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 </p>
 
 <p style="text-align: justify;">
