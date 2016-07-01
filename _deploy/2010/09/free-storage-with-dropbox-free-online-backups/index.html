@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+        <title>Free Storage With Dropbox (Free Online Backups) - Tiago Espinha</title>
+        <meta name="author" content="Tiago Espinha" />
+        <meta name="description" content="Free Storage With Dropbox (Free Online Backups)" />
+        <meta name="keywords" content="Free Storage With Dropbox (Free Online Backups), Tiago Espinha, Software" />
+
+        <meta content="0" property="fb:app_id">
+        <meta content="Tiago Espinha" property="og:site_name">
+        
+          <meta content="Free Storage With Dropbox (Free Online Backups)" property="og:title">
+        
+        
+          <meta content="article" property="og:type">
+        
+        
+          <meta content="My Personal Blog" property="og:description">
+        
+        
+          <meta content="https://www.tiagoespinha.net/2010/09/free-storage-with-dropbox-free-online-backups/" property="og:url">
+        
+        
+          <meta content="2010-09-15T02:40:21+02:00" property="article:published_time">
+          <meta content="https://www.tiagoespinha.net/about/" property="article:author">
+        
+        
+          <meta content="http://aboutashu.com/static/img/logo-high-resolution.png" property="og:image">
+        
+        
+          
+          <meta content="Software" property="article:section">
+          
+        
+        
+          
+          <meta content="Backups" property="article:tag">
+          
+          <meta content="Dropbox" property="article:tag">
+          
+          <meta content="Free Online Storage" property="article:tag">
+          
+          <meta content="Free Storage" property="article:tag">
+          
+          <meta content="Software" property="article:tag">
+          
+          <meta content="Storage" property="article:tag">
+          
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@\#">
+        <meta name="twitter:creator" content="@\#">
+        
+          <meta name="twitter:title" content="Free Storage With Dropbox (Free Online Backups)">
+        
+        
+          <meta name="twitter:url" content="https://www.tiagoespinha.net/2010/09/free-storage-with-dropbox-free-online-backups/">
+        
+        
+          <meta name="twitter:description" content="My Personal Blog">
+        
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+
+        <!-- Core BootStrap CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Material Design CSS -->
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/bootstrap-material-design.min.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/syntax.css">
+
+        <!-- Custom CSS -->        
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/thickbox.css">
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/main.css">
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/projects.css">
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5075580-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </head>
+
+    <body class="home overflow-hidden">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="header-panel shadow-z-2">
+    <div class="container">
+    <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="row-picture">
+        <img id="about" class="logo-img" src="https://www.tiagoespinha.net/static/img/avatar.png" height="75px" width="75px">
+      </div>
+      <div class="row-details">
+      <h4 class="list-group-item-heading">Tiago Espinha</h4>
+      <p class="list-group-item-text">Tiago's Tech Blog</p>
+      <div class="social-icons">
+	
+        <a class="icon" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-skype"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-stack-exchange"></i></a>
+    
+</div>
+      </div>
+        <div class="navbar-header pull-right">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-2x fa-bars"></i>
+            </button>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-8 col-xs-12">
+      <h2 class="blog-title-pro">Free Storage With Dropbox (Free Online Backups)</h2>
+      <p class="info">
+      
+      <span class="time">15 Sep 2010</span>
+      
+      
+    <span class="categories">
+        &raquo; <a href="/category/Software">Software</a>
+    </span>
+    
+      </p>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="container main outer">
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                    <nav class="menu">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="list-separator nav navbar-nav well well-primary post">
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 current-menu-item free-storage-with-dropbox-free-online-backups"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  free-storage-with-dropbox-free-online-backups"><a href="/about/"><i class="fa fa-comments"></i> About</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  free-storage-with-dropbox-free-online-backups"><a href="/projects/"><i class="fa fa-desktop"></i> Projects</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  free-storage-with-dropbox-free-online-backups"><a href="#"><i class="fa fa-graduation-cap"></i> Resume</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  free-storage-with-dropbox-free-online-backups"><a href="https://github.com/etiago"><i class="fa fa-github"></i> GitHub</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  free-storage-with-dropbox-free-online-backups"><a href="/feed.xml"><i class="fa fa-feed"></i> XML Feed</a></li>
+
+</ul>
+    </div>
+    </nav>
+
+            </div> <!-- end /.col-md-3 -->
+
+            <div class="col-md-9 col-xs-12 full">
+                <div class="post-content well">
+<article class="content">
+    <div class="post"><p style="text-align: justify;">
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/09/dropbox.png" rel="lightbox[412]" title="dropbox"><img class="alignleft size-full wp-image-413" title="dropbox" src="https://www.tiagoespinha.net/wp-content/uploads/2010/09/dropbox.png" alt="" width="127" height="127" /></a>If you need a way to store your files in a manner that they are always accessible everywhere, then Dropbox is for you. In case you haven&#8217;t yet heard about this service, then know that Dropbox offers you 2Gb for free to store whichever files you like. The guys at Dropbox also have a software that integrates nicely with Windows and Mac OS and you can even access the files from your iPhone or Android powered phone.
+</p>
+
+<p style="text-align: justify;">
+  You might think that 2Gb are rather meager and you are right, that&#8217;s nothing these days. This is why Dropbox has an awesome <a href="http://www.dropbox.com/referrals/NTU5NzI4OQ" target="_blank">referral program</a> that will allow you to go up to 10Gb just by referring friends! That&#8217;s right, 10Gb for free just by referring Dropbox to a few friends.
+</p>
+
+<p style="text-align: justify;">
+  Read on to find out more!
+</p>
+
+<p style="text-align: justify;">
+  <!--more-->
+</p>
+
+<p style="text-align: justify;">
+  If you are up for it, Dropbox also offers paid plans where you can pay $9.99 a month for 50Gb of storage or you can go the extra mile and pay $19.99 for the 100Gb service. Still, if this is a little too extreme for you, register an account (with <a href="http://www.dropbox.com/referrals/NTU5NzI4OQ" target="_blank">my referral</a>, obviously :)) and start spamming referring friends with your link!
+</p>
+</div>
+    <hr />
+    <div class="share-page">
+    Share this on &rarr;
+ <a href="https://twitter.com/share" class="twitter-share-button" data-via="\#">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Google + -->
+<div class="g-plus" data-action="share" data-annotation="bubble"></div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Facebook -->
+<div class="fb-share-button" data-href="https://www.tiagoespinha.net/2010/09/free-storage-with-dropbox-free-online-backups/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</article>
+<hr />
+
+
+    
+    
+        
+            
+                
+                <div class="panel-body">
+                <h4>Related Posts</h4>
+                <ul>
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/">Why I started using emacs (and why you shouldn&#8217;t)</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/">Stuck at &#8220;Preparing your Desktop&#8221; After Migrating Windows Partition to SSD?</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>, <a href="/category/Windows">Windows</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/">Disable power management for the 8188eu driver in Raspbian</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>, <a href="/category/Technology">Technology</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/">[Project] How to easily monitor your plants&#8217; soil humidity</a>
+                    
+                        <small>(Categories: <a href="/category/DIY">DIY</a>, <a href="/category/Hardware">Hardware</a>, <a href="/category/Raspberry Pi">Raspberry Pi</a>, <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2013/10/automatic-recovery-of-rest-interfaces/">Automatic Recovery of REST Interfaces</a>
+                    
+                        <small>(Categories: <a href="/category/SOA">SOA</a>, <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2013/08/wechat-pebble-wechat-notifications-on-your-pebble/">WeChat Pebble &#8211; WeChat notifications on your Pebble!</a>
+                    
+                        <small>(Categories: <a href="/category/Android">Android</a>, <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </ul>
+    </div>
+
+
+<div class="PageNavigation">
+  
+    <a class="prev pull-left" href="/2010/09/android-rooting-for-dummies-what-is-rooting/">&laquo; Android Rooting For Dummies (What is Rooting?)</a>
+  
+  
+    <a class="next pull-right" href="/2010/09/how-to-seal-a-bag-airtight-with-a-plastic-bottle/">How To Seal a Bag Airtight With a Plastic Bottle &raquo;</a>
+  
+</div>
+
+
+<div class="disqus-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+
+        var disqus_shortname = "tiagostechblog";
+        var disqus_identifier = "https://www.tiagoespinha.net_Free Storage With Dropbox (Free Online Backups)";
+        var disqus_title = "Free Storage With Dropbox (Free Online Backups)";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    /* ]]> */
+    </script>
+</div>
+</div>
+
+                <div class="row">
+                  <div class="col-md-12 col-xs-12 footer">
+                <footer>
+                    © Copyright text here
+                     
+                    - <a href="#">Privacy link</a> - Powered by Jekyll.
+                    
+                </footer>
+                <div align="center">
+                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                  <!-- hcz-jekyll -->
+                  <ins class="adsbygoogle"
+                       style="display:block"
+                       data-ad-client="ca-pub-0776433630785969"
+                       data-ad-slot="9690958902"
+                       data-ad-format="auto"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+            </div>
+                </div>
+            </div> <!-- end /.col-md-9 -->
+        </div> <!-- end /.row -->
+
+    </div> <!-- end /.container -->
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <script src="https://www.tiagoespinha.net/static/js/thickbox-compressed.js"></script>
+        <script src="https://www.tiagoespinha.net/static/js/material.min.js"></script>
+        <script src="https://www.tiagoespinha.net/static/js/main.js"></script>
+        <script src="https://www.tiagoespinha.net/static/js/projects.js"></script>
+    </body>
+</html>

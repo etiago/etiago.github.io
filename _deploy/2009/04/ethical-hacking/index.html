@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+        <title>Ethical Hacking - Tiago Espinha</title>
+        <meta name="author" content="Tiago Espinha" />
+        <meta name="description" content="Ethical Hacking" />
+        <meta name="keywords" content="Ethical Hacking, Tiago Espinha, Technology" />
+
+        <meta content="0" property="fb:app_id">
+        <meta content="Tiago Espinha" property="og:site_name">
+        
+          <meta content="Ethical Hacking" property="og:title">
+        
+        
+          <meta content="article" property="og:type">
+        
+        
+          <meta content="My Personal Blog" property="og:description">
+        
+        
+          <meta content="https://www.tiagoespinha.net/2009/04/ethical-hacking/" property="og:url">
+        
+        
+          <meta content="2009-04-27T21:38:33+02:00" property="article:published_time">
+          <meta content="https://www.tiagoespinha.net/about/" property="article:author">
+        
+        
+          <meta content="http://aboutashu.com/static/img/logo-high-resolution.png" property="og:image">
+        
+        
+          
+          <meta content="Technology" property="article:section">
+          
+        
+        
+          
+          <meta content="#CEH" property="article:tag">
+          
+          <meta content="Information Technology" property="article:tag">
+          
+          <meta content="IT" property="article:tag">
+          
+          <meta content="IT Security" property="article:tag">
+          
+          <meta content="Security" property="article:tag">
+          
+          <meta content="Technology" property="article:tag">
+          
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@\#">
+        <meta name="twitter:creator" content="@\#">
+        
+          <meta name="twitter:title" content="Ethical Hacking">
+        
+        
+          <meta name="twitter:url" content="https://www.tiagoespinha.net/2009/04/ethical-hacking/">
+        
+        
+          <meta name="twitter:description" content="My Personal Blog">
+        
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+
+        <!-- Core BootStrap CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Material Design CSS -->
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/bootstrap-material-design.min.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/syntax.css">
+
+        <!-- Custom CSS -->        
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/thickbox.css">
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/main.css">
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/projects.css">
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5075580-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </head>
+
+    <body class="home overflow-hidden">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="header-panel shadow-z-2">
+    <div class="container">
+    <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="row-picture">
+        <img id="about" class="logo-img" src="https://www.tiagoespinha.net/static/img/avatar.png" height="75px" width="75px">
+      </div>
+      <div class="row-details">
+      <h4 class="list-group-item-heading">Tiago Espinha</h4>
+      <p class="list-group-item-text">Tiago's Tech Blog</p>
+      <div class="social-icons">
+	
+        <a class="icon" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-skype"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-stack-exchange"></i></a>
+    
+</div>
+      </div>
+        <div class="navbar-header pull-right">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-2x fa-bars"></i>
+            </button>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-8 col-xs-12">
+      <h2 class="blog-title-pro">Ethical Hacking</h2>
+      <p class="info">
+      
+      <span class="time">27 Apr 2009</span>
+      
+      
+    <span class="categories">
+        &raquo; <a href="/category/Technology">Technology</a>
+    </span>
+    
+      </p>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="container main outer">
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                    <nav class="menu">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="list-separator nav navbar-nav well well-primary post">
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 current-menu-item ethical-hacking"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  ethical-hacking"><a href="/about/"><i class="fa fa-comments"></i> About</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  ethical-hacking"><a href="/projects/"><i class="fa fa-desktop"></i> Projects</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  ethical-hacking"><a href="#"><i class="fa fa-graduation-cap"></i> Resume</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  ethical-hacking"><a href="https://github.com/etiago"><i class="fa fa-github"></i> GitHub</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  ethical-hacking"><a href="/feed.xml"><i class="fa fa-feed"></i> XML Feed</a></li>
+
+</ul>
+    </div>
+    </nav>
+
+            </div> <!-- end /.col-md-3 -->
+
+            <div class="col-md-9 col-xs-12 full">
+                <div class="post-content well">
+<article class="content">
+    <div class="post"><p>‘Times are a changing’ – nowadays more than ever this is true. Companies and individuals rely more and more on the Internet and let’s be honest: the Internet is not a safe place, not by a slim chance. I’m not even talking about viruses, which on their own are a pretty big threat. What I am going on about are hackers. You know, the evil guys who want all your money and your credit card numbers.</p>
+
+<p>Don’t take it personally, no hacker has a grudge especially against you or your company, but unless you take preemptive measures to be on the front line, then you are at risk. There is a chance that you are at risk right now. This is the sort of thing where you cannot possibly think “this only happens to other people” – well, think again, it happened to electrical power plants in the US.</p>
+
+<p>Are you convinced that you need to do something about it yet? I hope you are.</p>
+
+<p>So what’s the whole idea you ask? Well, the idea is being ahead of the hackers, it is thinking like an hacker so that you can be preemptive and patch the holes in your organization. Do you know how store-owners set up motion sensors near windows that can easily be broken? The idea here is just the same.</p>
+
+<p>This concept is called ethical hacking. You are taught on the ways, tricks and subterfuges of hackers so that you can have a different insight on your company. Believe it or not, but the biggest flaw in computer systems is actually us, the users. We are easily duped and deceived by people pretending to be who they aren’t, and this has reached astronomical levels. The most blatant case nowadays is when you get an e-mail that pretends to be a legitimate e-mail from your bank, from a work-mate or simply people who would be innocently sending you pictures.</p>
+
+<p>Well my fellow Internauts, no enough care is much care these days. The <a href="http://iclass.eccouncil.org/">EC-Council</a> provides you with the security training that you need not only to help yourself and your company, but also to help other companies. This of course is an investment that can get a return flowing in so in the end, it is all benefits! This isn’t all; if you are trained in <a href="http://socialspark.com/metrics/click/post?slot_id=36484&#038;url=http%3A%2F%2Furlbrief.com%2F98d904" rel="nofollow">IT Security</a>, your job opportunities simply tenfold. Is that not what everyone wants at a time of recession and crisis?</p>
+
+<p>The iClass by the EC-Council has the following categories:</p>
+
+<p>-Security Fundamentals</p>
+
+<p>-Ethical Hacking </p>
+
+<p>-Penetration Testing </p>
+
+<p>-Computer Forensics  </p>
+
+<p>-Disaster Recovery </p>
+
+<p>-Secure Programming</p>
+
+<p>So whether you are a newbie (hey, there’s no shame about that!) and you need the fundamentals, or whether you fancy a job at a crime lab doing scientific forensics for a living, the iClass covers it all. You just take your pick!</p>
+
+<p>If you are interested, and here’s hoping that you won’t miss this great opportunity, then here are some links that will help you on the EC-Council site.</p>
+
+<p>Program Site:</p>
+
+<p><a href="http://iclass.eccouncil.org/">http://iclass.eccouncil.org/</a></p>
+
+<p>Different Certifications:</p>
+
+<p><a href="http://iclass.eccouncil.org/index.php?option=com_content&amp;view=article&amp;id=68&amp;Itemid=91">http://iclass.eccouncil.org/index.php?option=com_content&amp;view=article&amp;id=68&amp;Itemid=91</a> </p>
+
+<p>The CEH (Certified Ethical Hacker) :</p>
+
+<p><a href="http://www.eccouncil.org/ceh.htm">http://www.eccouncil.org/ceh.htm</a> </p>
+
+<p>Certification Center:</p>
+
+<p><a href="http://www.isc2.org/">http://www.isc2.org/</a> </p>
+
+<p>CompTIA:</p>
+
+<p><a href="http://www.comptia.org/">http://www.comptia.org/</a></p>
+
+<p><a href="http://socialspark.com/metrics/click/post?slot_id=36484&#038;url=http%3A%2F%2Furlbrief.com%2F98d904" rel="nofollow">IT Security</a></p>
+
+<map name="map2697">
+  <area href="http://socialspark.com/metrics/click/disclosure?slot_id=36484&#038;url=http%3A%2F%2Furlbrief.com%2F98d904" shape="rect" coords="0,0,206,45" rel="nofollow" />
+  
+  <area href="http://socialspark.com/code_of_ethics" shape="rect" coords="207,0,225,45" rel="nofollow" />
+</map>
+
+<p><img alt="Post?slot_id=36484&#038;url=http%3a%2f%2fsocialspark" border="0" src="http://socialspark.com/metrics/view/post?slot_id=36484&#038;url=http%3A%2F%2Fsocialspark.com%2Fimages%2Fdisclosure_badges%2Fdisclosure_badge_blue.png" style="border:0" usemap="#map2697" /></p>
+
+<p><img src="http://ad.doubleclick.net/ad/N5654.139913.9527099420421/B3455931;sz=1x1" width="1" height="1" border="0" /></p>
+</div>
+    <hr />
+    <div class="share-page">
+    Share this on &rarr;
+ <a href="https://twitter.com/share" class="twitter-share-button" data-via="\#">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Google + -->
+<div class="g-plus" data-action="share" data-annotation="bubble"></div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Facebook -->
+<div class="fb-share-button" data-href="https://www.tiagoespinha.net/2009/04/ethical-hacking/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</article>
+<hr />
+
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+                
+                <div class="panel-body">
+                <h4>Related Posts</h4>
+                <ul>
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/">Disable power management for the 8188eu driver in Raspbian</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>, <a href="/category/Technology">Technology</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2013/08/now-running-off-a-raspberry-pi/">Now running off a Raspberry Pi!</a>
+                    
+                        <small>(Categories: <a href="/category/Hardware">Hardware</a>, <a href="/category/Technology">Technology</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2012/07/changing-the-way-i-use-my-mac/">Changing the way I use my Mac</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>, <a href="/category/Technology">Technology</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2009/11/adobe-and-the-slap-on-apple/">Adobe and the slap on Apple</a>
+                    
+                        <small>(Categories: <a href="/category/Technology">Technology</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2009/07/imageshack-hacked-yes/">Imageshack Hacked? &#8211; Yes!</a>
+                    
+                        <small>(Categories: <a href="/category/Technology">Technology</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2009/07/musical-tesla-coil-plans/">Musical Tesla Coil Plans [Updated&#8230;]</a>
+                    
+                        <small>(Categories: <a href="/category/Technology">Technology</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </ul>
+    </div>
+
+
+<div class="PageNavigation">
+  
+    <a class="prev pull-left" href="/2009/04/lg-km900-youre-doing-it-wrong/">&laquo; LG KM900 &#8211; You&#8217;re doing it wrong</a>
+  
+  
+    <a class="next pull-right" href="/2009/05/the-first-flaw-in-windows-7/">The First Flaw in Windows 7 &raquo;</a>
+  
+</div>
+
+
+<div class="disqus-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+
+        var disqus_shortname = "tiagostechblog";
+        var disqus_identifier = "https://www.tiagoespinha.net_Ethical Hacking";
+        var disqus_title = "Ethical Hacking";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    /* ]]> */
+    </script>
+</div>
+</div>
+
+                <div class="row">
+                  <div class="col-md-12 col-xs-12 footer">
+                <footer>
+                    © Copyright text here
+                     
+                    - <a href="#">Privacy link</a> - Powered by Jekyll.
+                    
+                </footer>
+                <div align="center">
+                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                  <!-- hcz-jekyll -->
+                  <ins class="adsbygoogle"
+                       style="display:block"
+                       data-ad-client="ca-pub-0776433630785969"
+                       data-ad-slot="9690958902"
+                       data-ad-format="auto"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+            </div>
+                </div>
+            </div> <!-- end /.col-md-9 -->
+        </div> <!-- end /.row -->
+
+    </div> <!-- end /.container -->
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <script src="https://www.tiagoespinha.net/static/js/thickbox-compressed.js"></script>
+        <script src="https://www.tiagoespinha.net/static/js/material.min.js"></script>
+        <script src="https://www.tiagoespinha.net/static/js/main.js"></script>
+        <script src="https://www.tiagoespinha.net/static/js/projects.js"></script>
+    </body>
+</html>
