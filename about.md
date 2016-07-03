@@ -8,7 +8,11 @@ guid: http://tiagoespinha.info/?page_id=2
 permalink: /about/
 ---
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2008/08/tiago-copy.jpg" rel="lightbox[2]" title="About me"><img class="wp-image-578 alignleft" src="http://www.tiagoespinha.net/wp-content/uploads/2008/08/tiago-copy.jpg" alt="tiago copy" width="144" height="216" /></a>My name is Tiago Espinha, I am 27 years of age, from Portugal and the developer of the application TeddyBearNotes that you will be able to find in this blog. This application is now quite outdated so use it at your own peril, and feel free to contribute code for it.
+  <a href="http://www.tiagoespinha.net/wp-content/uploads/2008/08/tiago-copy.jpg" rel="lightbox[2]" title="About me"><img class="wp-image-578 alignleft" src="http://www.tiagoespinha.net/wp-content/uploads/2008/08/tiago-copy.jpg" alt="tiago copy" width="144" height="216" /></a>My name is Tiago Espinha, I am <script>document.write((function () { // birthday is a date
+    var ageDifMs = Date.now() - new Date(1987,8,4).getTime();
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+})())</script> years of age, from Portugal and the developer of the application TeddyBearNotes that you will be able to find in this blog. This application is now quite outdated so use it at your own peril, and feel free to contribute code for it.
 </p>
 
 <p style="text-align: justify;">
