@@ -42,7 +42,7 @@ tags:
 </p>
 
 <div id="attachment_738" style="width: 330px" class="wp-caption aligncenter">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2014/10/blog2.jpg" rel="lightbox[736]" title="[Photo] Jupiter and its 4 largest moons"><img class="wp-image-738" src="http://www.tiagoespinha.net/wp-content/uploads/2014/10/blog2.jpg" alt="Jupiter, photo 1" width="320" height="200" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2014/10/blog2.jpg" rel="lightbox[736]" title="[Photo] Jupiter and its 4 largest moons"><img class="wp-image-738" src="https://www.tiagoespinha.net/wp-content/uploads/2014/10/blog2.jpg" alt="Jupiter, photo 1" width="320" height="200" /></a>
   
   <p class="wp-caption-text">
     Left to right: Europa, Jupiter, Io, Ganymede and Callisto
@@ -50,7 +50,7 @@ tags:
 </div>
 
 <div id="attachment_737" style="width: 330px" class="wp-caption aligncenter">
-  <a href="http://www.tiagoespinha.net/?attachment_id=737"><img class="wp-image-737" src="http://www.tiagoespinha.net/wp-content/uploads/2014/10/blog1.jpg" alt="Jupiter, photo 2" width="320" height="200" /></a>
+  <a href="http://www.tiagoespinha.net/?attachment_id=737"><img class="wp-image-737" src="https://www.tiagoespinha.net/wp-content/uploads/2014/10/blog1.jpg" alt="Jupiter, photo 2" width="320" height="200" /></a>
   
   <p class="wp-caption-text">
     Left to right: Europa, Jupiter, Io, Ganymede and Callisto

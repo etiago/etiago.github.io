@@ -18,7 +18,7 @@ tags:
   - Technology
 ---
 <p style="text-align: justify;">
-  <a href="http://socialspark.com/metrics/click/profile?opportunity_id=3751&url=http%3A%2F%2Fwww.jdoqocy.com%2Fclick-2225504-10685232"><img class="alignleft size-full wp-image-263" style="float:left; margin:0 1em 1em 0" title="CQ60" src="http://www.tiagoespinha.net/wp-content/uploads/2009/09/t.png" alt="CQ60" width="200" height="117" /></a>So here I am now, finally alone. My owner won&#8217;t leave me alone for a second during the day! I&#8217;m surprised he gave me some rest now, I guess I should enjoy it.
+  <a href="http://socialspark.com/metrics/click/profile?opportunity_id=3751&url=http%3A%2F%2Fwww.jdoqocy.com%2Fclick-2225504-10685232"><img class="alignleft size-full wp-image-263" style="float:left; margin:0 1em 1em 0" title="CQ60" src="https://www.tiagoespinha.net/wp-content/uploads/2009/09/t.png" alt="CQ60" width="200" height="117" /></a>So here I am now, finally alone. My owner won&#8217;t leave me alone for a second during the day! I&#8217;m surprised he gave me some rest now, I guess I should enjoy it.
 </p>
 
 <p style="text-align: justify;">

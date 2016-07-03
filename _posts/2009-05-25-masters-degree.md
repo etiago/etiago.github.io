@@ -17,7 +17,7 @@ tags:
   - University of Leicester
 ---
 <p style="text-align: center;">
-  <img class="size-full wp-image-190 aligncenter" title="unilogo" src="http://www.tiagoespinha.net/wp-content/uploads/2009/05/unilogo.gif" alt="unilogo" width="184" height="50" />
+  <img class="size-full wp-image-190 aligncenter" title="unilogo" src="https://www.tiagoespinha.net/wp-content/uploads/2009/05/unilogo.gif" alt="unilogo" width="184" height="50" />
 </p>
 
 <p style="text-align: justify;">

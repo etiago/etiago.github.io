@@ -87,7 +87,7 @@ tags:
 </p>
 
 <div id="attachment_694" style="width: 522px" class="wp-caption alignleft">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-05-09-12.13.19.jpg" rel="lightbox[689]" title="[Project] How to easily monitor your plants' soil humidity"><img class="wp-image-694" src="http://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-05-09-12.13.19.jpg" alt="Raspberry Pi + Arduino wired together" width="512" height="384" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-05-09-12.13.19.jpg" rel="lightbox[689]" title="[Project] How to easily monitor your plants' soil humidity"><img class="wp-image-694" src="https://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-05-09-12.13.19.jpg" alt="Raspberry Pi + Arduino wired together" width="512" height="384" /></a>
   
   <p class="wp-caption-text">
     Raspberry Pi + Arduino wired together
@@ -139,7 +139,7 @@ tags:
 </ul>
 
 <div id="attachment_701" style="width: 522px" class="wp-caption alignleft">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-05-09-12.51.20.jpg" rel="lightbox[689]" title="[Project] How to easily monitor your plants' soil humidity"><img class="wp-image-701" src="http://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-05-09-12.51.20.jpg" alt="Above, the soil moisture sensor itself (YL-69). Below, the bridge device which you'll need to use (YL-38)." width="512" height="384" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-05-09-12.51.20.jpg" rel="lightbox[689]" title="[Project] How to easily monitor your plants' soil humidity"><img class="wp-image-701" src="https://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-05-09-12.51.20.jpg" alt="Above, the soil moisture sensor itself (YL-69). Below, the bridge device which you'll need to use (YL-38)." width="512" height="384" /></a>
   
   <p class="wp-caption-text">
     Above, the soil moisture sensor itself (YL-69). Below, the bridge device which you&#8217;ll need to use (YL-38).
@@ -193,14 +193,14 @@ tags:
 </p>
 
 <h3 style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2014/05/Screenshot-2014-05-13-20.35.53.png" rel="lightbox[689]" title="[Project] How to easily monitor your plants' soil humidity"><img class="alignleft wp-image-699" src="http://www.tiagoespinha.net/wp-content/uploads/2014/05/Screenshot-2014-05-13-20.35.53.png" alt="Screenshot 2014-05-13 20.35.53" width="512" height="185" /></a>But wait, there&#8217;s more!
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2014/05/Screenshot-2014-05-13-20.35.53.png" rel="lightbox[689]" title="[Project] How to easily monitor your plants' soil humidity"><img class="alignleft wp-image-699" src="https://www.tiagoespinha.net/wp-content/uploads/2014/05/Screenshot-2014-05-13-20.35.53.png" alt="Screenshot 2014-05-13 20.35.53" width="512" height="185" /></a>But wait, there&#8217;s more!
 </h3>
 
 <p style="text-align: justify;">
   I&#8217;m also the proud owner of a Pebble watch, so why not put this to good use, I thought! Everything was already in place so all I had to do was set up an alert system that monitors the last collected data. If it&#8217;s above a &#8220;drought threshold&#8221;, I receive an alert on my Pebble. But there&#8217;s still more! As soon as I water my plants, I get another alert as seen below:
 </p>
 
-# <a href="http://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-04-28-08.41.21.jpg" rel="lightbox[689]" title="[Project] How to easily monitor your plants' soil humidity"><img class="wp-image-700 aligncenter" src="http://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-04-28-08.41.21.jpg" alt="2014-04-28 08.41.21" width="360" height="480" /></a>
+# <a href="https://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-04-28-08.41.21.jpg" rel="lightbox[689]" title="[Project] How to easily monitor your plants' soil humidity"><img class="wp-image-700 aligncenter" src="https://www.tiagoespinha.net/wp-content/uploads/2014/05/2014-04-28-08.41.21.jpg" alt="2014-04-28 08.41.21" width="360" height="480" /></a>
 
 &nbsp;
 

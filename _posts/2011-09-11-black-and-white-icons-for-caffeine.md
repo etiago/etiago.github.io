@@ -22,7 +22,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  Anyway, this tool places an icon on the status bar. The only problem is that this icon is in color and it just stands out in my status bar like a sore thumb. SO! I created a new icon set. You can get it by clicking <a href="http://www.tiagoespinha.net/wp-content/uploads/2011/09/icons.zip">here</a>. Scroll down to have a look at the icons before you download it.
+  Anyway, this tool places an icon on the status bar. The only problem is that this icon is in color and it just stands out in my status bar like a sore thumb. SO! I created a new icon set. You can get it by clicking <a href="https://www.tiagoespinha.net/wp-content/uploads/2011/09/icons.zip">here</a>. Scroll down to have a look at the icons before you download it.
 </p>
 
 <p style="text-align: justify;">
@@ -30,16 +30,16 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  Icons:<br /> <a href="http://www.tiagoespinha.net/wp-content/uploads/2011/09/active.png" rel="lightbox[505]" title="active"><img class="alignleft size-full wp-image-507" title="active" src="http://www.tiagoespinha.net/wp-content/uploads/2011/09/active.png" alt="" width="22" height="20" /></a><a href="http://www.tiagoespinha.net/wp-content/uploads/2011/09/inactive.png" rel="lightbox[505]" title="inactive"><img class="alignleft size-full wp-image-508" title="inactive" src="http://www.tiagoespinha.net/wp-content/uploads/2011/09/inactive.png" alt="" width="22" height="20" /></a>
+  Icons:<br /> <a href="https://www.tiagoespinha.net/wp-content/uploads/2011/09/active.png" rel="lightbox[505]" title="active"><img class="alignleft size-full wp-image-507" title="active" src="https://www.tiagoespinha.net/wp-content/uploads/2011/09/active.png" alt="" width="22" height="20" /></a><a href="https://www.tiagoespinha.net/wp-content/uploads/2011/09/inactive.png" rel="lightbox[505]" title="inactive"><img class="alignleft size-full wp-image-508" title="inactive" src="https://www.tiagoespinha.net/wp-content/uploads/2011/09/inactive.png" alt="" width="22" height="20" /></a>
 </p>
 
 <p style="text-align: justify;">
   <p style="text-align: justify;">
-    This is what it looks like in action:<br /> <a href="http://www.tiagoespinha.net/wp-content/uploads/2011/09/Screen-Shot-2011-09-11-at-8.40.20-PM.png" rel="lightbox[505]" title="Screen Shot 2011-09-11 at 8.40.20 PM"><img class="alignleft size-full wp-image-509" title="Screen Shot 2011-09-11 at 8.40.20 PM" src="http://www.tiagoespinha.net/wp-content/uploads/2011/09/Screen-Shot-2011-09-11-at-8.40.20-PM.png" alt="" width="562" height="22" /></a>
+    This is what it looks like in action:<br /> <a href="https://www.tiagoespinha.net/wp-content/uploads/2011/09/Screen-Shot-2011-09-11-at-8.40.20-PM.png" rel="lightbox[505]" title="Screen Shot 2011-09-11 at 8.40.20 PM"><img class="alignleft size-full wp-image-509" title="Screen Shot 2011-09-11 at 8.40.20 PM" src="https://www.tiagoespinha.net/wp-content/uploads/2011/09/Screen-Shot-2011-09-11-at-8.40.20-PM.png" alt="" width="562" height="22" /></a>
   </p>
   
   <p style="text-align: justify;">
-    and<br /> <a href="http://www.tiagoespinha.net/wp-content/uploads/2011/09/Screen-Shot-2011-09-11-at-8.40.48-PM.png" rel="lightbox[505]" title="Screen Shot 2011-09-11 at 8.40.48 PM"><img class="alignleft size-full wp-image-510" title="Screen Shot 2011-09-11 at 8.40.48 PM" src="http://www.tiagoespinha.net/wp-content/uploads/2011/09/Screen-Shot-2011-09-11-at-8.40.48-PM.png" alt="" width="562" height="21" /></a>
+    and<br /> <a href="https://www.tiagoespinha.net/wp-content/uploads/2011/09/Screen-Shot-2011-09-11-at-8.40.48-PM.png" rel="lightbox[505]" title="Screen Shot 2011-09-11 at 8.40.48 PM"><img class="alignleft size-full wp-image-510" title="Screen Shot 2011-09-11 at 8.40.48 PM" src="https://www.tiagoespinha.net/wp-content/uploads/2011/09/Screen-Shot-2011-09-11-at-8.40.48-PM.png" alt="" width="562" height="21" /></a>
   </p>
   
   <p style="text-align: justify;">

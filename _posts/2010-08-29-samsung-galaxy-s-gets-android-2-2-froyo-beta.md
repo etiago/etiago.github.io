@@ -28,7 +28,7 @@ tags:
   - Technology
 ---
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2010/08/froyogalaxy.jpg" rel="lightbox[367]" title="froyogalaxy"><img class="alignright size-full wp-image-370" title="froyogalaxy" src="http://www.tiagoespinha.net/wp-content/uploads/2010/08/froyogalaxy.jpg" alt="" width="216" height="217" /></a>In case you were not aware yet, there are Froyo builds available out there <strong>RIGHT NOW</strong> for the Samsung Galaxy S. You just have to be aware that these builds are in fact beta builds released by Samsung and thus might still be a bit buggy and crash-ey. Still, it shouldn&#8217;t break your phone. If anything you&#8217;ll just have to reflash it back with Éclair which is perfectly possible and very safe.
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/08/froyogalaxy.jpg" rel="lightbox[367]" title="froyogalaxy"><img class="alignright size-full wp-image-370" title="froyogalaxy" src="https://www.tiagoespinha.net/wp-content/uploads/2010/08/froyogalaxy.jpg" alt="" width="216" height="217" /></a>In case you were not aware yet, there are Froyo builds available out there <strong>RIGHT NOW</strong> for the Samsung Galaxy S. You just have to be aware that these builds are in fact beta builds released by Samsung and thus might still be a bit buggy and crash-ey. Still, it shouldn&#8217;t break your phone. If anything you&#8217;ll just have to reflash it back with Éclair which is perfectly possible and very safe.
 </p>
 
 <p style="text-align: justify;">

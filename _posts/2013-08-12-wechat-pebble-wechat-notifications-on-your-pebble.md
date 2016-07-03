@@ -31,7 +31,7 @@ Because WeChat is popular in China, it is bound to push notifications which incl
 Adding a font with 2000~3000 characters seems to be troublesome due to severe space restrictions in the Pebble firmware. Therefore, I came up with an approach which makes use of the [Unifont character library](http://unifoundry.com/unifont.html) to render messages on the Android app and send them to the Pebble watch as a bitmap. This effectively solves the problem not only for Chinese but also for Russian, Hebrew, you name it!
 
 <div id="attachment_600" style="width: 287px" class="wp-caption aligncenter">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2013/08/2013-07-31-13.57.36.jpg" rel="lightbox[595]" title="WeChat Pebble - WeChat notifications on your Pebble!"><img class="wp-image-600" alt="WeChat Pebble in action!" src="http://www.tiagoespinha.net/wp-content/uploads/2013/08/2013-07-31-13.57.36.jpg" width="277" height="368" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2013/08/2013-07-31-13.57.36.jpg" rel="lightbox[595]" title="WeChat Pebble - WeChat notifications on your Pebble!"><img class="wp-image-600" alt="WeChat Pebble in action!" src="https://www.tiagoespinha.net/wp-content/uploads/2013/08/2013-07-31-13.57.36.jpg" width="277" height="368" /></a>
   
   <p class="wp-caption-text">
     WeChat Pebble in action!
@@ -49,7 +49,7 @@ All of this is available as open-source and for free.
 **NOTE: **For the app to actually push the WeChat notifications you have to first start the app and follow the instructions. Also keep in mind that in the Settings you can choose different types of notifications.
 
 <div id="attachment_596" style="width: 178px" class="wp-caption aligncenter">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2013/08/market.png" rel="lightbox[595]" title="WeChat Pebble - WeChat notifications on your Pebble!"><img class="wp-image-596" alt="Play Store" src="http://www.tiagoespinha.net/wp-content/uploads/2013/08/market.png" width="168" height="168" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2013/08/market.png" rel="lightbox[595]" title="WeChat Pebble - WeChat notifications on your Pebble!"><img class="wp-image-596" alt="Play Store" src="https://www.tiagoespinha.net/wp-content/uploads/2013/08/market.png" width="168" height="168" /></a>
   
   <p class="wp-caption-text">
     Play Store
@@ -63,7 +63,7 @@ All of this is available as open-source and for free.
 2 &#8211; Install the Pebble watchapp by installing this [.pbw](http://www.tiagoespinha.net/wechatpebble/watchface.pbw) or by scanning the QR code below.
 
 <div id="attachment_597" style="width: 178px" class="wp-caption aligncenter">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2013/08/watchapp.png" rel="lightbox[595]" title="WeChat Pebble - WeChat notifications on your Pebble!"><img class="wp-image-597" alt="Pebble Watch App (.pbw)" src="http://www.tiagoespinha.net/wp-content/uploads/2013/08/watchapp.png" width="168" height="168" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2013/08/watchapp.png" rel="lightbox[595]" title="WeChat Pebble - WeChat notifications on your Pebble!"><img class="wp-image-597" alt="Pebble Watch App (.pbw)" src="https://www.tiagoespinha.net/wp-content/uploads/2013/08/watchapp.png" width="168" height="168" /></a>
   
   <p class="wp-caption-text">
     Pebble Watch App (.pbw)

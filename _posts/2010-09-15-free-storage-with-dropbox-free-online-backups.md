@@ -17,7 +17,7 @@ tags:
   - Storage
 ---
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2010/09/dropbox.png" rel="lightbox[412]" title="dropbox"><img class="alignleft size-full wp-image-413" title="dropbox" src="http://www.tiagoespinha.net/wp-content/uploads/2010/09/dropbox.png" alt="" width="127" height="127" /></a>If you need a way to store your files in a manner that they are always accessible everywhere, then Dropbox is for you. In case you haven&#8217;t yet heard about this service, then know that Dropbox offers you 2Gb for free to store whichever files you like. The guys at Dropbox also have a software that integrates nicely with Windows and Mac OS and you can even access the files from your iPhone or Android powered phone.
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/09/dropbox.png" rel="lightbox[412]" title="dropbox"><img class="alignleft size-full wp-image-413" title="dropbox" src="https://www.tiagoespinha.net/wp-content/uploads/2010/09/dropbox.png" alt="" width="127" height="127" /></a>If you need a way to store your files in a manner that they are always accessible everywhere, then Dropbox is for you. In case you haven&#8217;t yet heard about this service, then know that Dropbox offers you 2Gb for free to store whichever files you like. The guys at Dropbox also have a software that integrates nicely with Windows and Mac OS and you can even access the files from your iPhone or Android powered phone.
 </p>
 
 <p style="text-align: justify;">

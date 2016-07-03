@@ -17,7 +17,7 @@ tags:
   - Seal Bag Airtight
 ---
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2010/09/recycle_logo_13.jpg" rel="lightbox[417]" title="recycle_logo_1"><img class="alignleft size-full wp-image-427" title="recycle_logo_1" src="http://www.tiagoespinha.net/wp-content/uploads/2010/09/recycle_logo_13.jpg" alt="" width="180" height="180" /></a>You&#8217;re just about to learn a technique known for many centuries by Buddhist priests, passed on from generation to generation, but always kept in secret within their ranks. This technique teaches you how to seal a bag, in a airtight manner, with nothing but a&#8230;. plastic bottle!
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/09/recycle_logo_13.jpg" rel="lightbox[417]" title="recycle_logo_1"><img class="alignleft size-full wp-image-427" title="recycle_logo_1" src="https://www.tiagoespinha.net/wp-content/uploads/2010/09/recycle_logo_13.jpg" alt="" width="180" height="180" /></a>You&#8217;re just about to learn a technique known for many centuries by Buddhist priests, passed on from generation to generation, but always kept in secret within their ranks. This technique teaches you how to seal a bag, in a airtight manner, with nothing but a&#8230;. plastic bottle!
 </p>
 
 <p style="text-align: justify;">
@@ -49,15 +49,15 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2010/09/image001.jpeg" rel="lightbox[417]" title="image001"><img class="size-full wp-image-420 alignnone" title="image001" src="http://www.tiagoespinha.net/wp-content/uploads/2010/09/image001.jpeg" alt="" width="320" height="214" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/09/image001.jpeg" rel="lightbox[417]" title="image001"><img class="size-full wp-image-420 alignnone" title="image001" src="https://www.tiagoespinha.net/wp-content/uploads/2010/09/image001.jpeg" alt="" width="320" height="214" /></a>
 </p>
 
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2010/09/image001.jpeg"></a>At this point you should have separated these two parts of the bottle and now is when the &#8220;magic&#8221; begins. In actual fact, you just need the mouthpiece, you can throw away the rest or fancy a vase out of it. With the mouthpiece, you unscrew the cap, pass the open part of the bag through the mouth of the bottle and apply the cap over the plastic bag, thus sealing it shut. Here&#8217;s an image explaining showing the end result:
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/09/image001.jpeg"></a>At this point you should have separated these two parts of the bottle and now is when the &#8220;magic&#8221; begins. In actual fact, you just need the mouthpiece, you can throw away the rest or fancy a vase out of it. With the mouthpiece, you unscrew the cap, pass the open part of the bag through the mouth of the bottle and apply the cap over the plastic bag, thus sealing it shut. Here&#8217;s an image explaining showing the end result:
 </p>
 
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2010/09/image002.jpeg" rel="lightbox[417]" title="image002"><img class="size-full wp-image-421 alignnone" title="image002" src="http://www.tiagoespinha.net/wp-content/uploads/2010/09/image002.jpeg" alt="" width="320" height="213" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2010/09/image002.jpeg" rel="lightbox[417]" title="image002"><img class="size-full wp-image-421 alignnone" title="image002" src="https://www.tiagoespinha.net/wp-content/uploads/2010/09/image002.jpeg" alt="" width="320" height="213" /></a>
 </p>
 
 <p style="text-align: justify;">

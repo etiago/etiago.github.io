@@ -31,7 +31,7 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2014/06/International_Space_Station_after_undocking_of_STS-132.jpg" rel="lightbox[712]" title="How to see the International Space Station (ISS)"><img class="alignleft wp-image-713" src="http://www.tiagoespinha.net/wp-content/uploads/2014/06/International_Space_Station_after_undocking_of_STS-132.jpg" alt="International_Space_Station_after_undocking_of_STS-132" width="480" height="306" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2014/06/International_Space_Station_after_undocking_of_STS-132.jpg" rel="lightbox[712]" title="How to see the International Space Station (ISS)"><img class="alignleft wp-image-713" src="https://www.tiagoespinha.net/wp-content/uploads/2014/06/International_Space_Station_after_undocking_of_STS-132.jpg" alt="International_Space_Station_after_undocking_of_STS-132" width="480" height="306" /></a>
 </p>
 
 <p style="text-align: justify;">
@@ -47,5 +47,5 @@ tags:
 </p>
 
 <p style="text-align: justify;">
-  <a href="http://www.tiagoespinha.net/wp-content/uploads/2014/06/2014-06-11-23.15.16-copy.jpg" rel="lightbox[712]" title="How to see the International Space Station (ISS)"><img class="alignleft wp-image-718" src="http://www.tiagoespinha.net/wp-content/uploads/2014/06/2014-06-11-23.15.16-copy.jpg" alt="2014-06-11 23.15.16 copy" width="512" height="683" /></a>
+  <a href="https://www.tiagoespinha.net/wp-content/uploads/2014/06/2014-06-11-23.15.16-copy.jpg" rel="lightbox[712]" title="How to see the International Space Station (ISS)"><img class="alignleft wp-image-718" src="https://www.tiagoespinha.net/wp-content/uploads/2014/06/2014-06-11-23.15.16-copy.jpg" alt="2014-06-11 23.15.16 copy" width="512" height="683" /></a>
 </p>
