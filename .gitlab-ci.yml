@@ -4,14 +4,14 @@ default:
     untracked: true
     key: "$CI_BUILD_REF_NAME"
     paths:
-      - cache/bundler/
+      - /usr/local/lib/ruby/gems/
   before_script:
     - apt-get update
     - apt-get install -y sqlite3 libsqlite3-dev nodejs
     - ruby -v
     - which ruby
     - gem install bundler --no-document
-    - bundle install --jobs $(nproc) "${FLAGS[@]}" --path=cache/bundler
+    - bundle install --jobs $(nproc) "${FLAGS[@]}"
 
 stages:
   - build
@@ -23,9 +23,9 @@ install-and-build:
     untracked: true
     key: "$CI_BUILD_REF_NAME"
     paths:
-      - cache/bundler/
+      - /usr/local/lib/ruby/gems/
   script:
-    - cache/bundler/ruby/2.7.0/bin/jekyll b
+    - jekyll b
   artifacts:
     name: "deployable"
     expire_in: "1 day"
