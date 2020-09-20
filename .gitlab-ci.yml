@@ -31,6 +31,6 @@ deploy:
   stage: deploy
   script:
     #- ls _deploy/
-    - aws s3 sync /mnt/to-sync/ s3://tmp-tiagoespinha.net/ --region eu-west-2 --delete
+    - aws s3 sync _deploy/ s3://tmp-tiagoespinha.net/ --region eu-west-2 --delete
   dependencies:
     - install-and-build
