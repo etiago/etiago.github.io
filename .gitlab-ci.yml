@@ -8,6 +8,10 @@ default:
     - gem install bundler --no-document
     - bundle install --jobs $(nproc) "${FLAGS[@]}"
 
+stages:
+  - install-and-build
+  - deploy
+
 install-and-build:
   script:
     - jekyll b
@@ -20,3 +24,5 @@ install-and-build:
 deploy:
   script:
     - ls _deploy/
+  dependencies:
+    - install-and-build
