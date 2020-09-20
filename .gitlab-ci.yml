@@ -9,10 +9,11 @@ default:
     - bundle install --jobs $(nproc) "${FLAGS[@]}"
 
 stages:
-  - install-and-build
+  - build
   - deploy
 
 install-and-build:
+  stage: build
   script:
     - jekyll b
   artifacts:
@@ -22,6 +23,7 @@ install-and-build:
       - _deploy/
 
 deploy:
+  stage: deploy
   script:
     - ls _deploy/
   dependencies:
