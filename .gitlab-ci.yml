@@ -23,8 +23,10 @@ install-and-build:
       - _deploy/
 
 deploy:
+  image: amazon/aws-cli:2.0.50
   stage: deploy
   script:
-    - ls _deploy/
+    #- ls _deploy/
+    - s3 sync /mnt/to-sync/ s3://tmp-tiagoespinha.net/ --region eu-west-2 --delete
   dependencies:
     - install-and-build
