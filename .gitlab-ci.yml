@@ -10,5 +10,13 @@ default:
 
 install-and-build:
   script:
-    #- bundle install
     - jekyll b
+  artifacts:
+    name: "deployable"
+    expire_in: "1 day"
+    paths:
+      - _deploy/
+
+deploy:
+  script:
+    - ls _deploy/
