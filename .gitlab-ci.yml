@@ -14,8 +14,6 @@ stages:
 
 install-and-build:
   stage: build
-  before_script:
-    - ''
   script:
     - jekyll b
   artifacts:
@@ -26,6 +24,8 @@ install-and-build:
 
 deploy:
   image: amazon/aws-cli:2.0.50
+  before_script:
+    - ''
   stage: deploy
   script:
     #- ls _deploy/
