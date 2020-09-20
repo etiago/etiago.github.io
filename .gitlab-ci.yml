@@ -19,6 +19,11 @@ stages:
 
 install-and-build:
   stage: build
+  cache:
+    untracked: true
+    key: "$CI_BUILD_REF_NAME"
+    paths:
+      - cache/bundler/
   script:
     - jekyll b
   artifacts:
