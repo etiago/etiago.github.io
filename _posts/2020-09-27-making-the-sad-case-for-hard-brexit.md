@@ -5,7 +5,7 @@ date: 2020-09-27T06:32:00+00:00
 author: tiago
 layout: post
 guid: http://tiagoespinha.info/?p=777
-permalink: /2020/09/first-post/
+permalink: /2020/09/making-the-sad-case-for-a-hard-brexit/
 categories:
   - politics
 ---
