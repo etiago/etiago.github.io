@@ -1,0 +1,24 @@
+#+BEGIN_EXPORT html
+---
+id: 778
+title: Blogging with org-mode!
+date: 2021-01-31T14:14:31+00:00
+author: tiago
+layout: post
+guid: http://tiagoespinha.info/?p=778
+permalink: /2021/01/2021-01-21-blogging-with-org-mode/
+categories:
+  - tech
+  - emacs
+---
+#+END_EXPORT
+
+I've been meaning to come back to blogging more frequently, but the whole set up that the blog requires was putting me off.
+
+Just as it happens, I've recently gotten into Emacs and the whole org-mode cult, and naturally, started trying to do everything on emacs :-).
+
+One of the things I came across, was an approach to write Jekyll posts by using an org file to fill in the contents, which is exactly how this blog post was written.
+
+Hopefully this will make it easier for me to come back to a more regular blogging cadence.
+
+Time will tell!
