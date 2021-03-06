@@ -1,3 +1,4 @@
+#+OPTIONS: toc:nil html-style:nil html-scripts:nil num:nil
 #+BEGIN_EXPORT html
 ---
 id: 778
