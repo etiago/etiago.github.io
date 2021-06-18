@@ -1,0 +1,17 @@
+trigger:
+  - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '_deploy'
+      Contents: '**'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/_deploy'
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/_deploy'
+      ArtifactName: 'site'
+      publishLocation: 'Container'
