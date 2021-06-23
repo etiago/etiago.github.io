@@ -1,0 +1,89 @@
+---
+id: 780
+title: HTTPS with custom domains on Azure CDN
+date:  2021-06-20T05:47:31+01:00
+author: tiago
+layout: post
+guid: http://tiagoespinha.info/?p=780
+permalink: /2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/
+categories:
+  - tech
+  - emacs
+---
+
+<p>
+My blog is written in <a href="https://jekyllrb.com/">Jekyll</a>. Simply put, Jekyll takes documents written in Markdown (similar to what you could use to write <code>README</code> files in a Git repository) and allows you to build that into HTML that any browser can understand. It also allows you to very easily apply a theme on your blog such that with the same content, you could easily change the look of your blog.
+</p>
+
+<p>
+On a bit of a tangent, these latest few posts have been written using Emacs' <a href="https://orgmode.org/">org-mode</a> which you can think of as a special Markdown that Emacs is really good at editing.
+</p>
+
+<p>
+Because Jekyll itself is quite flexible, it allows you to sideload pre-generated HTML posts, alongside the normal Markdown ones. So currently I generate my HTML straight out of <code>org-mode</code> and let Jekyll index and display those posts.
+</p>
+
+<p>
+Azure then allows you to take a bunch of static HTML files, put them in a storage account, and serve them as a static website. This blog post assumes that that's where you're starting. You have a static website hosted on Azure. And if you don't, the three links below should get you to that point. If they don't, drop me a message and I'll be happy to help.
+</p>
+
+<ol class="org-ol">
+<li><a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#:~:text=Azure%20Create%20Storage%20Account%201%20On%20the%20Azure,3%20and%2024%20characters%20in%20...%20See%20More.">Create a storage account that will hold your files.</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website">Enable the static website feature on Azure.</a></li>
+<li><a href="https://azure.microsoft.com/en-us/features/storage-explorer/">Upload the files using something like Microsoft Azure Storage Explorer.</a></li>
+</ol>
+
+<p>
+Once you've gone through those steps, you should end up with something similar to this in your storage account:
+</p>
+
+<div >
+  <p><img style="margin: auto;" src="/assets/staticwebsite.jpeg" width="700" alt="Image showing Static Website enabled on Azure"></p>
+</div>
+
+<p>
+When you're at this stage, your website is accessible at that <code>Primary endpoint</code>. In this case that is <a href="https://tiagoespinhanet.z33.web.core.windows.net/">https://tiagoespinhanet.z33.web.core.windows.net/</a>.
+</p>
+
+<p>
+That's quite the URL to memorise and to type out every time someone wants to access your blog though!
+</p>
+
+<p>
+Not only that, but that URL is region-specific. Because my storage account is in the UK South region, anyone anywhere in the world hitting that endpoint is going to have my blog served off Azure servers located in that UK South region. Works well for me but for someone in Australia, it's going to have less than ideal latency and loading speeds.
+</p>
+
+<p>
+A common pattern to deal with this is to use a <a href="https://en.wikipedia.org/wiki/Content_delivery_network">Content Delivery Network (CDN)</a>. The CDN replicates the static content across a network that's distributed across the globe, such that whenever you access the content, you get served by a point of presence that's closest to you.
+</p>
+
+<p>
+Azure makes setting this up a trivial matter.
+</p>
+
+<p>
+Head over to the CDN profiles in Azure, which takes you to the following page:
+</p>
+
+<div >
+  <p><img style="margin: auto;" src="/assets/cdnprofiles.jpeg" alt="Image showing Azure's CDN profiles page."></p>
+</div>
+
+<p>
+You then <code>Create</code> a new CDN profile which takes you to the following page:
+</p>
+
+<div >
+  <p><img style="margin: auto;" src="/assets/newcdnprofile.jpeg" alt="Image showing Azure's CDN new profile page."></p>
+</div>
+
+<p>
+The things to watch out for are:
+</p>
+
+<ul class="org-ul">
+<li>Tick <code>Create new CDN endpoint</code>. Assuming this is your first CDN, you need to create a new endpoint that can be used to reach your CDN On.</li>
+<li>Give you CDN endpoint a name. This is completely up to you. Your visitors <i>can</i> find out this value if they want, even if you later use a custom domain. So don't use anything that you wouldn't want exposed publicly.</li>
+<li>Pick an Origin type. For this example, pick <code>Storage static website</code> since we're looking to link this CDN with the <code>Storage static website</code> that you can create following the steps linked above.</li>
+<li>Pick the right <code>Origin hostname</code> from the drop down box below. It should be showing you all the hostnames you have available as part of storage static websites.</li>
+</ul>

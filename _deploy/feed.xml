@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tiago Espinha</title>
+    <description>My Personal Blog</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 20 Jun 2021 20:05:42 +0100</pubDate>
+    <lastBuildDate>Sun, 20 Jun 2021 20:05:42 +0100</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>HTTPS with custom domains on Azure CDN</title>
+        <description>&lt;p&gt;
+My blog is written in &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Simply put, Jekyll takes documents written in Markdown (similar to what you could use to write &lt;code&gt;README&lt;/code&gt; files in a Git repository) and allows you to build that into HTML that any browser can understand. It also allows you to very easily apply a theme on your blog such that with the same content, you could easily change the look of your blog.
+&lt;/p&gt;
+
+&lt;p&gt;
+On a bit of a tangent, these latest few posts have been written using Emacs' &lt;a href=&quot;https://orgmode.org/&quot;&gt;org-mode&lt;/a&gt; which you can think of as a special Markdown that Emacs is really good at editing.
+&lt;/p&gt;
+
+&lt;p&gt;
+Because Jekyll itself is quite flexible, it allows you to sideload pre-generated HTML posts, alongside the normal Markdown ones. So currently I generate my HTML straight out of &lt;code&gt;org-mode&lt;/code&gt; and let Jekyll index and display those posts.
+&lt;/p&gt;
+
+&lt;p&gt;
+Azure then allows you to take a bunch of static HTML files, put them in a storage account, and serve them as a static website. This blog post assumes that that's where you're starting. You have a static website hosted on Azure. And if you don't, the three links below should get you to that point. If they don't, drop me a message and I'll be happy to help.
+&lt;/p&gt;
+
+&lt;ol class=&quot;org-ol&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#:~:text=Azure%20Create%20Storage%20Account%201%20On%20the%20Azure,3%20and%2024%20characters%20in%20...%20See%20More.&quot;&gt;Create a storage account that will hold your files.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website&quot;&gt;Enable the static website feature on Azure.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://azure.microsoft.com/en-us/features/storage-explorer/&quot;&gt;Upload the files using something like Microsoft Azure Storage Explorer.&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Once you've gone through those steps, you should end up with something similar to this in your storage account:
+&lt;/p&gt;
+
+&lt;div &gt;
+  &lt;p&gt;&lt;img style=&quot;margin: auto;&quot; src=&quot;/assets/staticwebsite.jpeg&quot; width=&quot;700&quot; alt=&quot;Image showing Static Website enabled on Azure&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+When you're at this stage, your website is accessible at that &lt;code&gt;Primary endpoint&lt;/code&gt;. In this case that is &lt;a href=&quot;https://tiagoespinhanet.z33.web.core.windows.net/&quot;&gt;https://tiagoespinhanet.z33.web.core.windows.net/&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+That's quite the URL to memorise and to type out every time someone wants to access your blog though!
+&lt;/p&gt;
+
+&lt;p&gt;
+Not only that, but that URL is region-specific. Because my storage account is in the UK South region, anyone anywhere in the world hitting that endpoint is going to have my blog served off Azure servers located in that UK South region. Works well for me but for someone in Australia, it's going to have less than ideal latency and loading speeds.
+&lt;/p&gt;
+
+&lt;p&gt;
+A common pattern to deal with this is to use a &lt;a href=&quot;https://en.wikipedia.org/wiki/Content_delivery_network&quot;&gt;Content Delivery Network (CDN)&lt;/a&gt;. The CDN replicates the static content across a network that's distributed across the globe, such that whenever you access the content, you get served by a point of presence that's closest to you.
+&lt;/p&gt;
+
+&lt;p&gt;
+Azure makes setting this up a trivial matter.
+&lt;/p&gt;
+
+&lt;p&gt;
+Head over to the CDN profiles in Azure, which takes you to the following page:
+&lt;/p&gt;
+
+&lt;div &gt;
+  &lt;p&gt;&lt;img style=&quot;margin: auto;&quot; src=&quot;/assets/cdnprofiles.jpeg&quot; alt=&quot;Image showing Azure's CDN profiles page.&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+You then &lt;code&gt;Create&lt;/code&gt; a new CDN profile which takes you to the following page:
+&lt;/p&gt;
+
+&lt;div &gt;
+  &lt;p&gt;&lt;img style=&quot;margin: auto;&quot; src=&quot;/assets/newcdnprofile.jpeg&quot; alt=&quot;Image showing Azure's CDN new profile page.&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+The things to watch out for are:
+&lt;/p&gt;
+
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;Tick &lt;code&gt;Create new CDN endpoint&lt;/code&gt;. Assuming this is your first CDN, you need to create a new endpoint that can be used to reach your CDN On.&lt;/li&gt;
+&lt;li&gt;Give you CDN endpoint a name. This is completely up to you. Your visitors &lt;i&gt;can&lt;/i&gt; find out this value if they want, even if you later use a custom domain. So don't use anything that you wouldn't want exposed publicly.&lt;/li&gt;
+&lt;li&gt;Pick an Origin type. For this example, pick &lt;code&gt;Storage static website&lt;/code&gt; since we're looking to link this CDN with the &lt;code&gt;Storage static website&lt;/code&gt; that you can create following the steps linked above.&lt;/li&gt;
+&lt;li&gt;Pick the right &lt;code&gt;Origin hostname&lt;/code&gt; from the drop down box below. It should be showing you all the hostnames you have available as part of storage static websites.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 20 Jun 2021 05:47:31 +0100</pubDate>
+        <link>http://localhost:4000/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</guid>
+        
+        
+        <category>tech</category>
+        
+        <category>emacs</category>
+        
+      </item>
+    
+      <item>
+        <title>Starting a new role</title>
+        <description>&lt;p&gt;
+As of the 12th of June and after nearly four years, I'm no longer working at Ocado. At Ocado I had the opportunity to work with a number of amazing people and on amazing projects. I also picked up immense knowledge and new hobbies as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+But now it's time for a new challenge.
+&lt;/p&gt;
+
+&lt;p&gt;
+Come Monday, I'll be working for the Metaswitch part of Microsoft. It's nothing short of surreal to interview for and start a new role remotely but Microsoft made the process really easy and smooth. In the meanwhile I've had a chance to meet part of my team face to face in a nice outdoors team lunch and everyone seems very nice.
+&lt;/p&gt;
+
+&lt;p&gt;
+With the three weeks I had between jobs (between leftover PTO at Ocado and the fact that at Microsoft there are fixed days of the month to onboard new-starters), I decided to work on my side projects and brush up on my C++ skills which I hadn't used for a while. One of these side projects came sort of impromptu: I decided I was going to eat some of my own (future) dog food and move my blog (this one where you're reading this) to Microsoft Azure. This blog has no backend and is composed of static pages which are generated by a mix of Emacs' &lt;code&gt;org-mode&lt;/code&gt; and Jekyll. As such all it really needs is something that can serve files behind custom domains with HTTPS.
+&lt;/p&gt;
+
+&lt;p&gt;
+In these three weeks I also finally managed to get my Home Assistant instance talking to my IKEA Tradfri smart lamps, as well as all the Xiaomi switches and motion sensors using Zigbee2mqtt. It now means that in the rooms where I have a motion sensor, the lights come on and turn off automatically, without ever touching the switches.
+&lt;/p&gt;
+
+&lt;p&gt;
+With all of that sorted out and out of the way, I'm all set to start anew. I have my Microsoft hardware ready, my new desk set up, and I have a call set up for Monday morning with my new manager where we're going to go through my account setup.
+&lt;/p&gt;
+
+&lt;p&gt;
+Time for a fresh start :)
+&lt;/p&gt;
+</description>
+        <pubDate>Sat, 19 Jun 2021 14:48:00 +0100</pubDate>
+        <link>http://localhost:4000/2021/06/2021-06-19-starting-a-new-role/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/06/2021-06-19-starting-a-new-role/</guid>
+        
+        
+        <category>job</category>
+        
+        <category>tech</category>
+        
+      </item>
+    
+      <item>
+        <title>Blogging with org-mode!</title>
+        <description>&lt;p&gt;
+I've been meaning to come back to blogging more frequently, but the whole set up that the blog requires was putting me off.
+&lt;/p&gt;
+
+&lt;p&gt;
+Just as it happens, I've recently gotten into Emacs and the whole org-mode cult, and naturally, started trying to do everything on emacs :-).
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the things I came across, was an approach to write Jekyll posts by using an org file to fill in the contents, which is exactly how this blog post was written.
+&lt;/p&gt;
+
+&lt;p&gt;
+Hopefully this will make it easier for me to come back to a more regular blogging cadence.
+&lt;/p&gt;
+
+&lt;p&gt;
+Time will tell!
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 31 Jan 2021 14:14:31 +0000</pubDate>
+        <link>http://localhost:4000/2021/01/2021-01-21-blogging-with-org-mode/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/01/2021-01-21-blogging-with-org-mode/</guid>
+        
+        
+        <category>tech</category>
+        
+        <category>emacs</category>
+        
+      </item>
+    
+      <item>
+        <title>Making the (sad) case for a hard Brexit</title>
+        <description>&lt;p&gt;It’s not very frequently that I write about politics in this blog. It’s not very frequently that I write about anything really, but here’s an attempt to change that!&lt;/p&gt;
+
+&lt;p&gt;First off, a disclaimer: Brexit sucks. I did not vote for it. I’d much rather have the UK in the European Union. It simplifies life for the movement of goods and people.&lt;/p&gt;
+
+&lt;p&gt;But Brexit’s here. And the Conservative party have, from the very beginning, made it clear that they would make &lt;em&gt;“the will of the people”&lt;/em&gt; heard and Brexit would happen
+one way or another.&lt;/p&gt;
+
+&lt;p&gt;And now here’s the kicker: they’re right. Whether you like it or not, the people voted for this. It was a fairly marginal vote. Some people will try and make the
+case that marginal votes on such big issues should have a rerun (i.e., a second referendum), especially once it’s become more concrete what they are voting on.&lt;/p&gt;
+
+&lt;p&gt;But here’s the thing: the people voted for Brexit despite all the uncertainties, and despite all the flat out lies that they were being told. If the people of a country
+can’t recognise such lies, that makes you wonder why we’re allowing direct votes (i.e., referendums) on anything. Yes, I am saying that people who vote for something
+based on a lie and don’t do their own research are thick. The reality is though that the current British political system allows for direct voting, no matter how
+involved the topic is, and no matter the lies being told about it.&lt;/p&gt;
+
+&lt;p&gt;Are the liars to blame? Yes, partially. Although if a political system doesn’t protect itself against lies (and it’s not only the British one that doesn’t, many don’t, see the USA)
+it’s just a matter of time before they’re abused to gain political advantage.&lt;/p&gt;
+
+&lt;p&gt;But Brexit’s here.&lt;/p&gt;
+
+&lt;p&gt;And why is hard Brexit truly the only way forward?&lt;/p&gt;
+
+&lt;p&gt;The European Union have made it implicitly clear that allowing the UK to leave the union with a better deal than what they had within the union is a non-starter.
+It would open the door for more countries to leave and would effectively be the beginning of the end for the European Union as a thing.&lt;/p&gt;
+
+&lt;p&gt;The European Union is also larger than the UK and as such probably has a higher chance at being self-sustainable without the UK-related trade, or with it severely
+hampered. This puts the UK between a rock and a hard place. The EU refuses to give the UK a better (or even an as-good-as) deal, and they have the upper hand in the
+negotiations.&lt;/p&gt;
+
+&lt;p&gt;Also, with the number of backtracks the Conservative government was cornered into by the House of Commons, the EU has also realised that there is  unrest within the UK towards a hard Brexit and they’ve been
+using that to their advantage in the negotiations. It is true that a negotiation is give and take, but if you’re certain that your counterpart will fold if you
+stand your ground (by a vote in the House of Commons effectively forbidding a hard Brexit), then the only negotiation strategy that you need is really to… stand your ground.&lt;/p&gt;
+
+&lt;p&gt;Is it negotiating in bad faith?&lt;/p&gt;
+
+&lt;p&gt;Negotiations are conceptually bad faith endeavours. You have two parties trying to maximise the benefits they will get out of a deal.&lt;/p&gt;
+
+&lt;p&gt;Selling a house? As a seller you want to maximise the value you sell it for (maximising your monetary benefit). The buyer will want to minimise the amount they have to pay (maximising the value for money they’re getting).&lt;/p&gt;
+
+&lt;p&gt;Own a house in an area that’s going to be reposessed by the government to build some sort of essential infrastructure (wink, wink HS2) and the place where your house
+sits is the only place where that infrastructure can stand?&lt;/p&gt;
+
+&lt;p&gt;Damn right you’re going to negotiate in bad faith and get the best out of the situation.&lt;/p&gt;
+
+&lt;p&gt;Damn right the government is going to do their best to make sure you’re not aware that this is the case.&lt;/p&gt;
+
+&lt;p&gt;All this to say that the UK’s only possible strategy (whether it does want a deal or not, which is a separate discussion in itself) is to do everything to &lt;em&gt;show&lt;/em&gt; that it is ready
+and to ideally &lt;em&gt;truly&lt;/em&gt; be ready. It needs to literally be ready to leave without a deal, because it might, because a proper negotiation takes things all the way through,
+and because it shows the other party that you’re dead serious and is your best bet at getting them to fold and give you better terms.&lt;/p&gt;
+
+&lt;p&gt;And this is the key argument: if the UK is going to have Brexit, and if it has a number of key topics it sees as sticking points in the negotiation that it wants the EU to fold on
+it must take it all the way through. We might leave without a deal and when we do I’d rather there are measures in place to try as much as possible to ease the friction
+of trade, even if prices go up, than if we do nothing and show no readiness whatsoever.&lt;/p&gt;
+
+&lt;p&gt;I’ll end this post with the same disclaimer I started with: I’d rather we did not have Brexit. As a citizen of the EU, who’s lived in three different countries over the past decade
+this absolutely stinks.&lt;/p&gt;
+
+&lt;p&gt;But at this stage, there’s not enough momentum for reversing Brexit. And with it happening either way, negotiating for a better deal (and possibly folding at the last second)
+is a sensible thing to do. Depending on how confident the government is in the readiness, taking it all the way without a deal might be the only way to show the EU that not even
+being listed as a third country (as other countries are with the EU) will only push the UK further away from the negotiating table.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 27 Sep 2020 07:32:00 +0100</pubDate>
+        <link>http://localhost:4000/2020/09/making-the-sad-case-for-a-hard-brexit/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/09/making-the-sad-case-for-a-hard-brexit/</guid>
+        
+        
+        <category>politics</category>
+        
+      </item>
+    
+      <item>
+        <title>Clojure: beware of the partial</title>
+        <description>&lt;p style=&quot;text-align: justify;&quot;&gt;At some point in time while using &lt;a href=&quot;http://clojure-liberator.github.io/liberator/&quot;&gt;Liberator&lt;/a&gt; to build &lt;em&gt;semi-RESTful&lt;/em&gt; APIs, I found myself in a pickle. Essentially, the Liberator library allows you to build an API by specifying a number of handlers (effectively functions) for things like handling a malformed request, handling a non-existant request, and also allowing handlers for determining what &lt;em&gt;are&lt;/em&gt; malformed or non-existant requests.&lt;/p&gt;
+
+&lt;p&gt;This approach to building an API is pretty straight forward. To help it, &lt;strong&gt;Liberator&lt;/strong&gt; passes a “&lt;em&gt;context&lt;/em&gt;” argument into each of these handlers by default which carries information such as HTTP headers and whatever else you feel like adding to it throughout the validation pipeline until the request gets handled by the “&lt;em&gt;handle-ok&lt;/em&gt;” handler.&lt;/p&gt;
+
+&lt;p&gt;Then, at some point or another, you will be wanting to pass more arguments into these handlers. Clojure (and functional programming in general) discourage the use of global mutable state and encourages single-purpose, idempotent and side-effect free functions, meaning that you should be able to run the same function twice, with the same arguments, and get the same outcome (this usually will not be possible if the function depends/operates on shared global variables). Then what can you do? Liberator expects single-argument handlers to which it can pass its “&lt;em&gt;context&lt;/em&gt;” argument but we want to also pass additional arguments to it which will be evaluated and/or resolved at runtime.&lt;/p&gt;
+
+&lt;p&gt;After some googling on the issue, I found out a solution: partial functions! When partial is applied on a particular function with a set of arguments, rather than evaluating that function, it will create a wrapper function around it which will pass in the specified arguments plus whatever other arguments are passed in when the function is evaluated. It works something like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-clojure highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;partial&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is-malformed?&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In this case, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;partial&lt;/code&gt; will return another function which will have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config&lt;/code&gt; as first argument and also support a &lt;strong&gt;variable&lt;/strong&gt; amount of arguments. Great! This works, it solves the problem. Liberator will call the returned function, pass the &lt;em&gt;context&lt;/em&gt; into it, et voilà! Bob’s your uncle, klaar is Kees, job’s a good’un.&lt;/p&gt;
+
+&lt;h1 id=&quot;but-wait-the-title-says-beware&quot;&gt;But wait!… the title says beware!&lt;/h1&gt;
+
+&lt;p&gt;Yes, that’s because in this case, if you have a preset number of additional arguments that you’d like to pass into your handler, you should &lt;strong&gt;NOT&lt;/strong&gt; be using partials! You see, a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;partial&lt;/code&gt; application results &lt;strong&gt;always&lt;/strong&gt; in a variadic function, or a function which supports a variable number of arguments. When you have a varargs function, Clojure will create a list out of the arguments (every. single. time.) and then use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apply&lt;/code&gt; to push those arguments into the function. This has a particular performance impact which you should avoid if you can, and… you can!&lt;/p&gt;
+
+&lt;h1 id=&quot;so-how-should-it-be-done&quot;&gt;So how should it be done?&lt;/h1&gt;
+
+&lt;p&gt;Hey, it’s &lt;strong&gt;functional&lt;/strong&gt; programming right? Just evaluate an additional (potentially even anonymous, since it’s so small) function which takes a single argument (to validate the requirement for Liberator) and wraps around the handler you’ve created passing in both the argument (which you will capture as a closure into the anonymous function) and the context argument coming from Liberator. In the end, the same example as above would look something like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-clojure highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;is-malformed?&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Or if you want to use the &lt;a href=&quot;https://en.wikibooks.org/wiki/Learning_Clojure/Reader_Macros&quot;&gt;reader macro&lt;/a&gt; and make the code more compact:&lt;/p&gt;
+
+&lt;div class=&quot;language-clojure highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;is-malformed?&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And that’s it! This is about as efficient and compact as you can make it.&lt;/p&gt;
+
+&lt;h1 id=&quot;to-conclude&quot;&gt;To conclude…&lt;/h1&gt;
+
+&lt;p&gt;Don’t use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;partial&lt;/code&gt; unless you have a true need for a &lt;strong&gt;variable&lt;/strong&gt; number of arguments at &lt;strong&gt;runtime&lt;/strong&gt;. If you need a function which takes more arguments that what a library/whatever passes to your function, just wrap it in another function and enclosure your additional arguments into it.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2016/12/clojure-beware-of-the-partial/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/clojure-beware-of-the-partial/</guid>
+        
+        <category>clojure</category>
+        
+        
+        <category>Software</category>
+        
+      </item>
+    
+      <item>
+        <title>Home Automation with Clojure (part 1)</title>
+        <description>&lt;p style=&quot;text-align: justify;&quot;&gt;Those who know me, know that I like simplifying things. Tasks that are repetitive quickly become chores which nobody wants to do. That’s probably one of the reasons why humanity started automating things from production pipelines to software testing.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;One of the things I’ve been building along the past few months is a home automation API. Specifically a web API which allows me, via HTTP calls, to control various aspects of my wannabe-smart home.&lt;/p&gt;
+
+&lt;p&gt;What do I have in my smart home, you ask? I have:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Philips Hue lights in my kitchen, living room and house entrance.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Surveillance cameras with motion detection.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Flic buttons to control those smart appliances.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;hue-lights&quot;&gt;Hue lights&lt;/h1&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;This all started with having the Hue lights. Once you have them, you realize how convenient it is to be in bed with your smartphone and not having to care whether you turned off the lights around the house, since you can just grab your phone and turn them all off. Still, once you’re able to do that, you realize that you can no longer use your house’s built-in light switches since the lights need to be always on in order to function (n.b., they are always supplied current in order to stay connected to the control base but they consume very little power when they are soft-shut down). Well, that sucks! Now you went from a situation where you could flip a switch and “let there be light!” to a situation where you always need your smartphone close by just to turn on your lights: not convenient.&lt;/p&gt;
+
+&lt;h1 id=&quot;enter-the-flic-buttons&quot;&gt;Enter the Flic buttons&lt;/h1&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;At some point I read about the Flic buttons. They’re basic tools really, just a push button attached to a bluetooth module which will pair to a device (e.g., an Android phone) and trigger whenever you click it, double click it or long click it. Then it’s up to you to define what each trigger will do on the attached device.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;Initially I bought these buttons and they were working out really fine. Their Android app is very decent and provides integration with, amongst others, Philips Hue. Still, I ran into a less than ideal scenario: if I configured the app on my phone, then whenever I wasn’t home nobody else could turn on or turn off the lights using the Flic buttons (since my phone would not be in range of the bluetooth network). I could have also configured the app on my wife’s phone but whenever my parents or anyone eelse would visit, the problem would remain. I would run into having to configure the app countless times for whoever would be visiting me at the time.&lt;/p&gt;
+
+&lt;h3 id=&quot;flic-linux-sdk-to-the-rescue&quot;&gt;Flic Linux SDK to the rescue&lt;/h3&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;What Flic also provides is a &lt;a href=&quot;https://github.com/50ButtonsEach/fliclib-linux-hci&quot;&gt;Linux SDK&lt;/a&gt;, meaning that if you have a Linux device with a supported bluetooth dongle, you can create a program that effectively does the same as Flic’s own Android app: listen to specific events of specific buttons and perform tasks accordingly.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;That’s what I did. I created a Java program (a really simple and stupid one that I’m ashamed to show 😛) which on startup connects to all the buttons and stays in a while loop listening to events from the buttons. But what a minute! How am I going to control my lights now? Oh, that’s right Hue has a Web API.&lt;/p&gt;
+
+&lt;h3 id=&quot;come-the-hue-web-api&quot;&gt;Come the Hue web API&lt;/h3&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;The Hue web API is fairly decent. They provide an online emulator straight from your Hue control base and from there it’s fairly straight forward to get started. They have documentation which gets you up and running quite fast but… it’s rather limited. In particular, there was a use case of mine which wasn’t covered: toggling lights. Specifically I wanted to toggle a light on the click of a button so that rather than remembering “one click is for turning on, two clicks is for turning off” and effectively already wasting two actions of a Flic button, I could have an action that’s just… toggle the light. If it’s on, turn it off. If it’s off, turn it to whatever state it last had.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;This, sadly, is not possible (to the best of my knowledge). Philips has decided to implement a very purist (and thus inconvenient) REST API. In a REST API you’re supposed to send a &lt;strong&gt;new&lt;/strong&gt; and &lt;strong&gt;wholesome&lt;/strong&gt; representation of the entity you are POST-ing or PUT-ing to. REST APIs, which are in principle stateless, should therefore not refer to the previous state. Technicalities aside, it’s an inconvenient API.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;What to do then?&lt;/strong&gt; Simple. I built my own API, exposed to the Internet, which allows me to control my Hue lamps via (more convenient and flexible) HTTP requests. As some people have pointed out to me, it’s something like a proxy… except it’s a stateful one. By now it also has a lot more functionality than what I could squeeze out of a proxy.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;The end result is a Clojure-based web API which allows me to remotely perform actions like toggling a particular light in my home. It also now supports geofencing (e.g., when someone arrives home and it’s after sunset, turn on the entrance light) and voice commands but I will leave that to another post.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 Dec 2016 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2016/12/home-automation-with-clojure-part-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/home-automation-with-clojure-part-1/</guid>
+        
+        <category>home automation</category>
+        
+        <category>clojure</category>
+        
+        <category>home api</category>
+        
+        
+        <category>Software</category>
+        
+      </item>
+    
+      <item>
+        <title>New Year's Resolution&amp;#58; Blog more!</title>
+        <description>&lt;p&gt;Admittedly I’m not the most avid blogger there is. Nonetheless, I keep this blog up and running just for the sake of it. This blog has been alive since 2008 (that’s 8 years already!) and since then a lot has changed — this blog hasn’t escaped the wave of change either.&lt;/p&gt;
+
+&lt;p&gt;So here’s my committment to 2017: BLOG MORE!&lt;/p&gt;
+
+&lt;p&gt;Shorter blog posts, blogging about technologies that I love, and keeping a track of what I’m working on.&lt;/p&gt;
+
+&lt;p&gt;2016 has been marked mostly by a realization: my time is extremely limited! But writing about things is as important as making them, especially so in the world of technology.&lt;/p&gt;
+
+&lt;p&gt;Cheers to a better 2017! And expect some blog posts coming up on Clojure, and maybe Scala.&lt;/p&gt;
+
+&lt;p&gt;Haven’t you heard? I’m in love with functional programming 😉.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 15 Dec 2016 19:52:00 +0000</pubDate>
+        <link>http://localhost:4000/2016/12/new-years-resolution-getting-back-to-blogging/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/new-years-resolution-getting-back-to-blogging/</guid>
+        
+        <category>new year</category>
+        
+        <category>more blogging</category>
+        
+        <category>meta</category>
+        
+        
+        <category>Software</category>
+        
+      </item>
+    
+      <item>
+        <title>Why I started using emacs (and why you shouldn&amp;#8217;t)</title>
+        <description>&lt;p style=&quot;text-align: justify;&quot;&gt;
+  In what feels like a long time ago, I &amp;#8211; as the curious software engineer that I am &amp;#8211; began a journey. I had decided to try vim (&lt;em&gt;&amp;#8220;wha&amp;#8230;? It said emacs in the title&amp;#8230; is this the right art&amp;#8230;&amp;#8221;&lt;/em&gt; &amp;#8212; yes it is, just keep on reading). It&amp;#8217;d always baffled me why would people use such a barebones editor over a proper IDE but I figured, if so many people were using it and following it almost as a cult, there &lt;em&gt;must&lt;/em&gt; be something to it. So I sat down and forced myself to learn some basics to get me started. And, of course, I started by learning how to &lt;em&gt;quit&lt;/em&gt; the editor (relevant side joke: &lt;em&gt;Q: How do you generate a random string? A: Put a Windows user in front of vi, and tell them to exit.&lt;/em&gt;), learned about the different modes and I learned basic things like moving forwards and backwards by units of words, and how to delete multiple lines and how to go to a certain line, etc. Basically the kind of thing I would be faced with whilst using vim to actually achieve something programming-wise.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  [Continue Reading]
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  &lt;!--more--&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  And it was glorious.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  The muscle memory started forming and it became second nature. Vim became part of my tool belt and, when it came to editing files, I started to use it for &lt;em&gt;everything. &lt;/em&gt;Delete lines in bulk? Got it. Search and replace the whole document with regular expressions? Piece of cake. Moving around the document by using search rather than painstakingly scrolling my way to it? Hell yeah.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  As part of my vim usage, I also created a very small .vimrc which loaded some basic plugins and set the tabbing policies to something sensible (spaces master race!), but that was it, and all was well.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Then one day, I woke up and thought: &lt;em&gt;&amp;#8220;heh, it&amp;#8217;s funny, I&amp;#8217;ve heard about the &lt;a href=&quot;https://en.wikipedia.org/wiki/Editor_war&quot;&gt;editor war&lt;/a&gt; but I never really took the time to see what&amp;#8217;s on the other side of the fence&amp;#8221;&lt;/em&gt; and so I decided to climb the fence and have a quick peek. I equipped myself with emacs and, again, forced myself to go through the same bootcamp I had forced myself to years earlier with vim. Not only did I do the same thing, but because my muscle memory was already developed around vim, I started noting down the key combinations for the most common things I was doing in vim, except this time in emacs.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Editor-wise, I didn&amp;#8217;t feel much difference in productivity. It was when I started exploring the different plugins and available customizations that I got really hooked. You see, emacs has its equivalent of the .vimrc file, the init.el. Here is where you can load plugins and set configuration variables to be loaded on emacs&amp;#8217; startup. While in the process of trying to customize emacs to behave the same way &lt;em&gt;my&lt;/em&gt; vim was behaving with regards to tabbing and directory explorer (I was using NERDTree) I found out how that in emacs you can simply set up MELPA, emacs&amp;#8217; package repository, and install everything through it. Emacs has its own package repository. Mind blown. Every single mainstream plugin is available at the distance of Alt + X (M-x in emacs notation), writing package-install, and then typing the name of the package. It&amp;#8217;s like your editor has its own version of &lt;em&gt;apt-get&lt;/em&gt;.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Since this exotic new editor (which contrary to vim is always in edit mode) was allowing me to discover, install and configure a whole range of plugins through a package repository, I started installing and configuring. That&amp;#8217;s when mind blown #2 came. To load and configure this plugins via the &lt;em&gt;init.el&lt;/em&gt; file I was writing elisp code. That&amp;#8217;s right, emacs is built around elisp, its own dialect of a functional programming lisp language. I&amp;#8217;d never done any functional programming before, but damn, I was enjoying it thoroughly. I&amp;#8217;d never done any Vimscript before but I&amp;#8217;d heard horror stories about it, and elisp, by opposition, was being a walk in a very pleasant park with a warm breeze flowing through.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  After all was said and done, and after gradually (over the course of days) customizing my init.el to my liking, my emacs was looking no different than a fancy Atom or Sublime Text. Below you&amp;#8217;ll find a comparison of what emacs looks like out of the box (courtesy of GNU) and what &lt;em&gt;my&lt;/em&gt; emacs looks like sporting the monokai theme:&lt;img class=&quot;wp-image-775 aligncenter&quot; src=&quot;https://www.tiagoespinha.net/wp-content/uploads/2016/05/splash.png&quot; alt=&quot;splash&quot; width=&quot;500&quot; height=&quot;453&quot; srcset=&quot;https://www.tiagoespinha.net/wp-content/uploads/2016/05/splash.png 722w, https://www.tiagoespinha.net/wp-content/uploads/2016/05/splash-300x272.png 300w, https://www.tiagoespinha.net/wp-content/uploads/2016/05/splash-500x453.png 500w&quot; sizes=&quot;(max-width: 500px) 100vw, 500px&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  &lt;img class=&quot;wp-image-774 aligncenter&quot; src=&quot;https://www.tiagoespinha.net/wp-content/uploads/2016/05/Capture-1024x718.png&quot; alt=&quot;Capture&quot; width=&quot;500&quot; height=&quot;350&quot; srcset=&quot;https://www.tiagoespinha.net/wp-content/uploads/2016/05/Capture-1024x718.png 1024w, https://www.tiagoespinha.net/wp-content/uploads/2016/05/Capture-300x210.png 300w, https://www.tiagoespinha.net/wp-content/uploads/2016/05/Capture-768x538.png 768w, https://www.tiagoespinha.net/wp-content/uploads/2016/05/Capture-500x350.png 500w, https://www.tiagoespinha.net/wp-content/uploads/2016/05/Capture-900x631.png 900w&quot; sizes=&quot;(max-width: 500px) 100vw, 500px&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Now, a few weeks later, I look back and I think I would have done it all the same. However, beware, &lt;em&gt;don&amp;#8217;t&lt;/em&gt; get into emacs unless you really have the time to spare to have a whole new world opened to you. Are you already a functional programming guru? Then step right ahead, you&amp;#8217;ll feel right at home with emacs. Otherwise, you&amp;#8217;ll find yourself discovering &lt;em&gt;more&lt;/em&gt; than an editor. Emacs was once jokingly defined as a &amp;#8220;great operating system, lacking only a decent editor&amp;#8221;. I disagree. It &lt;em&gt;is&lt;/em&gt; an operating system, but the editor itself is awesome and kicks vim out of the park any time. By the way, did I mention that vim was &lt;em&gt;implemented &lt;/em&gt;within emacs? You will be able to use your tested and tried vim experience with all the goodness of emacs. What&amp;#8217;s more to want?
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Have fun with emacs and tell me about your experiences in the comments section below. Until the next time.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 May 2016 17:03:33 +0100</pubDate>
+        <link>http://localhost:4000/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</guid>
+        
+        <category>editor</category>
+        
+        <category>emacs</category>
+        
+        <category>functional programming</category>
+        
+        <category>Software</category>
+        
+        
+        <category>Software</category>
+        
+      </item>
+    
+      <item>
+        <title>Stuck at &amp;#8220;Preparing your Desktop&amp;#8221; After Migrating Windows Partition to SSD?</title>
+        <description>&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Recently at work I helped a colleague migrating his laptop from a HDD to an SSD. He was dual-booting his machine with Windows 7 and Ubuntu, and after skillfully shrinking his original partitions (in order to fit the SSD), we copied the partitions over with dd from the HDD to the SSD. After that was done, Grub was understandably confused as its entries were pointing to the HDD partitions rather than the SSD partitions but even after an update-grub and grub-install from within Ubuntu, Windows still wouldn&amp;#8217;t boot.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  We consistently got stuck at &amp;#8220;Preparing your Desktop&amp;#8221; screen and eventually Windows would boot into a completely empty desktop.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Keep reading to figure out how to fix this.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  &lt;!--more--&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Even though my Windows skills have rusted from having fully migrated to Arch Linux a while back, I still remembered you could run programs from the task manager which, conveniently, is still possible to launch using the Ctrl+Alt+Del combination. Having done so allowed me to diagnose the problem: when I ran cmd.exe, Windows was mounting the SSD partition from which I was trying to boot as F:\ rather than C:\ where Windows expected everything to be.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  The fix, after you know what to do, is simple-ish.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Essentially you need to change your registry (you know, regedit) and remove all the letter mappings so that Windows will remap all your drives again at boot.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Easy right? Just launch regedit and edit away! But NO! Because you will, with 100% certainty, not be able to launch regedit!
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  So what&amp;#8217;s the solution then, how can you edit your registry without actually being able to boot into Windows?
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Nice question! We do it from Ubuntu using a nifty tool called chntpw which was originally developed (I assume&amp;#8230; based on the name&amp;#8230;) to change the password of NT-based systems.
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  So! Jump on Ubuntu, get yourself chntpw installed (seriously, if you don&amp;#8217;t know how to do this, get a friend to help you as the next steps are VERY sensitive!) and do the following steps:
+&lt;/p&gt;
+
+&lt;ol style=&quot;text-align: justify;&quot;&gt;
+  &lt;li&gt;
+    Mount your Windows partition (from now on called &lt;WindowsPartition&gt;).
+  &amp;lt;/li&amp;gt;
+  &lt;li&gt;
+    Run chntpw -i &lt;WindowsPartition&gt;/Windows/System32/config/system (N.B. Windows is not case-sensitive but Linux is! Therefore, your file might be called SYSTEM).
+  &amp;lt;/li&amp;gt;
+  &lt;li&gt;
+    From the menu, choose option 9 (Registry Editor).
+  &lt;/li&gt;
+  &lt;li&gt;
+    Now if you type &amp;#8220;ls&amp;#8221;, one of the items should be &amp;#8220;MountedDevices&amp;#8221;.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Enter it by typing &amp;#8220;cd MountedDevices&amp;#8221;.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Again if you &amp;#8220;ls&amp;#8221;, a number of entries should appear, including all your drive letter mappings (we&amp;#8217;re almost there!).
+  &lt;/li&gt;
+  &lt;li&gt;
+    Now, I had no success actually &lt;em&gt;changing&lt;/em&gt; the mappings so I ended up simply removing all the mappings and letting Windows remapping on the next boot. To do so type &amp;#8221; dv \DosDevices\C:&amp;#8221; and repeat this command for all the mapped letters in your computer.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Do &amp;#8220;ls&amp;#8221; one more time to confirm the mappings have been deleted.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Choose option &amp;#8220;q&amp;#8221; to quit chntpw followed by &amp;#8220;y&amp;#8221; to confirm writing the registry hive file.
+  &lt;/li&gt;
+  &lt;li&gt;
+    TADA! You&amp;#8217;re done! Boot into Windows and it should finally boot correctly.
+  &lt;/li&gt;
+&amp;lt;/ol&amp;gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Let me know in the comments if you&amp;#8217;re stuck in some step and I&amp;#8217;ll gladly give a hand!
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  Till the next time!
+&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;
+  [&lt;a href=&quot;http://members.iinet.net/~herman546/Hacking%20the%20Windows%20Registry%20with%20chntpw.html&quot; target=&quot;_blank&quot;&gt;Credit&lt;/a&gt;]
+&lt;/p&gt;
+&lt;/WindowsPartition&gt;&lt;/li&gt;&lt;/WindowsPartition&gt;&lt;/li&gt;&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 08 Sep 2015 21:52:59 +0100</pubDate>
+        <link>http://localhost:4000/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</guid>
+        
+        <category>HDD</category>
+        
+        <category>Migrate Windows Partition</category>
+        
+        <category>Software</category>
+        
+        <category>SSD</category>
+        
+        <category>Ubuntu</category>
+        
+        <category>Windows</category>
+        
+        
+        <category>Software</category>
+        
+        <category>Windows</category>
+        
+      </item>
+    
+      <item>
+        <title>Disable power management for the 8188eu driver in Raspbian</title>
+        <description>&lt;p&gt;Many WIFI USB dongles out there rely on the 8188eu driver for support under Linux. In fact, in a &lt;a href=&quot;http://www.tiagoespinha.net/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/&quot;&gt;previous post&lt;/a&gt;  I covered how to compile a 8188eu driver for your own Raspbian kernel which will keep being upgraded if you are vigilant enough to run rpi-update every now and then.&lt;/p&gt;
+
+&lt;p&gt;One thing I didn’t mention in that blog post is that certain devices which use this chipset will enter power management mode after some time.&lt;/p&gt;
+
+&lt;p&gt;If this is the case with your device, you can fix it by creating a file called /etc/modprobe.d/8188eu.conf which loads the configuration for the 8188eu kernel module and write the following inside:&lt;/p&gt;
+
+&lt;p&gt;options 8188eu rtw_power_mgnt=0 rtw_enusbss=0&lt;/p&gt;
+
+&lt;p&gt;Then restart your Raspbian and you should be good to go!&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Apr 2015 21:46:20 +0100</pubDate>
+        <link>http://localhost:4000/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</guid>
+        
+        <category>8188eu</category>
+        
+        <category>Raspberry Pi</category>
+        
+        <category>Raspbian</category>
+        
+        <category>raspbian wifi turns off</category>
+        
+        <category>Software</category>
+        
+        <category>wifi power management</category>
+        
+        
+        <category>Software</category>
+        
+        <category>Technology</category>
+        
+      </item>
+    
+  </channel>
+</rss>

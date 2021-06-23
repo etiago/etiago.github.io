@@ -2,11 +2,15 @@
 layout: default
 ---
 <div class="post-content well">
+{% comment %}  
 {% include advertisements.html %}
+{% endcomment %}
 <article class="content">
     <div class="post">{{ content }}</div>
     <hr />
+    {% comment %}  
     {% include advertisements.html %}
+    {% endcomment %}
     {% include share-page.html %}
 </article>
 <hr />

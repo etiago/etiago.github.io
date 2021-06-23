@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+        <title>Clojure: beware of the partial - Tiago Espinha</title>
+        <meta name="author" content="Tiago Espinha" />
+        <meta name="description" content="Clojure: beware of the partial" />
+        <meta name="keywords" content="Clojure: beware of the partial, Tiago Espinha, Software" />
+
+        <meta content="0" property="fb:app_id">
+        <meta content="Tiago Espinha" property="og:site_name">
+        
+          <meta content="Clojure: beware of the partial" property="og:title">
+        
+        
+          <meta content="article" property="og:type">
+        
+        
+          <meta content="My Personal Blog" property="og:description">
+        
+        
+          <meta content="http://localhost:4000/2016/12/clojure-beware-of-the-partial/" property="og:url">
+        
+        
+          <meta content="2016-12-19T00:00:00+00:00" property="article:published_time">
+          <meta content="http://localhost:4000/about/" property="article:author">
+        
+        
+          <meta content="http://aboutashu.com/static/img/logo-high-resolution.png" property="og:image">
+        
+        
+          
+          <meta content="Software" property="article:section">
+          
+        
+        
+          
+          <meta content="clojure" property="article:tag">
+          
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@\#">
+        <meta name="twitter:creator" content="@\#">
+        
+          <meta name="twitter:title" content="Clojure: beware of the partial">
+        
+        
+          <meta name="twitter:url" content="http://localhost:4000/2016/12/clojure-beware-of-the-partial/">
+        
+        
+          <meta name="twitter:description" content="My Personal Blog">
+        
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+
+        <!-- Core BootStrap CSS -->
+        <link rel="stylesheet" href="http://localhost:4000/static/css/bootstrap.min.css">
+        <!-- Material Design CSS -->
+        <link rel="stylesheet" href="http://localhost:4000/static/css/bootstrap-material-design.min.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="http://localhost:4000/static/css/syntax.css">
+
+        <!-- Custom CSS -->        
+        <link rel="stylesheet" href="http://localhost:4000/static/css/thickbox.css">
+        <link rel="stylesheet" href="http://localhost:4000/static/css/main.css">
+        <link rel="stylesheet" href="http://localhost:4000/static/css/projects.css">
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5075580-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </head>
+
+    <body class="home overflow-hidden">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="header-panel shadow-z-2">
+    <div class="container">
+    <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="row-picture">
+        <img id="about" class="logo-img" src="https://www.tiagoespinha.net/static/img/avatar.png" height="75px" width="75px">
+      </div>
+      <div class="row-details">
+      <h4 class="list-group-item-heading">Tiago Espinha</h4>
+      <p class="list-group-item-text">Tiago's Tech Blog</p>
+      <div class="social-icons">
+	
+        <a class="icon" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-skype"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+    
+        <a class="icon" target="_blank" href="#"><i class="fa fa-stack-exchange"></i></a>
+    
+</div>
+      </div>
+        <div class="navbar-header pull-right">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-2x fa-bars"></i>
+            </button>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-8 col-xs-12">
+      <h2 class="blog-title-pro">Clojure: beware of the partial</h2>
+      <p class="info">
+      
+      <span class="time">19 Dec 2016</span>
+      
+      
+    <span class="categories">
+        &raquo; <a href="/category/Software">Software</a>
+    </span>
+    
+      </p>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="container main outer">
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                    <nav class="menu">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="list-separator nav navbar-nav well well-primary post">
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 current-menu-item clojure-beware-of-the-partial"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  clojure-beware-of-the-partial"><a href="/about/"><i class="fa fa-comments"></i> About</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  clojure-beware-of-the-partial"><a href="/projects/"><i class="fa fa-desktop"></i> Projects</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  clojure-beware-of-the-partial"><a href="#"><i class="fa fa-graduation-cap"></i> Resume</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  clojure-beware-of-the-partial"><a href="https://github.com/etiago"><i class="fa fa-github"></i> GitHub</a></li>
+
+	
+	
+	
+	
+	
+	
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  clojure-beware-of-the-partial"><a href="/feed.xml"><i class="fa fa-feed"></i> XML Feed</a></li>
+
+</ul>
+    </div>
+    </nav>
+
+            </div> <!-- end /.col-md-3 -->
+
+            <div class="col-md-9 col-xs-12 full">
+                <div class="post-content well">
+
+<article class="content">
+    <div class="post"><p style="text-align: justify;">At some point in time while using <a href="http://clojure-liberator.github.io/liberator/">Liberator</a> to build <em>semi-RESTful</em> APIs, I found myself in a pickle. Essentially, the Liberator library allows you to build an API by specifying a number of handlers (effectively functions) for things like handling a malformed request, handling a non-existant request, and also allowing handlers for determining what <em>are</em> malformed or non-existant requests.</p>
+
+<p>This approach to building an API is pretty straight forward. To help it, <strong>Liberator</strong> passes a “<em>context</em>” argument into each of these handlers by default which carries information such as HTTP headers and whatever else you feel like adding to it throughout the validation pipeline until the request gets handled by the “<em>handle-ok</em>” handler.</p>
+
+<p>Then, at some point or another, you will be wanting to pass more arguments into these handlers. Clojure (and functional programming in general) discourage the use of global mutable state and encourages single-purpose, idempotent and side-effect free functions, meaning that you should be able to run the same function twice, with the same arguments, and get the same outcome (this usually will not be possible if the function depends/operates on shared global variables). Then what can you do? Liberator expects single-argument handlers to which it can pass its “<em>context</em>” argument but we want to also pass additional arguments to it which will be evaluated and/or resolved at runtime.</p>
+
+<p>After some googling on the issue, I found out a solution: partial functions! When partial is applied on a particular function with a set of arguments, rather than evaluating that function, it will create a wrapper function around it which will pass in the specified arguments plus whatever other arguments are passed in when the function is evaluated. It works something like this:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nb">partial</span><span class="w"> </span><span class="n">is-malformed?</span><span class="w"> </span><span class="n">config</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>In this case, <code class="language-plaintext highlighter-rouge">partial</code> will return another function which will have <code class="language-plaintext highlighter-rouge">config</code> as first argument and also support a <strong>variable</strong> amount of arguments. Great! This works, it solves the problem. Liberator will call the returned function, pass the <em>context</em> into it, et voilà! Bob’s your uncle, klaar is Kees, job’s a good’un.</p>
+
+<h1 id="but-wait-the-title-says-beware">But wait!… the title says beware!</h1>
+
+<p>Yes, that’s because in this case, if you have a preset number of additional arguments that you’d like to pass into your handler, you should <strong>NOT</strong> be using partials! You see, a <code class="language-plaintext highlighter-rouge">partial</code> application results <strong>always</strong> in a variadic function, or a function which supports a variable number of arguments. When you have a varargs function, Clojure will create a list out of the arguments (every. single. time.) and then use <code class="language-plaintext highlighter-rouge">apply</code> to push those arguments into the function. This has a particular performance impact which you should avoid if you can, and… you can!</p>
+
+<h1 id="so-how-should-it-be-done">So how should it be done?</h1>
+
+<p>Hey, it’s <strong>functional</strong> programming right? Just evaluate an additional (potentially even anonymous, since it’s so small) function which takes a single argument (to validate the requirement for Liberator) and wraps around the handler you’ve created passing in both the argument (which you will capture as a closure into the anonymous function) and the context argument coming from Liberator. In the end, the same example as above would look something like this:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">fn</span><span class="w"> </span><span class="p">[</span><span class="n">ctx</span><span class="p">]</span><span class="w"> </span><span class="p">(</span><span class="nf">is-malformed?</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="n">ctx</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Or if you want to use the <a href="https://en.wikibooks.org/wiki/Learning_Clojure/Reader_Macros">reader macro</a> and make the code more compact:</p>
+
+<div class="language-clojure highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">#</span><span class="p">(</span><span class="nf">is-malformed?</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="n">%</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>And that’s it! This is about as efficient and compact as you can make it.</p>
+
+<h1 id="to-conclude">To conclude…</h1>
+
+<p>Don’t use <code class="language-plaintext highlighter-rouge">partial</code> unless you have a true need for a <strong>variable</strong> number of arguments at <strong>runtime</strong>. If you need a function which takes more arguments that what a library/whatever passes to your function, just wrap it in another function and enclosure your additional arguments into it.</p>
+</div>
+    <hr />
+    
+    <div class="share-page">
+    Share this on &rarr;
+ <a href="https://twitter.com/share" class="twitter-share-button" data-via="\#">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Google + -->
+<div class="g-plus" data-action="share" data-annotation="bubble"></div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Facebook -->
+<div class="fb-share-button" data-href="http://localhost:4000/2016/12/clojure-beware-of-the-partial/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</article>
+<hr />
+
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <div class="panel-body">
+                <h4>Related Posts</h4>
+                <ul>
+                
+                <li class="relatedPost">
+                    <a href="http://localhost:4000/2016/12/home-automation-with-clojure-part-1/">Home Automation with Clojure (part 1)</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="http://localhost:4000/2016/12/new-years-resolution-getting-back-to-blogging/">New Year's Resolution&#58; Blog more!</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="http://localhost:4000/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/">Why I started using emacs (and why you shouldn&#8217;t)</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="http://localhost:4000/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/">Stuck at &#8220;Preparing your Desktop&#8221; After Migrating Windows Partition to SSD?</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>, <a href="/category/Windows">Windows</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="http://localhost:4000/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/">Disable power management for the 8188eu driver in Raspbian</a>
+                    
+                        <small>(Categories: <a href="/category/Software">Software</a>, <a href="/category/Technology">Technology</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+                <li class="relatedPost">
+                    <a href="http://localhost:4000/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/">[Project] How to easily monitor your plants&#8217; soil humidity</a>
+                    
+                        <small>(Categories: <a href="/category/DIY">DIY</a>, <a href="/category/Hardware">Hardware</a>, <a href="/category/Raspberry Pi">Raspberry Pi</a>, <a href="/category/Software">Software</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </ul>
+    </div>
+
+
+<div class="PageNavigation">
+  
+    <a class="prev pull-left" href="/2016/12/home-automation-with-clojure-part-1/">&laquo; Home Automation with Clojure (part 1)</a>
+  
+  
+    <a class="next pull-right" href="/2020/09/making-the-sad-case-for-a-hard-brexit/">Making the (sad) case for a hard Brexit &raquo;</a>
+  
+</div>
+
+
+<div class="disqus-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+
+        var disqus_shortname = "tiagostechblog";
+        var disqus_identifier = "http://localhost:4000_Clojure: beware of the partial";
+        var disqus_title = "Clojure: beware of the partial";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    /* ]]> */
+    </script>
+</div>
+</div>
+
+
+                <div class="row">
+                  <div class="col-md-12 col-xs-12 footer">
+                <footer>
+                    © Copyright text here
+                     
+                    - <a href="#">Privacy link</a> - Powered by Jekyll.
+                    
+                </footer>
+                <div align="center">
+                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                  <!-- hcz-jekyll -->
+                  <ins class="adsbygoogle"
+                       style="display:block"
+                       data-ad-client="ca-pub-0776433630785969"
+                       data-ad-slot="9690958902"
+                       data-ad-format="auto"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+            </div>
+                </div>
+            </div> <!-- end /.col-md-9 -->
+        </div> <!-- end /.row -->
+
+    </div> <!-- end /.container -->
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="http://localhost:4000/static/js/bootstrap.min.js"></script>
+
+        <script src="http://localhost:4000/static/js/thickbox-compressed.js"></script>
+        <script src="http://localhost:4000/static/js/material.min.js"></script>
+        <script src="http://localhost:4000/static/js/main.js"></script>
+        <script src="http://localhost:4000/static/js/projects.js"></script>
+    </body>
+</html>
