@@ -81,9 +81,10 @@ You then <code>Create</code> a new CDN profile which takes you to the following 
 The things to watch out for are:
 </p>
 
-<ul class="org-ul">
+<ol class="org-ol">
+<li>Choose the <code>Pricing tier</code>. There are different tiers, from different vendors, which provide different functionality (a comparison is available if you follow the <code>View full pricing details</code> link). The <code>Standard Microsoft</code> tier in particular allows for URL redirect and rewrite, which the Standard Akamai and Verizon tiers don't and is useful for redirecting HTTP to HTTPS.</li>
 <li>Tick <code>Create new CDN endpoint</code>. Assuming this is your first CDN, you need to create a new endpoint that can be used to reach your CDN On.</li>
 <li>Give you CDN endpoint a name. This is completely up to you. Your visitors <i>can</i> find out this value if they want, even if you later use a custom domain. So don't use anything that you wouldn't want exposed publicly.</li>
 <li>Pick an Origin type. For this example, pick <code>Storage static website</code> since we're looking to link this CDN with the <code>Storage static website</code> that you can create following the steps linked above.</li>
 <li>Pick the right <code>Origin hostname</code> from the drop down box below. It should be showing you all the hostnames you have available as part of storage static websites.</li>
-</ul>
+</ol>
