@@ -1,0 +1,33 @@
+---
+id: 781
+title: uint64 encoded in Protobuf bytes looks wrong
+date:  2022-02-09T19:46:31+01:00
+author: tiago
+layout: post
+guid: http://tiagoespinha.info/?p=781
+permalink: /2022/02/2022-02-09-grpc-protobuf-uint64-wrong/
+categories:
+  - tech
+  - protobuf
+  - grpc
+---
+
+<p>
+Today as I was trying to debug an issue, I had to interpret a Protobuf message that happened to have a uint64 in it. I only had access to the packet capture and was getting a mixture of: a) Wireshark being able to successfully read and interpret the uint64 apparently correctly and b) when trying to convert the hex bytes into decimal using the calculator getting a very different number, oh and c) getting 9 bytes for a uint64 instead of the expected 8.
+</p>
+
+<p>
+I spent far too much time looking at this and it wasn't an exercise in futility either. I had two packet captures and Wireshark was only interpreting one of them correctly. The goal of being able to convert these bytes by hand back to their decimal representation was as a means to then be able to do it in the one that Wireshark was failing to parse.
+</p>
+
+<p>
+The key to solve the riddle lies in how <a href="https://developers.google.com/protocol-buffers/docs/encoding#varints">varint</a> is encoded on the wire. The Protobuf docs give more detail but the short of it is that each byte has its most significant bit set to 1 if there are more bytes following. This means that if you have the byte 0x00, it will actually show up on the wire as 0x80 (or in binary 10000 0000).
+</p>
+
+<p>
+Giving a more concrete example, the decimal number 30000 is encoded in binary as 0111 0101 0011 0000. On the wire, this would show up as 1111 1101 1011 0000 (note all bytes have their most significant bit set, except the last one). Converting that binary back to decimal leaves us with 64944, not 30000.
+</p>
+
+<p>
+And that's it. Watch out when interpreting Protobuf messages from the wire!
+</p>
