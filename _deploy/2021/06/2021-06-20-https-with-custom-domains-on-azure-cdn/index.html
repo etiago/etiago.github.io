@@ -23,11 +23,11 @@
           <meta content="My Personal Blog" property="og:description">
         
         
-          <meta content="http://localhost:4000/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/" property="og:url">
+          <meta content="https://www.tiagoespinha.net/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/" property="og:url">
         
         
           <meta content="2021-06-20T05:47:31+01:00" property="article:published_time">
-          <meta content="http://localhost:4000/about/" property="article:author">
+          <meta content="https://www.tiagoespinha.net/about/" property="article:author">
         
         
           <meta content="http://aboutashu.com/static/img/logo-high-resolution.png" property="og:image">
@@ -47,7 +47,7 @@
           <meta name="twitter:title" content="HTTPS with custom domains on Azure CDN">
         
         
-          <meta name="twitter:url" content="http://localhost:4000/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/">
+          <meta name="twitter:url" content="https://www.tiagoespinha.net/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/">
         
         
           <meta name="twitter:description" content="My Personal Blog">
@@ -62,17 +62,17 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
 
         <!-- Core BootStrap CSS -->
-        <link rel="stylesheet" href="http://localhost:4000/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/bootstrap.min.css">
         <!-- Material Design CSS -->
-        <link rel="stylesheet" href="http://localhost:4000/static/css/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/bootstrap-material-design.min.css">
 
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="http://localhost:4000/static/css/syntax.css">
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/syntax.css">
 
         <!-- Custom CSS -->        
-        <link rel="stylesheet" href="http://localhost:4000/static/css/thickbox.css">
-        <link rel="stylesheet" href="http://localhost:4000/static/css/main.css">
-        <link rel="stylesheet" href="http://localhost:4000/static/css/projects.css">
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/thickbox.css">
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/main.css">
+        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/projects.css">
         <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -272,12 +272,13 @@ You then <code>Create</code> a new CDN profile which takes you to the following 
 The things to watch out for are:
 </p>
 
-<ul class="org-ul">
+<ol class="org-ol">
+<li>Choose the <code>Pricing tier</code>. There are different tiers, from different vendors, which provide different functionality (a comparison is available if you follow the <code>View full pricing details</code> link). The <code>Standard Microsoft</code> tier in particular allows for URL redirect and rewrite, which the Standard Akamai and Verizon tiers don't and is useful for redirecting HTTP to HTTPS.</li>
 <li>Tick <code>Create new CDN endpoint</code>. Assuming this is your first CDN, you need to create a new endpoint that can be used to reach your CDN On.</li>
 <li>Give you CDN endpoint a name. This is completely up to you. Your visitors <i>can</i> find out this value if they want, even if you later use a custom domain. So don't use anything that you wouldn't want exposed publicly.</li>
 <li>Pick an Origin type. For this example, pick <code>Storage static website</code> since we're looking to link this CDN with the <code>Storage static website</code> that you can create following the steps linked above.</li>
 <li>Pick the right <code>Origin hostname</code> from the drop down box below. It should be showing you all the hostnames you have available as part of storage static websites.</li>
-</ul>
+</ol>
 </div>
     <hr />
     
@@ -291,7 +292,7 @@ The things to watch out for are:
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <!-- Facebook -->
-<div class="fb-share-button" data-href="http://localhost:4000/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
+<div class="fb-share-button" data-href="https://www.tiagoespinha.net/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
 </div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -309,6 +310,41 @@ The things to watch out for are:
     
         
             
+                
+                <div class="panel-body">
+                <h4>Related Posts</h4>
+                <ul>
+                
+                <li class="relatedPost">
+                    <a href="https://www.tiagoespinha.net/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/">uint64 encoded in Protobuf bytes looks wrong</a>
+                    
+                        <small>(Categories: <a href="/category/tech">tech</a>, <a href="/category/protobuf">protobuf</a>, <a href="/category/grpc">grpc</a>)</small>
+                    
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
         
             
         
@@ -331,12 +367,8 @@ The things to watch out for are:
         
             
                 
-                <div class="panel-body">
-                <h4>Related Posts</h4>
-                <ul>
-                
                 <li class="relatedPost">
-                    <a href="http://localhost:4000/2021/06/2021-06-19-starting-a-new-role/">Starting a new role</a>
+                    <a href="https://www.tiagoespinha.net/2021/06/2021-06-19-starting-a-new-role/">Starting a new role</a>
                     
                         <small>(Categories: <a href="/category/job">job</a>, <a href="/category/tech">tech</a>)</small>
                     
@@ -355,7 +387,7 @@ The things to watch out for are:
             
                 
                 <li class="relatedPost">
-                    <a href="http://localhost:4000/2021/01/2021-01-21-blogging-with-org-mode/">Blogging with org-mode!</a>
+                    <a href="https://www.tiagoespinha.net/2021/01/2021-01-21-blogging-with-org-mode/">Blogging with org-mode!</a>
                     
                         <small>(Categories: <a href="/category/tech">tech</a>, <a href="/category/emacs">emacs</a>)</small>
                     
@@ -1680,6 +1712,8 @@ The things to watch out for are:
     <a class="prev pull-left" href="/2021/06/2021-06-19-starting-a-new-role/">&laquo; Starting a new role</a>
   
   
+    <a class="next pull-right" href="/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/">uint64 encoded in Protobuf bytes looks wrong &raquo;</a>
+  
 </div>
 
 
@@ -1689,7 +1723,7 @@ The things to watch out for are:
         /* <![CDATA[ */
 
         var disqus_shortname = "tiagostechblog";
-        var disqus_identifier = "http://localhost:4000_HTTPS with custom domains on Azure CDN";
+        var disqus_identifier = "https://www.tiagoespinha.net_HTTPS with custom domains on Azure CDN";
         var disqus_title = "HTTPS with custom domains on Azure CDN";
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
@@ -1737,11 +1771,11 @@ The things to watch out for are:
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="http://localhost:4000/static/js/bootstrap.min.js"></script>
+        <script src="https://www.tiagoespinha.net/static/js/bootstrap.min.js"></script>
 
-        <script src="http://localhost:4000/static/js/thickbox-compressed.js"></script>
-        <script src="http://localhost:4000/static/js/material.min.js"></script>
-        <script src="http://localhost:4000/static/js/main.js"></script>
-        <script src="http://localhost:4000/static/js/projects.js"></script>
+        <script src="https://www.tiagoespinha.net/static/js/thickbox-compressed.js"></script>
+        <script src="https://www.tiagoespinha.net/static/js/material.min.js"></script>
+        <script src="https://www.tiagoespinha.net/static/js/main.js"></script>
+        <script src="https://www.tiagoespinha.net/static/js/projects.js"></script>
     </body>
 </html>

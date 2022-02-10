@@ -3,11 +3,46 @@
   <channel>
     <title>Tiago Espinha</title>
     <description>My Personal Blog</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Jun 2021 20:05:42 +0100</pubDate>
-    <lastBuildDate>Sun, 20 Jun 2021 20:05:42 +0100</lastBuildDate>
+    <link>https://www.tiagoespinha.net/</link>
+    <atom:link href="https://www.tiagoespinha.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 10 Feb 2022 05:36:58 +0000</pubDate>
+    <lastBuildDate>Thu, 10 Feb 2022 05:36:58 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>uint64 encoded in Protobuf bytes looks wrong</title>
+        <description>&lt;p&gt;
+Today as I was trying to debug an issue, I had to interpret a Protobuf message that happened to have a uint64 in it. I only had access to the packet capture and was getting a mixture of: a) Wireshark being able to successfully read and interpret the uint64 apparently correctly and b) when trying to convert the hex bytes into decimal using the calculator getting a very different number, oh and c) getting 9 bytes for a uint64 instead of the expected 8.
+&lt;/p&gt;
+
+&lt;p&gt;
+I spent far too much time looking at this and it wasn't an exercise in futility either. I had two packet captures and Wireshark was only interpreting one of them correctly. The goal of being able to convert these bytes by hand back to their decimal representation was as a means to then be able to do it in the one that Wireshark was failing to parse.
+&lt;/p&gt;
+
+&lt;p&gt;
+The key to solve the riddle lies in how &lt;a href=&quot;https://developers.google.com/protocol-buffers/docs/encoding#varints&quot;&gt;varint&lt;/a&gt; is encoded on the wire. The Protobuf docs give more detail but the short of it is that each byte has its most significant bit set to 1 if there are more bytes following. This means that if you have the byte 0x00, it will actually show up on the wire as 0x80 (or in binary 10000 0000).
+&lt;/p&gt;
+
+&lt;p&gt;
+Giving a more concrete example, the decimal number 30000 is encoded in binary as 0111 0101 0011 0000. On the wire, this would show up as 1111 1101 1011 0000 (note all bytes have their most significant bit set, except the last one). Converting that binary back to decimal leaves us with 64944, not 30000.
+&lt;/p&gt;
+
+&lt;p&gt;
+And that's it. Watch out when interpreting Protobuf messages from the wire!
+&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Feb 2022 18:46:31 +0000</pubDate>
+        <link>https://www.tiagoespinha.net/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/</guid>
+        
+        
+        <category>tech</category>
+        
+        <category>protobuf</category>
+        
+        <category>grpc</category>
+        
+      </item>
     
       <item>
         <title>HTTPS with custom domains on Azure CDN</title>
@@ -81,16 +116,17 @@ You then &lt;code&gt;Create&lt;/code&gt; a new CDN profile which takes you to th
 The things to watch out for are:
 &lt;/p&gt;
 
-&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;ol class=&quot;org-ol&quot;&gt;
+&lt;li&gt;Choose the &lt;code&gt;Pricing tier&lt;/code&gt;. There are different tiers, from different vendors, which provide different functionality (a comparison is available if you follow the &lt;code&gt;View full pricing details&lt;/code&gt; link). The &lt;code&gt;Standard Microsoft&lt;/code&gt; tier in particular allows for URL redirect and rewrite, which the Standard Akamai and Verizon tiers don't and is useful for redirecting HTTP to HTTPS.&lt;/li&gt;
 &lt;li&gt;Tick &lt;code&gt;Create new CDN endpoint&lt;/code&gt;. Assuming this is your first CDN, you need to create a new endpoint that can be used to reach your CDN On.&lt;/li&gt;
 &lt;li&gt;Give you CDN endpoint a name. This is completely up to you. Your visitors &lt;i&gt;can&lt;/i&gt; find out this value if they want, even if you later use a custom domain. So don't use anything that you wouldn't want exposed publicly.&lt;/li&gt;
 &lt;li&gt;Pick an Origin type. For this example, pick &lt;code&gt;Storage static website&lt;/code&gt; since we're looking to link this CDN with the &lt;code&gt;Storage static website&lt;/code&gt; that you can create following the steps linked above.&lt;/li&gt;
 &lt;li&gt;Pick the right &lt;code&gt;Origin hostname&lt;/code&gt; from the drop down box below. It should be showing you all the hostnames you have available as part of storage static websites.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Sun, 20 Jun 2021 05:47:31 +0100</pubDate>
-        <link>http://localhost:4000/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</guid>
+        <link>https://www.tiagoespinha.net/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</guid>
         
         
         <category>tech</category>
@@ -130,8 +166,8 @@ Time for a fresh start :)
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Jun 2021 14:48:00 +0100</pubDate>
-        <link>http://localhost:4000/2021/06/2021-06-19-starting-a-new-role/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/06/2021-06-19-starting-a-new-role/</guid>
+        <link>https://www.tiagoespinha.net/2021/06/2021-06-19-starting-a-new-role/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2021/06/2021-06-19-starting-a-new-role/</guid>
         
         
         <category>job</category>
@@ -163,8 +199,8 @@ Time will tell!
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 31 Jan 2021 14:14:31 +0000</pubDate>
-        <link>http://localhost:4000/2021/01/2021-01-21-blogging-with-org-mode/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/01/2021-01-21-blogging-with-org-mode/</guid>
+        <link>https://www.tiagoespinha.net/2021/01/2021-01-21-blogging-with-org-mode/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2021/01/2021-01-21-blogging-with-org-mode/</guid>
         
         
         <category>tech</category>
@@ -237,8 +273,8 @@ is a sensible thing to do. Depending on how confident the government is in the r
 being listed as a third country (as other countries are with the EU) will only push the UK further away from the negotiating table.&lt;/p&gt;
 </description>
         <pubDate>Sun, 27 Sep 2020 07:32:00 +0100</pubDate>
-        <link>http://localhost:4000/2020/09/making-the-sad-case-for-a-hard-brexit/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/09/making-the-sad-case-for-a-hard-brexit/</guid>
+        <link>https://www.tiagoespinha.net/2020/09/making-the-sad-case-for-a-hard-brexit/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2020/09/making-the-sad-case-for-a-hard-brexit/</guid>
         
         
         <category>politics</category>
@@ -283,8 +319,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;p&gt;Don’t use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;partial&lt;/code&gt; unless you have a true need for a &lt;strong&gt;variable&lt;/strong&gt; number of arguments at &lt;strong&gt;runtime&lt;/strong&gt;. If you need a function which takes more arguments that what a library/whatever passes to your function, just wrap it in another function and enclosure your additional arguments into it.&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2016/12/clojure-beware-of-the-partial/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/clojure-beware-of-the-partial/</guid>
+        <link>https://www.tiagoespinha.net/2016/12/clojure-beware-of-the-partial/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/12/clojure-beware-of-the-partial/</guid>
         
         <category>clojure</category>
         
@@ -340,8 +376,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;p style=&quot;text-align: justify;&quot;&gt;The end result is a Clojure-based web API which allows me to remotely perform actions like toggling a particular light in my home. It also now supports geofencing (e.g., when someone arrives home and it’s after sunset, turn on the entrance light) and voice commands but I will leave that to another post.&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Dec 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2016/12/home-automation-with-clojure-part-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/home-automation-with-clojure-part-1/</guid>
+        <link>https://www.tiagoespinha.net/2016/12/home-automation-with-clojure-part-1/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/12/home-automation-with-clojure-part-1/</guid>
         
         <category>home automation</category>
         
@@ -369,8 +405,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;p&gt;Haven’t you heard? I’m in love with functional programming 😉.&lt;/p&gt;
 </description>
         <pubDate>Thu, 15 Dec 2016 19:52:00 +0000</pubDate>
-        <link>http://localhost:4000/2016/12/new-years-resolution-getting-back-to-blogging/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/new-years-resolution-getting-back-to-blogging/</guid>
+        <link>https://www.tiagoespinha.net/2016/12/new-years-resolution-getting-back-to-blogging/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/12/new-years-resolution-getting-back-to-blogging/</guid>
         
         <category>new year</category>
         
@@ -441,8 +477,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 08 May 2016 17:03:33 +0100</pubDate>
-        <link>http://localhost:4000/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</guid>
+        <link>https://www.tiagoespinha.net/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</guid>
         
         <category>editor</category>
         
@@ -550,8 +586,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;/WindowsPartition&gt;&lt;/li&gt;&lt;/WindowsPartition&gt;&lt;/li&gt;&lt;/ol&gt;
 </description>
         <pubDate>Tue, 08 Sep 2015 21:52:59 +0100</pubDate>
-        <link>http://localhost:4000/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</guid>
+        <link>https://www.tiagoespinha.net/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</guid>
         
         <category>HDD</category>
         
@@ -569,43 +605,6 @@ being listed as a third country (as other countries are with the EU) will only p
         <category>Software</category>
         
         <category>Windows</category>
-        
-      </item>
-    
-      <item>
-        <title>Disable power management for the 8188eu driver in Raspbian</title>
-        <description>&lt;p&gt;Many WIFI USB dongles out there rely on the 8188eu driver for support under Linux. In fact, in a &lt;a href=&quot;http://www.tiagoespinha.net/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/&quot;&gt;previous post&lt;/a&gt;  I covered how to compile a 8188eu driver for your own Raspbian kernel which will keep being upgraded if you are vigilant enough to run rpi-update every now and then.&lt;/p&gt;
-
-&lt;p&gt;One thing I didn’t mention in that blog post is that certain devices which use this chipset will enter power management mode after some time.&lt;/p&gt;
-
-&lt;p&gt;If this is the case with your device, you can fix it by creating a file called /etc/modprobe.d/8188eu.conf which loads the configuration for the 8188eu kernel module and write the following inside:&lt;/p&gt;
-
-&lt;p&gt;options 8188eu rtw_power_mgnt=0 rtw_enusbss=0&lt;/p&gt;
-
-&lt;p&gt;Then restart your Raspbian and you should be good to go!&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-</description>
-        <pubDate>Mon, 06 Apr 2015 21:46:20 +0100</pubDate>
-        <link>http://localhost:4000/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</guid>
-        
-        <category>8188eu</category>
-        
-        <category>Raspberry Pi</category>
-        
-        <category>Raspbian</category>
-        
-        <category>raspbian wifi turns off</category>
-        
-        <category>Software</category>
-        
-        <category>wifi power management</category>
-        
-        
-        <category>Software</category>
-        
-        <category>Technology</category>
         
       </item>
     
