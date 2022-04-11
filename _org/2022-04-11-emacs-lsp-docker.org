@@ -1,0 +1,77 @@
+#+OPTIONS: toc:nil html-style:nil html-scripts:nil num:nil
+#+BEGIN_EXPORT html
+---
+id: 782
+title: LSP Docker mode with multiple clients
+date:  2022-04-11T05:41:31+01:00
+author: tiago
+layout: post
+guid: http://tiagoespinha.info/?p=782
+permalink: /2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/
+categories:
+  - tech
+  - emacs
+  - lsp
+  - docker
+---
+#+END_EXPORT
+
+[[https://github.com/emacs-lsp/lsp-docker][LSP Docker]] is a fantastic extension if you need to make use of build containers for development. It creates LSP-mode clients in Emacs that allow a language server to run within a given Docker container/image rather than in your host machine. As someone who deals with this sort of setup at work, I was very keen to get this working right!
+
+It's not a particularly easy extension to get working though. The main issue I found was needing to deal with multiple instances of the same type of client (clangd in my case). I placed an =.lsp-docker.yml= in each of the LSP projects I wanted to use my client from with something along the lines of:
+
+#+begin_src yaml
+lsp:
+  server:
+    type: docker
+    subtype: image # Or image. container subtype means launching an existing container
+    # image subtype means creating a new container each time from a specified image
+    name: <image-i-manually-built>:<version> # Must be unique across all language servers
+    container-name: <unique container name>
+    server: clangd # Server id of a registered server (by lsp-mode) 
+    launch_command: "clangd" # Launch command of the language server
+    # (selected by a server id specified above) in stdio mode
+    # Note: launch_command is not used with container subtype servers
+    # as a command is embedded in a container itself and serves as an entrypoint
+  mappings:
+    - source: "<path to source on my host>"
+      destination: "<path to source within the container>"
+#+end_src
+
+As you will notice if you try having multiple repos with slight variations of this file, they all extend from the =clangd= server and as such, each of the clients will be a candidate client for each of the repos. This caused a problem for me - a client I've created for repo A had path mappings incompatible with repo B, which had path mappings of its own.
+
+After much faffing around with settings and manually debugging both LSP Docker and LSP itself, I figured I could either come up with a way to bump up the priority of the one client I wanted to use at any one time, or I could use the =lsp-enabled-clients= variable to whitelist the one client I wanted to use.
+
+Using the priority works, but is not ideal. In LSP Docker, all clients have a base priority of 100. If I bumped one client to a slightly higher priority (e.g., 101), next time I want to use yet another client I need to either reset the old client back to 100 and the /new new/ client to 101. Hardly ideal and involves restarting the LSP workspace multiple times.
+
+Enabling/disabling clients seemed like the way to go. This can be achieved easily with directory-local configs in Emacs. For example, by placing the following in a =.dir-locals.el= in the root of one of the =/home/tiago/git/myrepo1/= and a similar one in =myrepo2= with the client name adjusted to reflect the path/Docker image difference:
+
+#+begin_src emacs-lisp
+  ((c++-mode . ((lsp-enabled-clients . (home-tiago-git-myrepo1-clangd-docker)))))
+#+end_src
+
+Now, this came with an issue that wrecked my brain for a while. After doing this, I'd go into =myrepo1= and it'd all be fine, then I'd step into =myrepo2= and LSP would still be trying to load the image from =myrepo1=! Not only that, but at a much more essential level, Emacs wasn't loading my directory local configs at all!
+
+As it turns out, I had configured emacs with a hook to load LSP for the C++ major mode. The way I'd done this was with a =use-package= hook as follows:
+
+#+begin_src emacs-lisp
+  (use-package lsp-mode
+    :ensure t
+    :init (setq lsp-keymap-prefix "C-c l")
+    :hook ((c++-mode . lsp)))
+#+end_src
+
+This meant that as soon as I was opening a file in =myrepo2=, LSP was being loaded straight away and *failing* to load (because it was using the wrong client which didn't have the right path mappings), and in the process causing the dir local variables to fail to load as well!
+
+Imagine my confusion as I had directory local variables that just weren't being applied!
+
+The solution is deceptively simple: load LSP in deferred mode. This gives Emacs the chance to /first/ apply the directory local variables, /and then/ let LSP load, by which point LSP will see the enabled clients variable and load the right client. You can do this with:
+
+#+begin_src emacs-lisp
+  (use-package lsp-mode
+    :ensure t
+    :init (setq lsp-keymap-prefix "C-c l")
+    :hook ((c++-mode . lsp-deferred)))
+#+end_src
+
+Et voila! LSP Docker working just fine 😉

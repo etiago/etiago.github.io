@@ -5,9 +5,114 @@
     <description>My Personal Blog</description>
     <link>https://www.tiagoespinha.net/</link>
     <atom:link href="https://www.tiagoespinha.net/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 10 Feb 2022 05:36:58 +0000</pubDate>
-    <lastBuildDate>Thu, 10 Feb 2022 05:36:58 +0000</lastBuildDate>
+    <pubDate>Mon, 11 Apr 2022 06:21:17 +0100</pubDate>
+    <lastBuildDate>Mon, 11 Apr 2022 06:21:17 +0100</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>LSP Docker mode with multiple clients</title>
+        <description>&lt;p&gt;
+&lt;a href=&quot;https://github.com/emacs-lsp/lsp-docker&quot;&gt;LSP Docker&lt;/a&gt; is a fantastic extension if you need to make use of build containers for development. It creates LSP-mode clients in Emacs that allow a language server to run within a given Docker container/image rather than in your host machine. As someone who deals with this sort of setup at work, I was very keen to get this working right!
+&lt;/p&gt;
+
+&lt;p&gt;
+It's not a particularly easy extension to get working though. The main issue I found was needing to deal with multiple instances of the same type of client (clangd in my case). I placed an &lt;code&gt;.lsp-docker.yml&lt;/code&gt; in each of the LSP projects I wanted to use my client from with something along the lines of:
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+&lt;pre class=&quot;src src-yaml&quot;&gt;&lt;span style=&quot;color: #83a598;&quot;&gt;lsp&lt;/span&gt;:
+  &lt;span style=&quot;color: #83a598;&quot;&gt;server&lt;/span&gt;:
+    &lt;span style=&quot;color: #83a598;&quot;&gt;type&lt;/span&gt;: docker
+    &lt;span style=&quot;color: #83a598;&quot;&gt;subtype&lt;/span&gt;: image &lt;span style=&quot;color: #928374;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot;color: #928374;&quot;&gt;Or image. container subtype means launching an existing container&lt;/span&gt;
+    &lt;span style=&quot;color: #928374;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot;color: #928374;&quot;&gt;image subtype means creating a new container each time from a specified image&lt;/span&gt;
+    &lt;span style=&quot;color: #83a598;&quot;&gt;name&lt;/span&gt;: &amp;lt;image-i-manually-built&amp;gt;:&amp;lt;version&amp;gt; &lt;span style=&quot;color: #928374;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot;color: #928374;&quot;&gt;Must be unique across all language servers&lt;/span&gt;
+    &lt;span style=&quot;color: #83a598;&quot;&gt;container-name&lt;/span&gt;: &amp;lt;unique container name&amp;gt;
+    &lt;span style=&quot;color: #83a598;&quot;&gt;server&lt;/span&gt;: clangd &lt;span style=&quot;color: #928374;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot;color: #928374;&quot;&gt;Server id of a registered server (by lsp-mode) &lt;/span&gt;
+    &lt;span style=&quot;color: #83a598;&quot;&gt;launch_command&lt;/span&gt;: &lt;span style=&quot;color: #b8bb26;&quot;&gt;&quot;clangd&quot;&lt;/span&gt; &lt;span style=&quot;color: #928374;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot;color: #928374;&quot;&gt;Launch command of the language server&lt;/span&gt;
+    &lt;span style=&quot;color: #928374;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot;color: #928374;&quot;&gt;(selected by a server id specified above) in stdio mode&lt;/span&gt;
+    &lt;span style=&quot;color: #928374;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot;color: #928374;&quot;&gt;Note: launch_command is not used with container subtype servers&lt;/span&gt;
+    &lt;span style=&quot;color: #928374;&quot;&gt;# &lt;/span&gt;&lt;span style=&quot;color: #928374;&quot;&gt;as a command is embedded in a container itself and serves as an entrypoint&lt;/span&gt;
+  &lt;span style=&quot;color: #83a598;&quot;&gt;mappings&lt;/span&gt;:
+    - &lt;span style=&quot;color: #83a598;&quot;&gt;source&lt;/span&gt;: &lt;span style=&quot;color: #b8bb26;&quot;&gt;&quot;&amp;lt;path to source on my host&amp;gt;&quot;&lt;/span&gt;
+      &lt;span style=&quot;color: #83a598;&quot;&gt;destination&lt;/span&gt;: &lt;span style=&quot;color: #b8bb26;&quot;&gt;&quot;&amp;lt;path to source within the container&amp;gt;&quot;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+As you will notice if you try having multiple repos with slight variations of this file, they all extend from the &lt;code&gt;clangd&lt;/code&gt; server and as such, each of the clients will be a candidate client for each of the repos. This caused a problem for me - a client I've created for repo A had path mappings incompatible with repo B, which had path mappings of its own.
+&lt;/p&gt;
+
+&lt;p&gt;
+After much faffing around with settings and manually debugging both LSP Docker and LSP itself, I figured I could either come up with a way to bump up the priority of the one client I wanted to use at any one time, or I could use the &lt;code&gt;lsp-enabled-clients&lt;/code&gt; variable to whitelist the one client I wanted to use.
+&lt;/p&gt;
+
+&lt;p&gt;
+Using the priority works, but is not ideal. In LSP Docker, all clients have a base priority of 100. If I bumped one client to a slightly higher priority (e.g., 101), next time I want to use yet another client I need to either reset the old client back to 100 and the &lt;i&gt;new new&lt;/i&gt; client to 101. Hardly ideal and involves restarting the LSP workspace multiple times.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enabling/disabling clients seemed like the way to go. This can be achieved easily with directory-local configs in Emacs. For example, by placing the following in a &lt;code&gt;.dir-locals.el&lt;/code&gt; in the root of one of the &lt;code&gt;/home/tiago/git/myrepo1/&lt;/code&gt; and a similar one in &lt;code&gt;myrepo2&lt;/code&gt; with the client name adjusted to reflect the path/Docker image difference:
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+&lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #fe8019;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #cc241d;&quot;&gt;(&lt;/span&gt;c++-mode . &lt;span style=&quot;color: #b8bb26;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #83a598;&quot;&gt;(&lt;/span&gt;lsp-enabled-clients . &lt;span style=&quot;color: #8ec07c;&quot;&gt;(&lt;/span&gt;home-tiago-git-myrepo1-clangd-docker&lt;span style=&quot;color: #8ec07c;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #83a598;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #b8bb26;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #cc241d;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #fe8019;&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Now, this came with an issue that wrecked my brain for a while. After doing this, I'd go into &lt;code&gt;myrepo1&lt;/code&gt; and it'd all be fine, then I'd step into &lt;code&gt;myrepo2&lt;/code&gt; and LSP would still be trying to load the image from &lt;code&gt;myrepo1&lt;/code&gt;! Not only that, but at a much more essential level, Emacs wasn't loading my directory local configs at all!
+&lt;/p&gt;
+
+&lt;p&gt;
+As it turns out, I had configured emacs with a hook to load LSP for the C++ major mode. The way I'd done this was with a &lt;code&gt;use-package&lt;/code&gt; hook as follows:
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+&lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #fe8019;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #fb4934;&quot;&gt;use-package&lt;/span&gt; &lt;span style=&quot;color: #d3869b;&quot;&gt;lsp-mode&lt;/span&gt;
+  &lt;span style=&quot;color: #fe8019;&quot;&gt;:ensure&lt;/span&gt; t
+  &lt;span style=&quot;color: #fe8019;&quot;&gt;:init&lt;/span&gt; &lt;span style=&quot;color: #cc241d;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #fb4934;&quot;&gt;setq&lt;/span&gt; lsp-keymap-prefix &lt;span style=&quot;color: #b8bb26;&quot;&gt;&quot;C-c l&quot;&lt;/span&gt;&lt;span style=&quot;color: #cc241d;&quot;&gt;)&lt;/span&gt;
+  &lt;span style=&quot;color: #fe8019;&quot;&gt;:hook&lt;/span&gt; &lt;span style=&quot;color: #cc241d;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #b8bb26;&quot;&gt;(&lt;/span&gt;c++-mode . lsp&lt;span style=&quot;color: #b8bb26;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #cc241d;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #fe8019;&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+This meant that as soon as I was opening a file in &lt;code&gt;myrepo2&lt;/code&gt;, LSP was being loaded straight away and &lt;b&gt;failing&lt;/b&gt; to load (because it was using the wrong client which didn't have the right path mappings), and in the process causing the dir local variables to fail to load as well!
+&lt;/p&gt;
+
+&lt;p&gt;
+Imagine my confusion as I had directory local variables that just weren't being applied!
+&lt;/p&gt;
+
+&lt;p&gt;
+The solution is deceptively simple: load LSP in deferred mode. This gives Emacs the chance to &lt;i&gt;first&lt;/i&gt; apply the directory local variables, &lt;i&gt;and then&lt;/i&gt; let LSP load, by which point LSP will see the enabled clients variable and load the right client. You can do this with:
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+&lt;pre class=&quot;src src-emacs-lisp&quot;&gt;&lt;span style=&quot;color: #fe8019;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #fb4934;&quot;&gt;use-package&lt;/span&gt; &lt;span style=&quot;color: #d3869b;&quot;&gt;lsp-mode&lt;/span&gt;
+  &lt;span style=&quot;color: #fe8019;&quot;&gt;:ensure&lt;/span&gt; t
+  &lt;span style=&quot;color: #fe8019;&quot;&gt;:init&lt;/span&gt; &lt;span style=&quot;color: #cc241d;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #fb4934;&quot;&gt;setq&lt;/span&gt; lsp-keymap-prefix &lt;span style=&quot;color: #b8bb26;&quot;&gt;&quot;C-c l&quot;&lt;/span&gt;&lt;span style=&quot;color: #cc241d;&quot;&gt;)&lt;/span&gt;
+  &lt;span style=&quot;color: #fe8019;&quot;&gt;:hook&lt;/span&gt; &lt;span style=&quot;color: #cc241d;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #b8bb26;&quot;&gt;(&lt;/span&gt;c++-mode . lsp-deferred&lt;span style=&quot;color: #b8bb26;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #cc241d;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #fe8019;&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Et voila! LSP Docker working just fine 😉
+&lt;/p&gt;
+</description>
+        <pubDate>Mon, 11 Apr 2022 05:41:31 +0100</pubDate>
+        <link>https://www.tiagoespinha.net/2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/</guid>
+        
+        
+        <category>tech</category>
+        
+        <category>emacs</category>
+        
+        <category>lsp</category>
+        
+        <category>docker</category>
+        
+      </item>
     
       <item>
         <title>uint64 encoded in Protobuf bytes looks wrong</title>
