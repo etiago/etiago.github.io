@@ -80,4 +80,11 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
+search: true
+timezone: "Europe/London"
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "tiagostechblog"
 minimal_mistakes_skin: "dirt"

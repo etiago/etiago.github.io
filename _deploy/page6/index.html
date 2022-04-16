@@ -21,7 +21,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Tiago's Tech Blog">
 <meta property="og:title" content="Tiago’s Tech Blog">
-<meta property="og:url" content="http://localhost:4000/page6/">
+<meta property="og:url" content="https://www.tiagoespinha.net/page6/">
 
 
   <meta property="og:description" content="My Personal Blog">
@@ -37,10 +37,10 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/page6/">
+<link rel="canonical" href="https://www.tiagoespinha.net/page6/">
 
 
-  <link rel="prev" href="http://localhost:4000/page5/">
+  <link rel="prev" href="https://www.tiagoespinha.net/page5/">
 
 
 
@@ -50,7 +50,7 @@
     
       "@type": "Person",
       "name": null,
-      "url": "http://localhost:4000/"
+      "url": "https://www.tiagoespinha.net/"
     
   }
 </script>
@@ -115,6 +115,11 @@
           
         </a>
         <ul class="visible-links"></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -275,8 +280,15 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2008-08-13T10:03:00+01:00">August 13, 2008</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -316,8 +328,15 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2008-08-08T15:59:00+01:00">August 8, 2008</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -359,8 +378,15 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2008-07-28T07:52:00+01:00">July 28, 2008</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -402,8 +428,15 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2008-07-26T15:45:00+01:00">July 26, 2008</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -442,8 +475,15 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2008-07-22T16:40:00+01:00">July 22, 2008</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -534,6 +574,17 @@
     </div>
 
     
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
 
     <div id="footer" class="page__footer">
       <footer>
@@ -562,6 +613,10 @@
 
 
 
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

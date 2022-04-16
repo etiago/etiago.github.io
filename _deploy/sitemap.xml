@@ -3,10 +3,10 @@
   <channel>
     <title>Tiago's Tech Blog</title>
     <description>My Personal Blog</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Apr 2022 05:59:26 +0100</pubDate>
-    <lastBuildDate>Sat, 16 Apr 2022 05:59:26 +0100</lastBuildDate>
+    <link>https://www.tiagoespinha.net/</link>
+    <atom:link href="https://www.tiagoespinha.net/sitemap.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 16 Apr 2022 06:16:26 +0100</pubDate>
+    <lastBuildDate>Sat, 16 Apr 2022 06:16:26 +0100</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -100,8 +100,8 @@ Et voila! LSP Docker working just fine 😉
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 11 Apr 2022 05:41:31 +0100</pubDate>
-        <link>http://localhost:4000/2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/</guid>
+        <link>https://www.tiagoespinha.net/2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/</guid>
         
         
         <category>tech</category>
@@ -137,8 +137,8 @@ And that's it. Watch out when interpreting Protobuf messages from the wire!
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Feb 2022 18:46:31 +0000</pubDate>
-        <link>http://localhost:4000/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/</guid>
+        <link>https://www.tiagoespinha.net/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/</guid>
         
         
         <category>tech</category>
@@ -230,8 +230,8 @@ The things to watch out for are:
 &lt;/ol&gt;
 </description>
         <pubDate>Sun, 20 Jun 2021 05:47:31 +0100</pubDate>
-        <link>http://localhost:4000/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</guid>
+        <link>https://www.tiagoespinha.net/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</guid>
         
         
         <category>tech</category>
@@ -271,8 +271,8 @@ Time for a fresh start :)
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Jun 2021 14:48:00 +0100</pubDate>
-        <link>http://localhost:4000/2021/06/2021-06-19-starting-a-new-role/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/06/2021-06-19-starting-a-new-role/</guid>
+        <link>https://www.tiagoespinha.net/2021/06/2021-06-19-starting-a-new-role/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2021/06/2021-06-19-starting-a-new-role/</guid>
         
         
         <category>job</category>
@@ -304,8 +304,8 @@ Time will tell!
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 31 Jan 2021 14:14:31 +0000</pubDate>
-        <link>http://localhost:4000/2021/01/2021-01-21-blogging-with-org-mode/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/01/2021-01-21-blogging-with-org-mode/</guid>
+        <link>https://www.tiagoespinha.net/2021/01/2021-01-21-blogging-with-org-mode/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2021/01/2021-01-21-blogging-with-org-mode/</guid>
         
         
         <category>tech</category>
@@ -378,8 +378,8 @@ is a sensible thing to do. Depending on how confident the government is in the r
 being listed as a third country (as other countries are with the EU) will only push the UK further away from the negotiating table.&lt;/p&gt;
 </description>
         <pubDate>Sun, 27 Sep 2020 07:32:00 +0100</pubDate>
-        <link>http://localhost:4000/2020/09/making-the-sad-case-for-a-hard-brexit/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/09/making-the-sad-case-for-a-hard-brexit/</guid>
+        <link>https://www.tiagoespinha.net/2020/09/making-the-sad-case-for-a-hard-brexit/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2020/09/making-the-sad-case-for-a-hard-brexit/</guid>
         
         
         <category>politics</category>
@@ -424,8 +424,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;p&gt;Don’t use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;partial&lt;/code&gt; unless you have a true need for a &lt;strong&gt;variable&lt;/strong&gt; number of arguments at &lt;strong&gt;runtime&lt;/strong&gt;. If you need a function which takes more arguments that what a library/whatever passes to your function, just wrap it in another function and enclosure your additional arguments into it.&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2016/12/clojure-beware-of-the-partial/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/clojure-beware-of-the-partial/</guid>
+        <link>https://www.tiagoespinha.net/2016/12/clojure-beware-of-the-partial/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/12/clojure-beware-of-the-partial/</guid>
         
         <category>clojure</category>
         
@@ -481,8 +481,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;p style=&quot;text-align: justify;&quot;&gt;The end result is a Clojure-based web API which allows me to remotely perform actions like toggling a particular light in my home. It also now supports geofencing (e.g., when someone arrives home and it’s after sunset, turn on the entrance light) and voice commands but I will leave that to another post.&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Dec 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2016/12/home-automation-with-clojure-part-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/home-automation-with-clojure-part-1/</guid>
+        <link>https://www.tiagoespinha.net/2016/12/home-automation-with-clojure-part-1/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/12/home-automation-with-clojure-part-1/</guid>
         
         <category>home automation</category>
         
@@ -510,8 +510,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;p&gt;Haven’t you heard? I’m in love with functional programming 😉.&lt;/p&gt;
 </description>
         <pubDate>Thu, 15 Dec 2016 19:52:00 +0000</pubDate>
-        <link>http://localhost:4000/2016/12/new-years-resolution-getting-back-to-blogging/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/new-years-resolution-getting-back-to-blogging/</guid>
+        <link>https://www.tiagoespinha.net/2016/12/new-years-resolution-getting-back-to-blogging/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/12/new-years-resolution-getting-back-to-blogging/</guid>
         
         <category>new year</category>
         
@@ -582,8 +582,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 08 May 2016 17:03:33 +0100</pubDate>
-        <link>http://localhost:4000/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</guid>
+        <link>https://www.tiagoespinha.net/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</guid>
         
         <category>editor</category>
         
@@ -691,8 +691,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;/WindowsPartition&gt;&lt;/li&gt;&lt;/WindowsPartition&gt;&lt;/li&gt;&lt;/ol&gt;
 </description>
         <pubDate>Tue, 08 Sep 2015 21:52:59 +0100</pubDate>
-        <link>http://localhost:4000/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</guid>
+        <link>https://www.tiagoespinha.net/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/</guid>
         
         <category>HDD</category>
         
@@ -728,8 +728,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;p&gt; &lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Apr 2015 21:46:20 +0100</pubDate>
-        <link>http://localhost:4000/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</guid>
+        <link>https://www.tiagoespinha.net/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/</guid>
         
         <category>8188eu</category>
         
@@ -793,8 +793,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 06 Oct 2014 19:02:34 +0100</pubDate>
-        <link>http://localhost:4000/2014/10/photo-jupiter-and-its-4-largest-moons/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/10/photo-jupiter-and-its-4-largest-moons/</guid>
+        <link>https://www.tiagoespinha.net/2014/10/photo-jupiter-and-its-4-largest-moons/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2014/10/photo-jupiter-and-its-4-largest-moons/</guid>
         
         <category>astronomy</category>
         
@@ -866,8 +866,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 28 Sep 2014 08:29:58 +0100</pubDate>
-        <link>http://localhost:4000/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</guid>
+        <link>https://www.tiagoespinha.net/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/</guid>
         
         
         <category>Life hacks</category>
@@ -915,8 +915,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jun 2014 09:14:14 +0100</pubDate>
-        <link>http://localhost:4000/2014/06/how-to-see-the-international-space-station-iss/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/06/how-to-see-the-international-space-station-iss/</guid>
+        <link>https://www.tiagoespinha.net/2014/06/how-to-see-the-international-space-station-iss/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2014/06/how-to-see-the-international-space-station-iss/</guid>
         
         <category>astronomy</category>
         
@@ -1123,8 +1123,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 13 May 2014 21:02:06 +0100</pubDate>
-        <link>http://localhost:4000/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</guid>
+        <link>https://www.tiagoespinha.net/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/</guid>
         
         <category>Arduino</category>
         
@@ -1355,8 +1355,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/ssid&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Apr 2014 22:22:57 +0100</pubDate>
-        <link>http://localhost:4000/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</guid>
+        <link>https://www.tiagoespinha.net/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/</guid>
         
         <category>Dongle</category>
         
@@ -1416,8 +1416,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 11 Oct 2013 17:09:39 +0100</pubDate>
-        <link>http://localhost:4000/2013/10/chronopost-portugal-servico-enganador/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/10/chronopost-portugal-servico-enganador/</guid>
+        <link>https://www.tiagoespinha.net/2013/10/chronopost-portugal-servico-enganador/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2013/10/chronopost-portugal-servico-enganador/</guid>
         
         <category>chronopost</category>
         
@@ -1480,8 +1480,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Oct 2013 15:46:53 +0100</pubDate>
-        <link>http://localhost:4000/2013/10/automatic-recovery-of-rest-interfaces/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/10/automatic-recovery-of-rest-interfaces/</guid>
+        <link>https://www.tiagoespinha.net/2013/10/automatic-recovery-of-rest-interfaces/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2013/10/automatic-recovery-of-rest-interfaces/</guid>
         
         
         <category>SOA</category>
@@ -1555,8 +1555,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 20 Sep 2013 09:45:32 +0100</pubDate>
-        <link>http://localhost:4000/2013/09/ok-i-got-some-kefir-now-what-or-kefir-quickstart-guide/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/09/ok-i-got-some-kefir-now-what-or-kefir-quickstart-guide/</guid>
+        <link>https://www.tiagoespinha.net/2013/09/ok-i-got-some-kefir-now-what-or-kefir-quickstart-guide/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2013/09/ok-i-got-some-kefir-now-what-or-kefir-quickstart-guide/</guid>
         
         <category>how to make kefir</category>
         
@@ -1640,8 +1640,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Sep 2013 08:02:29 +0100</pubDate>
-        <link>http://localhost:4000/2013/09/would-you-like-some-kefir-like-some-what/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/09/would-you-like-some-kefir-like-some-what/</guid>
+        <link>https://www.tiagoespinha.net/2013/09/would-you-like-some-kefir-like-some-what/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2013/09/would-you-like-some-kefir-like-some-what/</guid>
         
         <category>health</category>
         
@@ -1717,8 +1717,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;p&gt;The source code is available for free on GitHub: &lt;a href=&quot;https://github.com/etiago/WeChatPebble&quot;&gt;https://github.com/etiago/WeChatPebble&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 12 Aug 2013 18:04:38 +0100</pubDate>
-        <link>http://localhost:4000/2013/08/wechat-pebble-wechat-notifications-on-your-pebble/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/08/wechat-pebble-wechat-notifications-on-your-pebble/</guid>
+        <link>https://www.tiagoespinha.net/2013/08/wechat-pebble-wechat-notifications-on-your-pebble/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2013/08/wechat-pebble-wechat-notifications-on-your-pebble/</guid>
         
         <category>Android</category>
         
@@ -1780,8 +1780,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 12 Aug 2013 11:59:41 +0100</pubDate>
-        <link>http://localhost:4000/2013/08/now-running-off-a-raspberry-pi/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/08/now-running-off-a-raspberry-pi/</guid>
+        <link>https://www.tiagoespinha.net/2013/08/now-running-off-a-raspberry-pi/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2013/08/now-running-off-a-raspberry-pi/</guid>
         
         
         <category>Hardware</category>
@@ -1817,8 +1817,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 26 May 2013 17:41:16 +0100</pubDate>
-        <link>http://localhost:4000/2013/05/silicon-valley-and-mozilla-or-the-story-of-how-i-started-using-firefox-again/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/05/silicon-valley-and-mozilla-or-the-story-of-how-i-started-using-firefox-again/</guid>
+        <link>https://www.tiagoespinha.net/2013/05/silicon-valley-and-mozilla-or-the-story-of-how-i-started-using-firefox-again/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2013/05/silicon-valley-and-mozilla-or-the-story-of-how-i-started-using-firefox-again/</guid>
         
         <category>Firefox</category>
         
@@ -1862,8 +1862,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 07 Nov 2012 21:48:27 +0000</pubDate>
-        <link>http://localhost:4000/2012/11/libgdx-and-vector2-mutability/</link>
-        <guid isPermaLink="true">http://localhost:4000/2012/11/libgdx-and-vector2-mutability/</guid>
+        <link>https://www.tiagoespinha.net/2012/11/libgdx-and-vector2-mutability/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2012/11/libgdx-and-vector2-mutability/</guid>
         
         <category>game development</category>
         
@@ -1905,8 +1905,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Sep 2012 10:21:06 +0100</pubDate>
-        <link>http://localhost:4000/2012/09/turmeric-soa-lessons-learned/</link>
-        <guid isPermaLink="true">http://localhost:4000/2012/09/turmeric-soa-lessons-learned/</guid>
+        <link>https://www.tiagoespinha.net/2012/09/turmeric-soa-lessons-learned/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2012/09/turmeric-soa-lessons-learned/</guid>
         
         <category>eBay</category>
         
@@ -1966,8 +1966,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jul 2012 16:22:03 +0100</pubDate>
-        <link>http://localhost:4000/2012/07/the-cross-discipline-conundrum-or-how-we-cant-always-learn-from-other-disciplines/</link>
-        <guid isPermaLink="true">http://localhost:4000/2012/07/the-cross-discipline-conundrum-or-how-we-cant-always-learn-from-other-disciplines/</guid>
+        <link>https://www.tiagoespinha.net/2012/07/the-cross-discipline-conundrum-or-how-we-cant-always-learn-from-other-disciplines/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2012/07/the-cross-discipline-conundrum-or-how-we-cant-always-learn-from-other-disciplines/</guid>
         
         
         <category>Research</category>
@@ -2013,8 +2013,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Jul 2012 11:58:46 +0100</pubDate>
-        <link>http://localhost:4000/2012/07/changing-the-way-i-use-my-mac/</link>
-        <guid isPermaLink="true">http://localhost:4000/2012/07/changing-the-way-i-use-my-mac/</guid>
+        <link>https://www.tiagoespinha.net/2012/07/changing-the-way-i-use-my-mac/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2012/07/changing-the-way-i-use-my-mac/</guid>
         
         
         <category>Software</category>
@@ -2034,8 +2034,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;p&gt;Hope that helps anyone who’s ever asked Google this question!&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Jan 2012 14:56:59 +0000</pubDate>
-        <link>http://localhost:4000/2012/01/quickies-why-cant-i-move-certain-applications-to-the-sd-card/</link>
-        <guid isPermaLink="true">http://localhost:4000/2012/01/quickies-why-cant-i-move-certain-applications-to-the-sd-card/</guid>
+        <link>https://www.tiagoespinha.net/2012/01/quickies-why-cant-i-move-certain-applications-to-the-sd-card/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2012/01/quickies-why-cant-i-move-certain-applications-to-the-sd-card/</guid>
         
         <category>Android</category>
         
@@ -2083,8 +2083,8 @@ sudo ifup wlan0&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 03 Jan 2012 22:29:39 +0000</pubDate>
-        <link>http://localhost:4000/2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/</link>
-        <guid isPermaLink="true">http://localhost:4000/2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/</guid>
+        <link>https://www.tiagoespinha.net/2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/</guid>
         
         <category>Camera FC</category>
         
@@ -2240,8 +2240,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/WSF_sources&gt;&lt;/p&gt;&lt;/path_to_php&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 13 Sep 2011 10:48:27 +0100</pubDate>
-        <link>http://localhost:4000/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/</link>
-        <guid isPermaLink="true">http://localhost:4000/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/</guid>
+        <link>https://www.tiagoespinha.net/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/</guid>
         
         <category>PHP</category>
         
@@ -2302,8 +2302,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 11 Sep 2011 20:47:50 +0100</pubDate>
-        <link>http://localhost:4000/2011/09/black-and-white-icons-for-caffeine/</link>
-        <guid isPermaLink="true">http://localhost:4000/2011/09/black-and-white-icons-for-caffeine/</guid>
+        <link>https://www.tiagoespinha.net/2011/09/black-and-white-icons-for-caffeine/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2011/09/black-and-white-icons-for-caffeine/</guid>
         
         <category>Apple Caffeine</category>
         
@@ -2419,8 +2419,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 31 Aug 2011 23:32:37 +0100</pubDate>
-        <link>http://localhost:4000/2011/08/on-turmeric-soa-open-source-and-the-apache-software-foundation/</link>
-        <guid isPermaLink="true">http://localhost:4000/2011/08/on-turmeric-soa-open-source-and-the-apache-software-foundation/</guid>
+        <link>https://www.tiagoespinha.net/2011/08/on-turmeric-soa-open-source-and-the-apache-software-foundation/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2011/08/on-turmeric-soa-open-source-and-the-apache-software-foundation/</guid>
         
         <category>Apache</category>
         
@@ -2470,8 +2470,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 23 Oct 2010 19:57:52 +0100</pubDate>
-        <link>http://localhost:4000/2010/10/adobe-starts-including-spyware-with-acrobat-reader/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/10/adobe-starts-including-spyware-with-acrobat-reader/</guid>
+        <link>https://www.tiagoespinha.net/2010/10/adobe-starts-including-spyware-with-acrobat-reader/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/10/adobe-starts-including-spyware-with-acrobat-reader/</guid>
         
         <category>Adobe</category>
         
@@ -2545,8 +2545,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Sep 2010 11:14:12 +0100</pubDate>
-        <link>http://localhost:4000/2010/09/how-to-seal-a-bag-airtight-with-a-plastic-bottle/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/09/how-to-seal-a-bag-airtight-with-a-plastic-bottle/</guid>
+        <link>https://www.tiagoespinha.net/2010/09/how-to-seal-a-bag-airtight-with-a-plastic-bottle/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/09/how-to-seal-a-bag-airtight-with-a-plastic-bottle/</guid>
         
         <category>Airtight</category>
         
@@ -2588,8 +2588,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Sep 2010 01:40:21 +0100</pubDate>
-        <link>http://localhost:4000/2010/09/free-storage-with-dropbox-free-online-backups/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/09/free-storage-with-dropbox-free-online-backups/</guid>
+        <link>https://www.tiagoespinha.net/2010/09/free-storage-with-dropbox-free-online-backups/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/09/free-storage-with-dropbox-free-online-backups/</guid>
         
         <category>Backups</category>
         
@@ -2633,8 +2633,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Sep 2010 01:24:33 +0100</pubDate>
-        <link>http://localhost:4000/2010/09/android-rooting-for-dummies-what-is-rooting/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/09/android-rooting-for-dummies-what-is-rooting/</guid>
+        <link>https://www.tiagoespinha.net/2010/09/android-rooting-for-dummies-what-is-rooting/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/09/android-rooting-for-dummies-what-is-rooting/</guid>
         
         <category>Android</category>
         
@@ -2676,8 +2676,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.tiagoespinha.net/wp-content/uploads/2010/09/angrybirds.png&quot; rel=&quot;lightbox[391]&quot; title=&quot;angrybirds&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-392&quot; title=&quot;angrybirds&quot; src=&quot;https://www.tiagoespinha.net/wp-content/uploads/2010/09/angrybirds.png&quot; alt=&quot;&quot; width=&quot;175&quot; height=&quot;175&quot; /&gt;&lt;/a&gt;(Don’t know what this is? Download an app called “Barcode Scanner” and scan this code to download “Angry Birds” right away!)&lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Sep 2010 18:51:16 +0100</pubDate>
-        <link>http://localhost:4000/2010/09/angry-birds-for-android-now-in-the-android-market/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/09/angry-birds-for-android-now-in-the-android-market/</guid>
+        <link>https://www.tiagoespinha.net/2010/09/angry-birds-for-android-now-in-the-android-market/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/09/angry-birds-for-android-now-in-the-android-market/</guid>
         
         <category>Android</category>
         
@@ -2711,8 +2711,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Sep 2010 14:22:30 +0100</pubDate>
-        <link>http://localhost:4000/2010/09/ipad-gets-the-ios-4-2-in-november-iphones-get-ios-4-1-now/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/09/ipad-gets-the-ios-4-2-in-november-iphones-get-ios-4-1-now/</guid>
+        <link>https://www.tiagoespinha.net/2010/09/ipad-gets-the-ios-4-2-in-november-iphones-get-ios-4-1-now/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/09/ipad-gets-the-ios-4-2-in-november-iphones-get-ios-4-1-now/</guid>
         
         <category>Apple iPad</category>
         
@@ -2778,8 +2778,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Sep 2010 21:05:02 +0100</pubDate>
-        <link>http://localhost:4000/2010/09/apples-new-ipod-line-up-ios-4-2-and-itunes-10/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/09/apples-new-ipod-line-up-ios-4-2-and-itunes-10/</guid>
+        <link>https://www.tiagoespinha.net/2010/09/apples-new-ipod-line-up-ios-4-2-and-itunes-10/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/09/apples-new-ipod-line-up-ios-4-2-and-itunes-10/</guid>
         
         <category>Apple</category>
         
@@ -2827,8 +2827,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 30 Aug 2010 12:44:29 +0100</pubDate>
-        <link>http://localhost:4000/2010/08/cyanogenmod-6-0-released-still-no-galaxy-s-support/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/08/cyanogenmod-6-0-released-still-no-galaxy-s-support/</guid>
+        <link>https://www.tiagoespinha.net/2010/08/cyanogenmod-6-0-released-still-no-galaxy-s-support/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/08/cyanogenmod-6-0-released-still-no-galaxy-s-support/</guid>
         
         <category>Android</category>
         
@@ -2943,8 +2943,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Aug 2010 12:42:15 +0100</pubDate>
-        <link>http://localhost:4000/2010/08/samsung-galaxy-s-gets-android-2-2-froyo-beta/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/08/samsung-galaxy-s-gets-android-2-2-froyo-beta/</guid>
+        <link>https://www.tiagoespinha.net/2010/08/samsung-galaxy-s-gets-android-2-2-froyo-beta/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/08/samsung-galaxy-s-gets-android-2-2-froyo-beta/</guid>
         
         <category>Android</category>
         
@@ -3004,8 +3004,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 23 Aug 2010 23:16:42 +0100</pubDate>
-        <link>http://localhost:4000/2010/08/tiago-is-now-officially-an-asf-committer/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/08/tiago-is-now-officially-an-asf-committer/</guid>
+        <link>https://www.tiagoespinha.net/2010/08/tiago-is-now-officially-an-asf-committer/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/08/tiago-is-now-officially-an-asf-committer/</guid>
         
         <category>Apache</category>
         
@@ -3035,8 +3035,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
         <description>&lt;p&gt;&lt;a href=&quot;https://www.tiagoespinha.net/wp-content/uploads/2010/08/46190_421669956860_586946860_5530928_7185433_n.jpg&quot; rel=&quot;lightbox[350]&quot; title=&quot;Check it out guys! &amp;quot;sig 3 B00BB00B 2100-12-21   Keanu Charles Reeves &amp;lt;theone@thematrix.com&amp;gt;&amp;quot;&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-351&quot; title=&quot;Check it out guys! &amp;quot;sig 3 B00BB00B 2100-12-21   Keanu Charles Reeves &amp;lt;theone@thematrix.com&amp;gt;&amp;quot;&quot; src=&quot;https://www.tiagoespinha.net/wp-content/uploads/2010/08/46190_421669956860_586946860_5530928_7185433_n.jpg&quot; alt=&quot;&quot; width=&quot;640&quot; height=&quot;480&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Aug 2010 22:28:34 +0100</pubDate>
-        <link>http://localhost:4000/2010/08/comics-autographs-in-the-future/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/08/comics-autographs-in-the-future/</guid>
+        <link>https://www.tiagoespinha.net/2010/08/comics-autographs-in-the-future/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/08/comics-autographs-in-the-future/</guid>
         
         <category>Comics</category>
         
@@ -3125,8 +3125,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 20 Aug 2010 21:26:31 +0100</pubDate>
-        <link>http://localhost:4000/2010/08/samsung-galaxy-s-lag-issue-and-how-to-fix-it/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/08/samsung-galaxy-s-lag-issue-and-how-to-fix-it/</guid>
+        <link>https://www.tiagoespinha.net/2010/08/samsung-galaxy-s-lag-issue-and-how-to-fix-it/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/08/samsung-galaxy-s-lag-issue-and-how-to-fix-it/</guid>
         
         <category>Android</category>
         
@@ -3182,8 +3182,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 26 Jul 2010 19:16:28 +0100</pubDate>
-        <link>http://localhost:4000/2010/07/samsung-galaxy-s-and-the-iphone-4s-amazing-screen/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/07/samsung-galaxy-s-and-the-iphone-4s-amazing-screen/</guid>
+        <link>https://www.tiagoespinha.net/2010/07/samsung-galaxy-s-and-the-iphone-4s-amazing-screen/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/07/samsung-galaxy-s-and-the-iphone-4s-amazing-screen/</guid>
         
         <category>Apple</category>
         
@@ -3241,8 +3241,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jul 2010 01:12:47 +0100</pubDate>
-        <link>http://localhost:4000/2010/07/why-apples-argument-is-simply-flawed/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/07/why-apples-argument-is-simply-flawed/</guid>
+        <link>https://www.tiagoespinha.net/2010/07/why-apples-argument-is-simply-flawed/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/07/why-apples-argument-is-simply-flawed/</guid>
         
         <category>antenna problems</category>
         
@@ -3288,8 +3288,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 22 Apr 2010 18:34:16 +0100</pubDate>
-        <link>http://localhost:4000/2010/04/lufthansa-offers-gray-powell-flight-to-germany/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/04/lufthansa-offers-gray-powell-flight-to-germany/</guid>
+        <link>https://www.tiagoespinha.net/2010/04/lufthansa-offers-gray-powell-flight-to-germany/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/04/lufthansa-offers-gray-powell-flight-to-germany/</guid>
         
         <category>Germany</category>
         
@@ -3343,8 +3343,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Apr 2010 15:11:06 +0100</pubDate>
-        <link>http://localhost:4000/2010/04/imagine-cup-and-volcano-ash/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/04/imagine-cup-and-volcano-ash/</guid>
+        <link>https://www.tiagoespinha.net/2010/04/imagine-cup-and-volcano-ash/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/04/imagine-cup-and-volcano-ash/</guid>
         
         <category>Eyjafjallajoekull</category>
         
@@ -3416,8 +3416,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 27 Jan 2010 20:10:40 +0000</pubDate>
-        <link>http://localhost:4000/2010/01/apple-tablet-the-ipad-is-meh/</link>
-        <guid isPermaLink="true">http://localhost:4000/2010/01/apple-tablet-the-ipad-is-meh/</guid>
+        <link>https://www.tiagoespinha.net/2010/01/apple-tablet-the-ipad-is-meh/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2010/01/apple-tablet-the-ipad-is-meh/</guid>
         
         <category>Apple</category>
         
@@ -3459,8 +3459,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 29 Dec 2009 23:08:27 +0000</pubDate>
-        <link>http://localhost:4000/2009/12/imacs-and-the-yellow-tinted-screen/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/12/imacs-and-the-yellow-tinted-screen/</guid>
+        <link>https://www.tiagoespinha.net/2009/12/imacs-and-the-yellow-tinted-screen/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/12/imacs-and-the-yellow-tinted-screen/</guid>
         
         <category>Apple</category>
         
@@ -3492,8 +3492,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 28 Dec 2009 14:06:19 +0000</pubDate>
-        <link>http://localhost:4000/2009/12/10-google-wave-invites/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/12/10-google-wave-invites/</guid>
+        <link>https://www.tiagoespinha.net/2009/12/10-google-wave-invites/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/12/10-google-wave-invites/</guid>
         
         <category>Google</category>
         
@@ -3525,8 +3525,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;Tiago&lt;/p&gt;
 </description>
         <pubDate>Mon, 28 Dec 2009 10:57:24 +0000</pubDate>
-        <link>http://localhost:4000/2009/12/out-with-the-old-in-with-the-new/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/12/out-with-the-old-in-with-the-new/</guid>
+        <link>https://www.tiagoespinha.net/2009/12/out-with-the-old-in-with-the-new/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/12/out-with-the-old-in-with-the-new/</guid>
         
         <category>2010</category>
         
@@ -3554,8 +3554,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.tiagoespinha.net/wp-content/uploads/2009/11/iphone-flash-message.jpg&quot; rel=&quot;lightbox[284]&quot; title=&quot;iphone-flash-message&quot;&gt;&lt;img class=&quot;alignleft size-full wp-image-285&quot; title=&quot;iphone-flash-message&quot; src=&quot;https://www.tiagoespinha.net/wp-content/uploads/2009/11/iphone-flash-message.jpg&quot; alt=&quot;iphone-flash-message&quot; width=&quot;315&quot; height=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Nov 2009 10:29:15 +0000</pubDate>
-        <link>http://localhost:4000/2009/11/adobe-and-the-slap-on-apple/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/11/adobe-and-the-slap-on-apple/</guid>
+        <link>https://www.tiagoespinha.net/2009/11/adobe-and-the-slap-on-apple/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/11/adobe-and-the-slap-on-apple/</guid>
         
         <category>Adobe</category>
         
@@ -3619,8 +3619,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Thu, 15 Oct 2009 14:58:48 +0100</pubDate>
-        <link>http://localhost:4000/2009/10/sidekick-data-recovered-most-of-it-maybe-all/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/10/sidekick-data-recovered-most-of-it-maybe-all/</guid>
+        <link>https://www.tiagoespinha.net/2009/10/sidekick-data-recovered-most-of-it-maybe-all/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/10/sidekick-data-recovered-most-of-it-maybe-all/</guid>
         
         
         <category>Uncategorized</category>
@@ -3642,8 +3642,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 10 Oct 2009 22:53:13 +0100</pubDate>
-        <link>http://localhost:4000/2009/10/t-mobile-sidekick-in-danger/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/10/t-mobile-sidekick-in-danger/</guid>
+        <link>https://www.tiagoespinha.net/2009/10/t-mobile-sidekick-in-danger/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/10/t-mobile-sidekick-in-danger/</guid>
         
         <category>Danger</category>
         
@@ -3695,8 +3695,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 07 Aug 2009 18:07:05 +0100</pubDate>
-        <link>http://localhost:4000/2009/08/windows-7-adjust-aero-peek-delay/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/08/windows-7-adjust-aero-peek-delay/</guid>
+        <link>https://www.tiagoespinha.net/2009/08/windows-7-adjust-aero-peek-delay/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/08/windows-7-adjust-aero-peek-delay/</guid>
         
         <category>Aero Peek</category>
         
@@ -3737,8 +3737,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 30 Jul 2009 19:22:03 +0100</pubDate>
-        <link>http://localhost:4000/2009/07/iphone-virus-avast/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/07/iphone-virus-avast/</guid>
+        <link>https://www.tiagoespinha.net/2009/07/iphone-virus-avast/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/07/iphone-virus-avast/</guid>
         
         <category>3GS</category>
         
@@ -3810,8 +3810,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Jul 2009 14:11:34 +0100</pubDate>
-        <link>http://localhost:4000/2009/07/iphone-os-3-0-spam-exploit/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/07/iphone-os-3-0-spam-exploit/</guid>
+        <link>https://www.tiagoespinha.net/2009/07/iphone-os-3-0-spam-exploit/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/07/iphone-os-3-0-spam-exploit/</guid>
         
         <category>Apple</category>
         
@@ -3847,8 +3847,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;For the whole release schedule, hit up the &lt;a href=&quot;http://windowsteamblog.com/blogs/windows7/archive/2009/07/21/when-will-you-get-windows-7-rtm.aspx&quot; target=&quot;_blank&quot;&gt;Windows Team Blog&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Jul 2009 09:10:22 +0100</pubDate>
-        <link>http://localhost:4000/2009/07/windows-7-rtmed/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/07/windows-7-rtmed/</guid>
+        <link>https://www.tiagoespinha.net/2009/07/windows-7-rtmed/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/07/windows-7-rtmed/</guid>
         
         <category>microsoft</category>
         
@@ -3886,8 +3886,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Jul 2009 08:31:42 +0100</pubDate>
-        <link>http://localhost:4000/2009/07/imageshack-hacked-yes/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/07/imageshack-hacked-yes/</guid>
+        <link>https://www.tiagoespinha.net/2009/07/imageshack-hacked-yes/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/07/imageshack-hacked-yes/</guid>
         
         <category>image shack hacked</category>
         
@@ -3955,8 +3955,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 09 Jul 2009 11:53:43 +0100</pubDate>
-        <link>http://localhost:4000/2009/07/google-chrome-os-first-screenshots/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/07/google-chrome-os-first-screenshots/</guid>
+        <link>https://www.tiagoespinha.net/2009/07/google-chrome-os-first-screenshots/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/07/google-chrome-os-first-screenshots/</guid>
         
         <category>Google</category>
         
@@ -4004,8 +4004,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 08 Jul 2009 09:19:42 +0100</pubDate>
-        <link>http://localhost:4000/2009/07/google-chrome-os-googles-bing-retaliation/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/07/google-chrome-os-googles-bing-retaliation/</guid>
+        <link>https://www.tiagoespinha.net/2009/07/google-chrome-os-googles-bing-retaliation/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/07/google-chrome-os-googles-bing-retaliation/</guid>
         
         <category>Chrome OS</category>
         
@@ -4043,8 +4043,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Jul 2009 12:28:37 +0100</pubDate>
-        <link>http://localhost:4000/2009/07/musical-tesla-coil-plans/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/07/musical-tesla-coil-plans/</guid>
+        <link>https://www.tiagoespinha.net/2009/07/musical-tesla-coil-plans/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/07/musical-tesla-coil-plans/</guid>
         
         <category>Musical Tesla Coil</category>
         
@@ -4079,8 +4079,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Jul 2009 10:25:51 +0100</pubDate>
-        <link>http://localhost:4000/2009/07/staples-leiria-july-6th-2009/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/07/staples-leiria-july-6th-2009/</guid>
+        <link>https://www.tiagoespinha.net/2009/07/staples-leiria-july-6th-2009/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/07/staples-leiria-july-6th-2009/</guid>
         
         <category>People</category>
         
@@ -4134,8 +4134,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Jul 2009 10:08:51 +0100</pubDate>
-        <link>http://localhost:4000/2009/07/the-end-of-the-ubuntu-vs-windows-war/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/07/the-end-of-the-ubuntu-vs-windows-war/</guid>
+        <link>https://www.tiagoespinha.net/2009/07/the-end-of-the-ubuntu-vs-windows-war/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/07/the-end-of-the-ubuntu-vs-windows-war/</guid>
         
         <category>Software</category>
         
@@ -4184,8 +4184,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/username&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 24 Jun 2009 09:37:15 +0100</pubDate>
-        <link>http://localhost:4000/2009/06/iphone-30-jailbreak-and-ultrasn0w-it-is-out/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/06/iphone-30-jailbreak-and-ultrasn0w-it-is-out/</guid>
+        <link>https://www.tiagoespinha.net/2009/06/iphone-30-jailbreak-and-ultrasn0w-it-is-out/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/06/iphone-30-jailbreak-and-ultrasn0w-it-is-out/</guid>
         
         <category>3GS</category>
         
@@ -4237,8 +4237,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 08 Jun 2009 17:38:10 +0100</pubDate>
-        <link>http://localhost:4000/2009/06/was-windows-vista-a-mistake-not-really/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/06/was-windows-vista-a-mistake-not-really/</guid>
+        <link>https://www.tiagoespinha.net/2009/06/was-windows-vista-a-mistake-not-really/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/06/was-windows-vista-a-mistake-not-really/</guid>
         
         <category>microsoft</category>
         
@@ -4276,8 +4276,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.tiagoespinha.net/wp-content/uploads/2009/05/dsc02430.jpg&quot; rel=&quot;lightbox[202]&quot; title=&quot;Last but not least, my VISA&quot;&gt;&lt;img class=&quot;alignnone size-thumbnail wp-image-206&quot; title=&quot;Last but not least, my VISA&quot; src=&quot;https://www.tiagoespinha.net/wp-content/uploads/2009/05/dsc02430-150x150.jpg&quot; alt=&quot;Last but not least, my VISA&quot; width=&quot;150&quot; height=&quot;150&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 May 2009 14:02:04 +0100</pubDate>
-        <link>http://localhost:4000/2009/05/google-summer-of-code-payments-rolling-in/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/05/google-summer-of-code-payments-rolling-in/</guid>
+        <link>https://www.tiagoespinha.net/2009/05/google-summer-of-code-payments-rolling-in/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/05/google-summer-of-code-payments-rolling-in/</guid>
         
         <category>2009</category>
         
@@ -4307,8 +4307,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;‘Till the next time!&lt;/p&gt;
 </description>
         <pubDate>Mon, 25 May 2009 21:04:22 +0100</pubDate>
-        <link>http://localhost:4000/2009/05/the-mozilla-mystery/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/05/the-mozilla-mystery/</guid>
+        <link>https://www.tiagoespinha.net/2009/05/the-mozilla-mystery/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/05/the-mozilla-mystery/</guid>
         
         <category>Firefox</category>
         
@@ -4338,8 +4338,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;My bottom-line is: who is to decide whether a standard should be implemented in a strict manner or not? And to which extent should interop efforts be made? All in all, if Microsoft designs interoperability towards OpenOffice, it might just break things with another Office Suite that decided to implement things differently.&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 May 2009 17:13:20 +0100</pubDate>
-        <link>http://localhost:4000/2009/05/office-2007-sp2-reduces-interoperability-tough-luck/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/05/office-2007-sp2-reduces-interoperability-tough-luck/</guid>
+        <link>https://www.tiagoespinha.net/2009/05/office-2007-sp2-reduces-interoperability-tough-luck/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/05/office-2007-sp2-reduces-interoperability-tough-luck/</guid>
         
         <category>microsoft</category>
         
@@ -4373,8 +4373,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;Have a good one.&lt;/p&gt;
 </description>
         <pubDate>Wed, 06 May 2009 22:14:31 +0100</pubDate>
-        <link>http://localhost:4000/2009/05/the-first-flaw-in-windows-7/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/05/the-first-flaw-in-windows-7/</guid>
+        <link>https://www.tiagoespinha.net/2009/05/the-first-flaw-in-windows-7/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/05/the-first-flaw-in-windows-7/</guid>
         
         <category>flaw</category>
         
@@ -4462,8 +4462,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&quot;http://ad.doubleclick.net/ad/N5654.139913.9527099420421/B3455931;sz=1x1&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 27 Apr 2009 20:38:33 +0100</pubDate>
-        <link>http://localhost:4000/2009/04/ethical-hacking/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/04/ethical-hacking/</guid>
+        <link>https://www.tiagoespinha.net/2009/04/ethical-hacking/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/04/ethical-hacking/</guid>
         
         <category>#CEH</category>
         
@@ -4503,8 +4503,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;is just doomed to extinction and failure. I know I wouldn’t buy anything outside that. (I am a proud owner of an iPhone 3G by the way)&lt;/p&gt;
 </description>
         <pubDate>Sun, 26 Apr 2009 23:46:43 +0100</pubDate>
-        <link>http://localhost:4000/2009/04/lg-km900-youre-doing-it-wrong/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/04/lg-km900-youre-doing-it-wrong/</guid>
+        <link>https://www.tiagoespinha.net/2009/04/lg-km900-youre-doing-it-wrong/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/04/lg-km900-youre-doing-it-wrong/</guid>
         
         <category>KM900</category>
         
@@ -4530,8 +4530,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;This will be my smallest post ever but that is all I have to say 🙂 I am friggin’ ecstatic!&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 Apr 2009 21:58:59 +0100</pubDate>
-        <link>http://localhost:4000/2009/04/google-summer-of-code-2009-part-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/04/google-summer-of-code-2009-part-2/</guid>
+        <link>https://www.tiagoespinha.net/2009/04/google-summer-of-code-2009-part-2/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/04/google-summer-of-code-2009-part-2/</guid>
         
         <category>Google</category>
         
@@ -4567,8 +4567,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 19 Apr 2009 13:34:32 +0100</pubDate>
-        <link>http://localhost:4000/2009/04/windows-7-rc-out-maybe/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/04/windows-7-rc-out-maybe/</guid>
+        <link>https://www.tiagoespinha.net/2009/04/windows-7-rc-out-maybe/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/04/windows-7-rc-out-maybe/</guid>
         
         <category>May 5th</category>
         
@@ -4600,8 +4600,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;So, the application period is over and my application is submitted. The results should be out on April 20th and I have my fingers crossed for me to get picked 🙂&lt;/p&gt;
 </description>
         <pubDate>Fri, 10 Apr 2009 22:29:43 +0100</pubDate>
-        <link>http://localhost:4000/2009/04/google-summer-of-code-2009/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/04/google-summer-of-code-2009/</guid>
+        <link>https://www.tiagoespinha.net/2009/04/google-summer-of-code-2009/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/04/google-summer-of-code-2009/</guid>
         
         <category>Apache</category>
         
@@ -4643,8 +4643,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;img class=&quot;alignnone size-medium wp-image-165&quot; title=&quot;vistabuntu&quot; src=&quot;https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-300x168.jpg&quot; alt=&quot;vistabuntu&quot; width=&quot;300&quot; height=&quot;168&quot; srcset=&quot;https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-300x168.jpg 300w, https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu-1024x575.jpg 1024w, https://www.tiagoespinha.net/wp-content/uploads/2009/03/vistabuntu.jpg 1366w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 24 Mar 2009 18:46:09 +0000</pubDate>
-        <link>http://localhost:4000/2009/03/vmware-unity-the-ultimate-virtualization/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/03/vmware-unity-the-ultimate-virtualization/</guid>
+        <link>https://www.tiagoespinha.net/2009/03/vmware-unity-the-ultimate-virtualization/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/03/vmware-unity-the-ultimate-virtualization/</guid>
         
         
         <category>Uncategorized</category>
@@ -4670,8 +4670,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;And that’s all folks! I better go get some sle…..get back to work I mean! 😉&lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Mar 2009 00:14:14 +0000</pubDate>
-        <link>http://localhost:4000/2009/03/whats-hot/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/03/whats-hot/</guid>
+        <link>https://www.tiagoespinha.net/2009/03/whats-hot/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/03/whats-hot/</guid>
         
         <category>Google</category>
         
@@ -4717,8 +4717,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;So if you still needed any proof that this is the cooler for you, look no further. This will solve ALL your temperature problems and I advocate that this graphics card should actually come with one of these coolers by default.&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 Mar 2009 21:40:01 +0000</pubDate>
-        <link>http://localhost:4000/2009/03/accelero-twin-turbo-by-artic-cooling-review/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/03/accelero-twin-turbo-by-artic-cooling-review/</guid>
+        <link>https://www.tiagoespinha.net/2009/03/accelero-twin-turbo-by-artic-cooling-review/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/03/accelero-twin-turbo-by-artic-cooling-review/</guid>
         
         <category>Accelero</category>
         
@@ -4754,8 +4754,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;Clearly, part of the code has already been rolled out, but not all of it. The why is yet to be known, as Google won’t give anything more than “soon, Themes will come to Google Apps”. But how soon, Google?&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Feb 2009 19:37:30 +0000</pubDate>
-        <link>http://localhost:4000/2009/02/gmail-now-has-customizable-themes-but-what-about-us/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/02/gmail-now-has-customizable-themes-but-what-about-us/</guid>
+        <link>https://www.tiagoespinha.net/2009/02/gmail-now-has-customizable-themes-but-what-about-us/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/02/gmail-now-has-customizable-themes-but-what-about-us/</guid>
         
         <category>GMail</category>
         
@@ -4841,8 +4841,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 03 Jan 2009 12:33:24 +0000</pubDate>
-        <link>http://localhost:4000/2009/01/pastebins-usenet-20/</link>
-        <guid isPermaLink="true">http://localhost:4000/2009/01/pastebins-usenet-20/</guid>
+        <link>https://www.tiagoespinha.net/2009/01/pastebins-usenet-20/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2009/01/pastebins-usenet-20/</guid>
         
         <category>HaxTools</category>
         
@@ -4900,8 +4900,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 18 Dec 2008 17:04:16 +0000</pubDate>
-        <link>http://localhost:4000/2008/12/what-apple-could-do-and-doesnt-to-have-the-upper-hand-at-microsoft/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/12/what-apple-could-do-and-doesnt-to-have-the-upper-hand-at-microsoft/</guid>
+        <link>https://www.tiagoespinha.net/2008/12/what-apple-could-do-and-doesnt-to-have-the-upper-hand-at-microsoft/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/12/what-apple-could-do-and-doesnt-to-have-the-upper-hand-at-microsoft/</guid>
         
         <category>Apple</category>
         
@@ -4947,8 +4947,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Nov 2008 12:20:40 +0000</pubDate>
-        <link>http://localhost:4000/2008/11/gmail-has-a-new-security-flaw/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/11/gmail-has-a-new-security-flaw/</guid>
+        <link>https://www.tiagoespinha.net/2008/11/gmail-has-a-new-security-flaw/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/11/gmail-has-a-new-security-flaw/</guid>
         
         <category>GMail</category>
         
@@ -4970,8 +4970,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.tiagoespinha.net/wp-content/uploads/2008/10/vogelzang-newmac-3574.jpg&quot; rel=&quot;lightbox[137]&quot; title=&quot;vogelzang-newmac-3574&quot;&gt;&lt;img class=&quot;alignnone size-medium wp-image-139&quot; title=&quot;vogelzang-newmac-3574&quot; src=&quot;https://www.tiagoespinha.net/wp-content/uploads/2008/10/vogelzang-newmac-3574-300x225.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;https://www.tiagoespinha.net/wp-content/uploads/2008/10/vogelzang-newmac-3574-300x225.jpg 300w, https://www.tiagoespinha.net/wp-content/uploads/2008/10/vogelzang-newmac-3574.jpg 600w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 22 Oct 2008 20:48:53 +0100</pubDate>
-        <link>http://localhost:4000/2008/10/apples-quality-center-puts-the-b-in-dumn/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/10/apples-quality-center-puts-the-b-in-dumn/</guid>
+        <link>https://www.tiagoespinha.net/2008/10/apples-quality-center-puts-the-b-in-dumn/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/10/apples-quality-center-puts-the-b-in-dumn/</guid>
         
         <category>Apple</category>
         
@@ -4993,8 +4993,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;p&gt;Another &lt;a href=&quot;http://www.internetnews.com/bus-news/article.php/3777686&quot; target=&quot;_blank&quot;&gt;source&lt;/a&gt; tells us that a pre-beta version of this new Windows will be distributed at the Professional Developer Conference, set to take place on Los Angeles on October 27th.&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Oct 2008 11:35:25 +0100</pubDate>
-        <link>http://localhost:4000/2008/10/windows-7-goes-official/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/10/windows-7-goes-official/</guid>
+        <link>https://www.tiagoespinha.net/2008/10/windows-7-goes-official/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/10/windows-7-goes-official/</guid>
         
         <category>microsoft</category>
         
@@ -5100,8 +5100,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 10 Oct 2008 23:32:10 +0100</pubDate>
-        <link>http://localhost:4000/2008/10/a-personal-view-at-firefox-vs-chrome/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/10/a-personal-view-at-firefox-vs-chrome/</guid>
+        <link>https://www.tiagoespinha.net/2008/10/a-personal-view-at-firefox-vs-chrome/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/10/a-personal-view-at-firefox-vs-chrome/</guid>
         
         <category>Browsers</category>
         
@@ -5179,8 +5179,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 04 Oct 2008 14:06:35 +0100</pubDate>
-        <link>http://localhost:4000/2008/10/microsoft-dreamway-2008-steve-ballmer/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/10/microsoft-dreamway-2008-steve-ballmer/</guid>
+        <link>https://www.tiagoespinha.net/2008/10/microsoft-dreamway-2008-steve-ballmer/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/10/microsoft-dreamway-2008-steve-ballmer/</guid>
         
         <category>Ballmer</category>
         
@@ -5224,8 +5224,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 24 Sep 2008 23:48:50 +0100</pubDate>
-        <link>http://localhost:4000/2008/09/microsoft-dreamway-2008/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/09/microsoft-dreamway-2008/</guid>
+        <link>https://www.tiagoespinha.net/2008/09/microsoft-dreamway-2008/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/09/microsoft-dreamway-2008/</guid>
         
         <category>Dreamway</category>
         
@@ -5273,8 +5273,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 23 Sep 2008 21:22:16 +0100</pubDate>
-        <link>http://localhost:4000/2008/09/msp-team-building-2009/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/09/msp-team-building-2009/</guid>
+        <link>https://www.tiagoespinha.net/2008/09/msp-team-building-2009/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/09/msp-team-building-2009/</guid>
         
         <category>microsoft</category>
         
@@ -5322,8 +5322,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 07 Sep 2008 00:16:37 +0100</pubDate>
-        <link>http://localhost:4000/2008/09/solid-state-musical-tesla-coil/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/09/solid-state-musical-tesla-coil/</guid>
+        <link>https://www.tiagoespinha.net/2008/09/solid-state-musical-tesla-coil/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/09/solid-state-musical-tesla-coil/</guid>
         
         <category>Musical Tesla Coil</category>
         
@@ -5369,8 +5369,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 02 Sep 2008 22:14:26 +0100</pubDate>
-        <link>http://localhost:4000/2008/09/google-chrome-released/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/09/google-chrome-released/</guid>
+        <link>https://www.tiagoespinha.net/2008/09/google-chrome-released/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/09/google-chrome-released/</guid>
         
         <category>Browsers</category>
         
@@ -5564,8 +5564,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 30 Aug 2008 12:35:29 +0100</pubDate>
-        <link>http://localhost:4000/2008/08/photos-from-the-msp-field-trip/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/08/photos-from-the-msp-field-trip/</guid>
+        <link>https://www.tiagoespinha.net/2008/08/photos-from-the-msp-field-trip/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/08/photos-from-the-msp-field-trip/</guid>
         
         <category>microsoft</category>
         
@@ -5609,8 +5609,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 30 Aug 2008 12:22:28 +0100</pubDate>
-        <link>http://localhost:4000/2008/08/my-first-msp-experience/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/08/my-first-msp-experience/</guid>
+        <link>https://www.tiagoespinha.net/2008/08/my-first-msp-experience/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/08/my-first-msp-experience/</guid>
         
         <category>microsoft</category>
         
@@ -5662,8 +5662,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Aug 2008 21:35:47 +0100</pubDate>
-        <link>http://localhost:4000/2008/08/stargate-atlantis-comes-to-an-end/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/08/stargate-atlantis-comes-to-an-end/</guid>
+        <link>https://www.tiagoespinha.net/2008/08/stargate-atlantis-comes-to-an-end/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/08/stargate-atlantis-comes-to-an-end/</guid>
         
         <category>my life</category>
         
@@ -5691,8 +5691,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Aug 2008 14:35:34 +0100</pubDate>
-        <link>http://localhost:4000/2008/08/microsoft-student-partner-the-outcome/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/08/microsoft-student-partner-the-outcome/</guid>
+        <link>https://www.tiagoespinha.net/2008/08/microsoft-student-partner-the-outcome/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/08/microsoft-student-partner-the-outcome/</guid>
         
         <category>microsoft</category>
         
@@ -5730,8 +5730,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 21 Aug 2008 11:04:42 +0100</pubDate>
-        <link>http://localhost:4000/2008/08/amd-acts-intel-reacts-atom-dual-core/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/08/amd-acts-intel-reacts-atom-dual-core/</guid>
+        <link>https://www.tiagoespinha.net/2008/08/amd-acts-intel-reacts-atom-dual-core/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/08/amd-acts-intel-reacts-atom-dual-core/</guid>
         
         <category>Amd</category>
         
@@ -5765,8 +5765,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Aug 2008 11:55:53 +0100</pubDate>
-        <link>http://localhost:4000/2008/08/amd-is-dead-think-again/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/08/amd-is-dead-think-again/</guid>
+        <link>https://www.tiagoespinha.net/2008/08/amd-is-dead-think-again/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/08/amd-is-dead-think-again/</guid>
         
         <category>Amd</category>
         
@@ -5806,8 +5806,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 19 Aug 2008 15:49:43 +0100</pubDate>
-        <link>http://localhost:4000/2008/08/iposture-the-ultimate-solution-for-your-back/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/08/iposture-the-ultimate-solution-for-your-back/</guid>
+        <link>https://www.tiagoespinha.net/2008/08/iposture-the-ultimate-solution-for-your-back/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/08/iposture-the-ultimate-solution-for-your-back/</guid>
         
         <category>gadget</category>
         
@@ -5925,8 +5925,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;
 </description>
         <pubDate>Tue, 19 Aug 2008 00:13:59 +0100</pubDate>
-        <link>http://localhost:4000/2008/08/pay-to-click-is-it-really-worth-it/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/08/pay-to-click-is-it-really-worth-it/</guid>
+        <link>https://www.tiagoespinha.net/2008/08/pay-to-click-is-it-really-worth-it/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/08/pay-to-click-is-it-really-worth-it/</guid>
         
         <category>crewbux</category>
         
@@ -5961,8 +5961,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/div&gt;
 </description>
         <pubDate>Wed, 13 Aug 2008 10:03:00 +0100</pubDate>
-        <link>http://localhost:4000/2008/08/microsoft-student-partner-pt-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/08/microsoft-student-partner-pt-2/</guid>
+        <link>https://www.tiagoespinha.net/2008/08/microsoft-student-partner-pt-2/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/08/microsoft-student-partner-pt-2/</guid>
         
         
         <category>microsoft</category>
@@ -5994,8 +5994,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 08 Aug 2008 15:59:00 +0100</pubDate>
-        <link>http://localhost:4000/2008/08/microsoft-student-partner/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/08/microsoft-student-partner/</guid>
+        <link>https://www.tiagoespinha.net/2008/08/microsoft-student-partner/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/08/microsoft-student-partner/</guid>
         
         
         <category>my life</category>
@@ -6017,8 +6017,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 28 Jul 2008 07:52:00 +0100</pubDate>
-        <link>http://localhost:4000/2008/07/google-code-jam-part-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/07/google-code-jam-part-2/</guid>
+        <link>https://www.tiagoespinha.net/2008/07/google-code-jam-part-2/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/07/google-code-jam-part-2/</guid>
         
         
         <category>code jam</category>
@@ -6042,8 +6042,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 26 Jul 2008 15:45:00 +0100</pubDate>
-        <link>http://localhost:4000/2008/07/google-code-jam-part-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/07/google-code-jam-part-1/</guid>
+        <link>https://www.tiagoespinha.net/2008/07/google-code-jam-part-1/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/07/google-code-jam-part-1/</guid>
         
         
         <category>code jam</category>
@@ -6068,8 +6068,8 @@ wsf.home=&quot;/usr/local/bin/apache2/php/wsf-php/&quot;&lt;/pre&gt;
 &lt;/p&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 22 Jul 2008 16:40:00 +0100</pubDate>
-        <link>http://localhost:4000/2008/07/first-post/</link>
-        <guid isPermaLink="true">http://localhost:4000/2008/07/first-post/</guid>
+        <link>https://www.tiagoespinha.net/2008/07/first-post/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2008/07/first-post/</guid>
         
         
         <category>Uncategorized</category>

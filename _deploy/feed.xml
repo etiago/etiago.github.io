@@ -3,10 +3,10 @@
   <channel>
     <title>Tiago's Tech Blog</title>
     <description>My Personal Blog</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Apr 2022 05:59:26 +0100</pubDate>
-    <lastBuildDate>Sat, 16 Apr 2022 05:59:26 +0100</lastBuildDate>
+    <link>https://www.tiagoespinha.net/</link>
+    <atom:link href="https://www.tiagoespinha.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 16 Apr 2022 06:16:26 +0100</pubDate>
+    <lastBuildDate>Sat, 16 Apr 2022 06:16:26 +0100</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -100,8 +100,8 @@ Et voila! LSP Docker working just fine 😉
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 11 Apr 2022 05:41:31 +0100</pubDate>
-        <link>http://localhost:4000/2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/</guid>
+        <link>https://www.tiagoespinha.net/2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/</guid>
         
         
         <category>tech</category>
@@ -137,8 +137,8 @@ And that's it. Watch out when interpreting Protobuf messages from the wire!
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Feb 2022 18:46:31 +0000</pubDate>
-        <link>http://localhost:4000/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/</guid>
+        <link>https://www.tiagoespinha.net/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/</guid>
         
         
         <category>tech</category>
@@ -230,8 +230,8 @@ The things to watch out for are:
 &lt;/ol&gt;
 </description>
         <pubDate>Sun, 20 Jun 2021 05:47:31 +0100</pubDate>
-        <link>http://localhost:4000/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</guid>
+        <link>https://www.tiagoespinha.net/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/</guid>
         
         
         <category>tech</category>
@@ -271,8 +271,8 @@ Time for a fresh start :)
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Jun 2021 14:48:00 +0100</pubDate>
-        <link>http://localhost:4000/2021/06/2021-06-19-starting-a-new-role/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/06/2021-06-19-starting-a-new-role/</guid>
+        <link>https://www.tiagoespinha.net/2021/06/2021-06-19-starting-a-new-role/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2021/06/2021-06-19-starting-a-new-role/</guid>
         
         
         <category>job</category>
@@ -304,8 +304,8 @@ Time will tell!
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 31 Jan 2021 14:14:31 +0000</pubDate>
-        <link>http://localhost:4000/2021/01/2021-01-21-blogging-with-org-mode/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/01/2021-01-21-blogging-with-org-mode/</guid>
+        <link>https://www.tiagoespinha.net/2021/01/2021-01-21-blogging-with-org-mode/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2021/01/2021-01-21-blogging-with-org-mode/</guid>
         
         
         <category>tech</category>
@@ -378,8 +378,8 @@ is a sensible thing to do. Depending on how confident the government is in the r
 being listed as a third country (as other countries are with the EU) will only push the UK further away from the negotiating table.&lt;/p&gt;
 </description>
         <pubDate>Sun, 27 Sep 2020 07:32:00 +0100</pubDate>
-        <link>http://localhost:4000/2020/09/making-the-sad-case-for-a-hard-brexit/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/09/making-the-sad-case-for-a-hard-brexit/</guid>
+        <link>https://www.tiagoespinha.net/2020/09/making-the-sad-case-for-a-hard-brexit/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2020/09/making-the-sad-case-for-a-hard-brexit/</guid>
         
         
         <category>politics</category>
@@ -424,8 +424,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;p&gt;Don’t use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;partial&lt;/code&gt; unless you have a true need for a &lt;strong&gt;variable&lt;/strong&gt; number of arguments at &lt;strong&gt;runtime&lt;/strong&gt;. If you need a function which takes more arguments that what a library/whatever passes to your function, just wrap it in another function and enclosure your additional arguments into it.&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2016/12/clojure-beware-of-the-partial/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/clojure-beware-of-the-partial/</guid>
+        <link>https://www.tiagoespinha.net/2016/12/clojure-beware-of-the-partial/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/12/clojure-beware-of-the-partial/</guid>
         
         <category>clojure</category>
         
@@ -481,8 +481,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;p style=&quot;text-align: justify;&quot;&gt;The end result is a Clojure-based web API which allows me to remotely perform actions like toggling a particular light in my home. It also now supports geofencing (e.g., when someone arrives home and it’s after sunset, turn on the entrance light) and voice commands but I will leave that to another post.&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Dec 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2016/12/home-automation-with-clojure-part-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/home-automation-with-clojure-part-1/</guid>
+        <link>https://www.tiagoespinha.net/2016/12/home-automation-with-clojure-part-1/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/12/home-automation-with-clojure-part-1/</guid>
         
         <category>home automation</category>
         
@@ -510,8 +510,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;p&gt;Haven’t you heard? I’m in love with functional programming 😉.&lt;/p&gt;
 </description>
         <pubDate>Thu, 15 Dec 2016 19:52:00 +0000</pubDate>
-        <link>http://localhost:4000/2016/12/new-years-resolution-getting-back-to-blogging/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/12/new-years-resolution-getting-back-to-blogging/</guid>
+        <link>https://www.tiagoespinha.net/2016/12/new-years-resolution-getting-back-to-blogging/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/12/new-years-resolution-getting-back-to-blogging/</guid>
         
         <category>new year</category>
         
@@ -582,8 +582,8 @@ being listed as a third country (as other countries are with the EU) will only p
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 08 May 2016 17:03:33 +0100</pubDate>
-        <link>http://localhost:4000/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</guid>
+        <link>https://www.tiagoespinha.net/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</link>
+        <guid isPermaLink="true">https://www.tiagoespinha.net/2016/05/why-i-started-using-emacs-and-why-you-shouldnt/</guid>
         
         <category>editor</category>
         
