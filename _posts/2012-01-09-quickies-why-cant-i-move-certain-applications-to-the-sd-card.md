@@ -2,8 +2,7 @@
 id: 539
 title: '[Quickies] Why can&#8217;t I move (certain) applications to the SD card?'
 date: 2012-01-09T14:56:59+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=539
 permalink: /2012/01/quickies-why-cant-i-move-certain-applications-to-the-sd-card/
 categories:

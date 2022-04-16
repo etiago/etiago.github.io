@@ -2,8 +2,7 @@
 id: 391
 title: Angry Birds for Android (Now in the Android Market!)
 date: 2010-09-03T17:51:16+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=391
 permalink: /2010/09/angry-birds-for-android-now-in-the-android-market/
 categories:

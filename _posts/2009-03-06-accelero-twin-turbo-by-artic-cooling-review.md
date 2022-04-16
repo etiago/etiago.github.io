@@ -2,8 +2,7 @@
 id: 159
 title: 'Accelero Twin Turbo by Artic Cooling &#8211; Review'
 date: 2009-03-06T21:40:01+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=159
 permalink: /2009/03/accelero-twin-turbo-by-artic-cooling-review/
 categories:

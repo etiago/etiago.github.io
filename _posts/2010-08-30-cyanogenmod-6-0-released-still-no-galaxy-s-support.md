@@ -2,8 +2,7 @@
 id: 375
 title: CyanogenMod 6.0 Released (Still No Galaxy S Support)
 date: 2010-08-30T11:44:29+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=375
 permalink: /2010/08/cyanogenmod-6-0-released-still-no-galaxy-s-support/
 categories:

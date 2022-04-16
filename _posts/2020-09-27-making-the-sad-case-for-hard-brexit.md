@@ -2,8 +2,7 @@
 id: 777
 title: Making the (sad) case for a hard Brexit
 date: 2020-09-27T06:32:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=777
 permalink: /2020/09/making-the-sad-case-for-a-hard-brexit/
 categories:

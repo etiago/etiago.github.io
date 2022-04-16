@@ -2,8 +2,7 @@
 id: 135
 title: Windows 7 goes official
 date: 2008-10-14T10:35:25+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=135
 permalink: /2008/10/windows-7-goes-official/
 categories:

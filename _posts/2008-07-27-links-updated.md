@@ -2,8 +2,7 @@
 id: 8
 title: Links updated
 date: 2008-07-27T07:11:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=8
 permalink: /2008/07/links-updated/
 blogger_blog:
@@ -14,6 +13,7 @@ blogger_permalink:
   - /2008/07/links-updated.html
 categories:
   - teddybearnotes
+published: false
 ---
 Here I am again to announce that TeddyBearNotes is now officially a SourceForge.net project!
 

@@ -2,8 +2,7 @@
 id: 564
 title: 'Turmeric SOA &#8211; Lessons learned'
 date: 2012-09-28T09:21:06+00:00
-author: admin
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=564
 permalink: /2012/09/turmeric-soa-lessons-learned/
 categories:

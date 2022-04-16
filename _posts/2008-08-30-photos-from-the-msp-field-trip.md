@@ -2,8 +2,7 @@
 id: 106
 title: Photos From the MSP Field-Trip
 date: 2008-08-30T11:35:29+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=106
 permalink: /2008/08/photos-from-the-msp-field-trip/
 categories:

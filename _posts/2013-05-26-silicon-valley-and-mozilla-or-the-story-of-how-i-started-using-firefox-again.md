@@ -2,8 +2,7 @@
 id: 582
 title: Silicon Valley and Mozilla (or The Story of How I started Using Firefox Again)
 date: 2013-05-26T16:41:16+00:00
-author: admin
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=582
 permalink: /2013/05/silicon-valley-and-mozilla-or-the-story-of-how-i-started-using-firefox-again/
 categories:

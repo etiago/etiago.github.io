@@ -2,8 +2,7 @@
 id: 731
 title: Wat is alcohol ketonatus? (What is alcohol ketonatus?)
 date: 2014-09-28T07:29:58+00:00
-author: admin
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=731
 permalink: /2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/
 categories:

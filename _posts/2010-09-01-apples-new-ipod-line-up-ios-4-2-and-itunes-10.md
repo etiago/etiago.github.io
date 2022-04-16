@@ -2,8 +2,7 @@
 id: 379
 title: 'Apple&#8217;s new iPod line-up, iOS 4.2 and iTunes 10'
 date: 2010-09-01T20:05:02+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=379
 permalink: /2010/09/apples-new-ipod-line-up-ios-4-2-and-itunes-10/
 categories:

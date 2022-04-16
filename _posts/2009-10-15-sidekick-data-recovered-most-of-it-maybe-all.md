@@ -2,8 +2,7 @@
 id: 278
 title: Sidekick data recovered (most of it, maybe all)
 date: 2009-10-15T13:58:48+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=278
 permalink: /2009/10/sidekick-data-recovered-most-of-it-maybe-all/
 categories:

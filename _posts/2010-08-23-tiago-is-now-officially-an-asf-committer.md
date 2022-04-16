@@ -2,8 +2,7 @@
 id: 357
 title: Tiago is now officially an ASF committer!
 date: 2010-08-23T22:16:42+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=357
 permalink: /2010/08/tiago-is-now-officially-an-asf-committer/
 categories:

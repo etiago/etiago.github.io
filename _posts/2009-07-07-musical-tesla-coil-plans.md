@@ -2,8 +2,7 @@
 id: 228
 title: 'Musical Tesla Coil Plans [Updated&#8230;]'
 date: 2009-07-07T11:28:37+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=228
 permalink: /2009/07/musical-tesla-coil-plans/
 categories:

@@ -2,8 +2,7 @@
 id: 387
 title: iPad gets the iOS 4.2 in November (iPhones get iOS 4.1 now)
 date: 2010-09-03T13:22:30+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=387
 permalink: /2010/09/ipad-gets-the-ios-4-2-in-november-iphones-get-ios-4-1-now/
 categories:

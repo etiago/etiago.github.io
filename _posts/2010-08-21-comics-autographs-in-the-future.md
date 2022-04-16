@@ -2,8 +2,7 @@
 id: 350
 title: '[Comics] Autographs in the future'
 date: 2010-08-21T21:28:34+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=350
 permalink: /2010/08/comics-autographs-in-the-future/
 categories:

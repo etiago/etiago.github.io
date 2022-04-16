@@ -2,8 +2,7 @@
 id: 367
 title: 'Samsung Galaxy S Gets Android 2.2 (Froyo) [Beta]'
 date: 2010-08-29T11:42:15+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=367
 permalink: /2010/08/samsung-galaxy-s-gets-android-2-2-froyo-beta/
 categories:

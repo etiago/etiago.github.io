@@ -2,8 +2,7 @@
 id: 3
 title: First Post
 date: 2008-07-22T15:40:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=3
 permalink: /2008/07/first-post/
 blogger_blog:

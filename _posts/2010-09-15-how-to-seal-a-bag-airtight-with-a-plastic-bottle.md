@@ -2,8 +2,7 @@
 id: 417
 title: How To Seal a Bag Airtight With a Plastic Bottle
 date: 2010-09-15T10:14:12+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=417
 permalink: /2010/09/how-to-seal-a-bag-airtight-with-a-plastic-bottle/
 categories:

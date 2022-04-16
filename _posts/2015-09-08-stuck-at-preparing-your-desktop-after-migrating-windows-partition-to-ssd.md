@@ -2,8 +2,7 @@
 id: 763
 title: 'Stuck at &#8220;Preparing your Desktop&#8221; After Migrating Windows Partition to SSD?'
 date: 2015-09-08T20:52:59+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=763
 permalink: /2015/09/stuck-at-preparing-your-desktop-after-migrating-windows-partition-to-ssd/
 categories:

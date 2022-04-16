@@ -2,8 +2,7 @@
 id: 52
 title: 'AMD acts, Intel reacts: Atom Dual-Core'
 date: 2008-08-21T10:04:42+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=52
 permalink: /2008/08/amd-acts-intel-reacts-atom-dual-core/
 categories:

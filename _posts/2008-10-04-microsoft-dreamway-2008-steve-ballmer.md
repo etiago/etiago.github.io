@@ -2,8 +2,7 @@
 id: 126
 title: 'Microsoft Dreamway 2008 &#8211; Steve Ballmer'
 date: 2008-10-04T13:06:35+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=126
 permalink: /2008/10/microsoft-dreamway-2008-steve-ballmer/
 categories:

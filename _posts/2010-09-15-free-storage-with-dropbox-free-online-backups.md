@@ -2,8 +2,7 @@
 id: 412
 title: Free Storage With Dropbox (Free Online Backups)
 date: 2010-09-15T00:40:21+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=412
 permalink: /2010/09/free-storage-with-dropbox-free-online-backups/
 categories:

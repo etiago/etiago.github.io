@@ -2,8 +2,7 @@
 id: 255
 title: 'iPhone virus &#8211; avast!'
 date: 2009-07-30T18:22:03+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=255
 permalink: /2009/07/iphone-virus-avast/
 categories:

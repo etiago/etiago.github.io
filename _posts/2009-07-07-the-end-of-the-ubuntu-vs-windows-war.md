@@ -2,8 +2,7 @@
 id: 218
 title: The end of the Ubuntu vs. Windows war!
 date: 2009-07-07T09:08:51+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=218
 permalink: /2009/07/the-end-of-the-ubuntu-vs-windows-war/
 categories:

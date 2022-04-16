@@ -2,8 +2,7 @@
 id: 55
 title: 'Microsoft Student Partner &#8211; The Outcome'
 date: 2008-08-22T13:35:34+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=55
 permalink: /2008/08/microsoft-student-partner-the-outcome/
 categories:

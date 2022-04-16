@@ -2,8 +2,7 @@
 id: 623
 title: Ok, I got some kefir, now what? (or Kefir Quickstart Guide)
 date: 2013-09-20T08:45:32+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=623
 permalink: /2013/09/ok-i-got-some-kefir-now-what-or-kefir-quickstart-guide/
 categories:

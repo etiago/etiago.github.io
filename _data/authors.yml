@@ -1,0 +1,14 @@
+Tiago Espinha:
+  name        : "Tiago Espinha"
+  bio         : "A collection of (mostly) tech related content on topics that I encounter in my day to day."
+  avatar      : "/assets/tiago.jpg"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://tiagoespinha.net"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/etiago"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/etiago"

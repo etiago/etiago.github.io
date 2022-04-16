@@ -2,8 +2,7 @@
 id: 325
 title: Pie Chart Yourself Into a Diet?
 date: 2010-05-08T11:00:46+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=325
 permalink: /2010/05/pie-chart-yourself-into-a-diet/
 categories:
@@ -15,6 +14,7 @@ tags:
   - Pie Charts
   - Plates
   - Wheel of Nutrition
+published: false
 ---
 <p style="text-align: justify;">
   Pretty much everyone who could actually use with a diet has problems with it. They either don&#8217;t know how much they should be eating of each of the different types of food, or they simply shun the idea out of their minds when push comes to shove. With this in mind, a very clever Portuguese guy and some other people (nationality bias much? 🙂 ) came up with this plate that has a wheel of nutrition drawn on it.

@@ -2,8 +2,7 @@
 id: 7
 title: '(TeddyBearNotes) Note for the readers&#8230;'
 date: 2008-07-27T06:38:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=7
 permalink: /2008/07/teddybearnotes-note-for-the-readers/
 blogger_blog:
@@ -14,6 +13,7 @@ blogger_permalink:
   - /2008/07/teddybearnotes-note-for-readers.html
 categories:
   - teddybearnotes
+published: false
 ---
 <div style="text-align: justify;">
   Apparently, TeddyBearNotes is about to get famous, thanks to my ever so loved friend Katy Thomas.</p> 

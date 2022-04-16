@@ -2,8 +2,7 @@
 id: 156
 title: 'Gmail now has customizable themes &#8211; what about us?!'
 date: 2009-02-21T19:37:30+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=156
 permalink: /2009/02/gmail-now-has-customizable-themes-but-what-about-us/
 categories:

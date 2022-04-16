@@ -2,8 +2,7 @@
 id: 257
 title: 'Windows 7 &#8211; Adjust Aero Peek Delay'
 date: 2009-08-07T17:07:05+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=257
 permalink: /2009/08/windows-7-adjust-aero-peek-delay/
 categories:

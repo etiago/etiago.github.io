@@ -2,8 +2,7 @@
 id: 78
 title: My First MSP Experience
 date: 2008-08-30T11:22:28+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=78
 permalink: /2008/08/my-first-msp-experience/
 categories:

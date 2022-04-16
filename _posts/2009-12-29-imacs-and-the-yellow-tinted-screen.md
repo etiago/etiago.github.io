@@ -2,8 +2,7 @@
 id: 301
 title: iMacs and the yellow tinted screen
 date: 2009-12-29T23:08:27+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=301
 permalink: /2009/12/imacs-and-the-yellow-tinted-screen/
 categories:

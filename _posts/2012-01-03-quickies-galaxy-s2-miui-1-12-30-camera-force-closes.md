@@ -2,8 +2,7 @@
 id: 535
 title: '[Quickies] Galaxy S2 MIUI 1.12.30 Camera Force Closes'
 date: 2012-01-03T22:29:39+00:00
-author: admin
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=535
 permalink: /2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/
 categories:

@@ -2,8 +2,7 @@
 id: 284
 title: Adobe and the slap on Apple
 date: 2009-11-12T10:29:15+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=284
 permalink: /2009/11/adobe-and-the-slap-on-apple/
 categories:

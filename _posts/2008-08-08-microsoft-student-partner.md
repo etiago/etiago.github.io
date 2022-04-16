@@ -2,8 +2,7 @@
 id: 16
 title: Microsoft Student Partner
 date: 2008-08-08T14:59:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=16
 permalink: /2008/08/microsoft-student-partner/
 blogger_blog:

@@ -2,8 +2,7 @@
 id: 175
 title: 'Google Summer of Code 2009 &#8211; Part 2'
 date: 2009-04-20T20:58:59+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=175
 permalink: /2009/04/google-summer-of-code-2009-part-2/
 categories:

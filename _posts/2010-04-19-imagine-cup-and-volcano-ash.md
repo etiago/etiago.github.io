@@ -2,8 +2,7 @@
 id: 314
 title: Imagine Cup and volcano ash
 date: 2010-04-19T14:11:06+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=314
 permalink: /2010/04/imagine-cup-and-volcano-ash/
 categories:

@@ -2,8 +2,7 @@
 id: 188
 title: 'Master&#8217;s Degree'
 date: 2009-05-25T16:19:34+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=188
 permalink: /2009/05/masters-degree/
 categories:
@@ -15,6 +14,7 @@ tags:
   - "Master's Degree"
   - my life
   - University of Leicester
+published: false
 ---
 <p style="text-align: center;">
   <img class="size-full wp-image-190 aligncenter" title="unilogo" src="https://www.tiagoespinha.net/wp-content/uploads/2009/05/unilogo.gif" alt="unilogo" width="184" height="50" />

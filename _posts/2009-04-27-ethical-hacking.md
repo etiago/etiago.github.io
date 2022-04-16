@@ -2,8 +2,7 @@
 id: 177
 title: Ethical Hacking
 date: 2009-04-27T19:38:33+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=177
 permalink: /2009/04/ethical-hacking/
 categories:

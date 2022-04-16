@@ -2,8 +2,7 @@
 id: 776
 title: 'Clojure: beware of the partial'
 date: 2016-12-19T00:00:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: https://www.tiagoespinha.net/?p=776
 permalink: /2016/12/clojure-beware-of-the-partial/
 categories:

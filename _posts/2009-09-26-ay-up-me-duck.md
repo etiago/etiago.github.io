@@ -2,8 +2,7 @@
 id: 273
 title: '&#8216;Ay up me duck!'
 date: 2009-09-26T17:27:28+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=273
 permalink: /2009/09/ay-up-me-duck/
 categories:
@@ -14,6 +13,7 @@ tags:
   - my life
   - Studies
   - University of Leicester
+published: false
 ---
 <p style="text-align: justify;">
   That&#8217;s right folks, despite not having given hourly updates on my trip to England, I am finally here; safe and sound. The trip was quite on the wire but everything just fit perfectly. The flight arrived a little bit late which meant we had to rush over to the correct bus stop within Heathrow but luckily this Taxi Assistant guy pointed us (me and my parents) in the right direction and off we went. With sandwiches bought in-between and eaten right at the bus stop, also with the anxiety feeling peaking a little over what&#8217;s normal. Still, there really was nothing to be anxious about. The bus came, we put our luggage in the trunk and off we were. It was quite tiring to take a 2.30h flight but ahead of that we still had a 2 hour bus trip to Leicester. (Buses are better in Portugal by the way!)

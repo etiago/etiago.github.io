@@ -2,8 +2,7 @@
 id: 333
 title: 'Why Apple&#8217;s argument is simply flawed'
 date: 2010-07-18T00:12:47+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=333
 permalink: /2010/07/why-apples-argument-is-simply-flawed/
 categories:

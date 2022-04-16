@@ -2,8 +2,7 @@
 id: 613
 title: Would you like some Kefir? Like some what?!
 date: 2013-09-18T07:02:29+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=613
 permalink: /2013/09/would-you-like-some-kefir-like-some-what/
 categories:

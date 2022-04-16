@@ -2,8 +2,7 @@
 id: 202
 title: 'Google Summer of Code &#8211; Payments Rolling In'
 date: 2009-05-28T13:02:04+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=202
 permalink: /2009/05/google-summer-of-code-payments-rolling-in/
 categories:

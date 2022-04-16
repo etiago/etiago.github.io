@@ -2,8 +2,7 @@
 id: 143
 title: MSDN Premium Subscription
 date: 2008-11-13T14:35:14+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=143
 permalink: /2008/11/msdn-premium-subscription/
 categories:
@@ -13,6 +12,7 @@ tags:
   - Microsoft Student Partner
   - MSDN
   - MSDN premium subscription
+published: false
 ---
 <p style="text-align: justify;">
   Yep, that is right indeed, I have one of such babies. Privileges of being a Microsoft Student Partner huh? It does have its downturns as well though, such as when I go out of my house, there&#8217;s a massive crowd waiting to get my autograph and to interview me&#8230; (not really&#8230;)

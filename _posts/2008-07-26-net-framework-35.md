@@ -2,8 +2,7 @@
 id: 5
 title: .NET Framework 3.5
 date: 2008-07-26T10:09:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=5
 permalink: /2008/07/net-framework-35/
 blogger_blog:
@@ -14,6 +13,7 @@ blogger_permalink:
   - /2008/07/net-framework-35.html
 categories:
   - teddybearnotes
+published: false
 ---
 <div style="text-align: justify;">
   A friend of mine pointed out that TBNotes&#8217; installer will report that the .NET Framework 3.5 is not installed, but a place to where download it from is not provided with it. Therefore, I decided to make a post with the links for downloading the framework:</p> 

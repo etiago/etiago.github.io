@@ -2,8 +2,7 @@
 id: 209
 title: Was Windows Vista a mistake? Not really!
 date: 2009-06-08T16:38:10+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=209
 permalink: /2009/06/was-windows-vista-a-mistake-not-really/
 categories:

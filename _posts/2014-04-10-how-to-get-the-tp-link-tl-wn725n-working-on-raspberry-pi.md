@@ -2,8 +2,7 @@
 id: 675
 title: How to get the TP-Link TL-WN725N working on Raspberry Pi
 date: 2014-04-10T21:22:57+00:00
-author: admin
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=675
 permalink: /2014/04/how-to-get-the-tp-link-tl-wn725n-working-on-raspberry-pi/
 categories:

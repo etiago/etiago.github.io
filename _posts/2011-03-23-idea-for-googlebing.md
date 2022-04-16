@@ -2,8 +2,7 @@
 id: 447
 title: Idea for Google/Bing
 date: 2011-03-23T22:17:37+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=447
 permalink: /2011/03/idea-for-googlebing/
 categories:
@@ -18,6 +17,7 @@ tags:
   - Improve Google
   - Result Based Engines
   - Search Engines
+published: false
 ---
 <p style="text-align: justify;">
   I just had this idea that could truly revolutionize search engines. Let&#8217;s start with the motivation:

@@ -2,8 +2,7 @@
 id: 148
 title: 'What Apple could do (and doesn&#8217;t) to have the upper hand at Microsoft'
 date: 2008-12-18T17:04:16+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=148
 permalink: /2008/12/what-apple-could-do-and-doesnt-to-have-the-upper-hand-at-microsoft/
 categories:

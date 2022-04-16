@@ -2,8 +2,7 @@
 id: 6
 title: Google Code Jam part 1
 date: 2008-07-26T14:45:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=6
 permalink: /2008/07/google-code-jam-part-1/
 blogger_blog:

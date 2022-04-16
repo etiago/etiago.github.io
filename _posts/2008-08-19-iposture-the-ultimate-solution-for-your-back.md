@@ -2,8 +2,7 @@
 id: 38
 title: 'iPosture: the ultimate solution for your back'
 date: 2008-08-19T14:49:43+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=38
 permalink: /2008/08/iposture-the-ultimate-solution-for-your-back/
 categories:

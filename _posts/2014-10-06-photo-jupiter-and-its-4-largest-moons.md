@@ -2,8 +2,7 @@
 id: 736
 title: '[Photo] Jupiter and its 4 largest moons'
 date: 2014-10-06T18:02:34+00:00
-author: admin
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=736
 permalink: /2014/10/photo-jupiter-and-its-4-largest-moons/
 categories:

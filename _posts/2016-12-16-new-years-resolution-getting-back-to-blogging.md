@@ -2,8 +2,7 @@
 id: 774
 title: 'New Year''s Resolution&#58; Blog more!'
 date: 2016-12-15T19:52:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: https://www.tiagoespinha.net/?p=774
 permalink: /2016/12/new-years-resolution-getting-back-to-blogging/
 categories:

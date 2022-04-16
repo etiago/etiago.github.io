@@ -2,8 +2,7 @@
 id: 128
 title: A personal view at Firefox vs. Chrome
 date: 2008-10-10T22:32:10+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=128
 permalink: /2008/10/a-personal-view-at-firefox-vs-chrome/
 categories:

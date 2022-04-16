@@ -2,8 +2,7 @@
 id: 183
 title: The First Flaw in Windows 7
 date: 2009-05-06T21:14:31+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=183
 permalink: /2009/05/the-first-flaw-in-windows-7/
 categories:

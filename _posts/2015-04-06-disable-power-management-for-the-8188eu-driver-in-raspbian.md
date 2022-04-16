@@ -2,8 +2,7 @@
 id: 754
 title: Disable power management for the 8188eu driver in Raspbian
 date: 2015-04-06T20:46:20+00:00
-author: admin
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=754
 permalink: /2015/04/disable-power-management-for-the-8188eu-driver-in-raspbian/
 categories:

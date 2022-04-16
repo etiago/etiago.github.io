@@ -2,8 +2,7 @@
 id: 212
 title: iPhone 3.0 Jailbreak and ultrasn0w? It is out!
 date: 2009-06-24T08:37:15+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=212
 permalink: /2009/06/iphone-30-jailbreak-and-ultrasn0w-it-is-out/
 categories:

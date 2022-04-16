@@ -2,8 +2,7 @@
 id: 21
 title: 'Pay to click: is it really worth it?'
 date: 2008-08-18T23:13:59+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=21
 permalink: /2008/08/pay-to-click-is-it-really-worth-it/
 categories:

@@ -2,8 +2,7 @@
 id: 45
 title: 'AMD is dead? Think again&#8230;'
 date: 2008-08-20T10:55:53+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=45
 permalink: /2008/08/amd-is-dead-think-again/
 categories:

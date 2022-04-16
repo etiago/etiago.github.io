@@ -2,8 +2,7 @@
 id: 298
 title: 10 Google Wave Invites
 date: 2009-12-28T14:06:19+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=298
 permalink: /2009/12/10-google-wave-invites/
 categories:

@@ -2,8 +2,7 @@
 id: 123
 title: Microsoft Dreamway 2008
 date: 2008-09-24T22:48:50+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=123
 permalink: /2008/09/microsoft-dreamway-2008/
 categories:

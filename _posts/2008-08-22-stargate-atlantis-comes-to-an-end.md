@@ -2,8 +2,7 @@
 id: 65
 title: 'Stargate Atlantis comes to an end&#8230;'
 date: 2008-08-22T20:35:47+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=65
 permalink: /2008/08/stargate-atlantis-comes-to-an-end/
 categories:

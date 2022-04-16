@@ -2,8 +2,7 @@
 id: 505
 title: Black and white icons for Caffeine
 date: 2011-09-11T19:47:50+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=505
 permalink: /2011/09/black-and-white-icons-for-caffeine/
 categories:

@@ -2,8 +2,7 @@
 id: 118
 title: MSP Team Building 2009
 date: 2008-09-23T20:22:16+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=118
 permalink: /2008/09/msp-team-building-2009/
 categories:

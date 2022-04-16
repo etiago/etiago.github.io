@@ -2,8 +2,7 @@
 id: 519
 title: 'WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA'
 date: 2011-09-13T09:48:27+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=519
 permalink: /2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/
 categories:

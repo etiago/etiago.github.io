@@ -2,8 +2,7 @@
 id: 71
 title: NASA found life out there!
 date: 2008-08-27T20:49:58+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=71
 permalink: /2008/08/nasa-found-life-out-there/
 categories:
@@ -14,6 +13,7 @@ tags:
   - Space
   - Technology
   - virus
+published: false
 ---
 <p style="text-align: justify;">
   No, not really. It is actually just an earthling virus that made it to outer space, and it isn&#8217;t even a real living virus, it&#8217;s a computer virus.

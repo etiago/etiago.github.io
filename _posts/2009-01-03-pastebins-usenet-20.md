@@ -2,8 +2,7 @@
 id: 150
 title: 'PasteBins &#8211; Usenet 2.0'
 date: 2009-01-03T12:33:24+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=150
 permalink: /2009/01/pastebins-usenet-20/
 categories:

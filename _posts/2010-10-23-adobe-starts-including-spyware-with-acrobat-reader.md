@@ -2,8 +2,7 @@
 id: 434
 title: Adobe Starts Including Spyware With Acrobat Reader
 date: 2010-10-23T18:57:52+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=434
 permalink: /2010/10/adobe-starts-including-spyware-with-acrobat-reader/
 categories:

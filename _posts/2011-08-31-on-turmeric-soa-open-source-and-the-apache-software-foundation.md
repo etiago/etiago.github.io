@@ -2,8 +2,7 @@
 id: 490
 title: On Turmeric SOA, open-source and the Apache Software Foundation
 date: 2011-08-31T22:32:37+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=490
 permalink: /2011/08/on-turmeric-soa-open-source-and-the-apache-software-foundation/
 categories:

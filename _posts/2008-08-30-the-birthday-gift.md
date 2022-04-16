@@ -2,8 +2,7 @@
 id: 73
 title: The Birthday Gift
 date: 2008-08-30T10:08:59+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=73
 permalink: /2008/08/the-birthday-gift/
 categories:
@@ -13,6 +12,7 @@ tags:
   - gift
   - my life
   - watch
+published: false
 ---
 <p style="text-align: justify;">
   This post comes more on the personal edge. Actually, it&#8217;s more like me showing off something and being damn proud of it 😉 but hey, I am of the opinion that an image is worth for a thousand words, so here go two thousand words for you to read! On a little background note, this was my best friend&#8217;s birthday gift 🙂 .

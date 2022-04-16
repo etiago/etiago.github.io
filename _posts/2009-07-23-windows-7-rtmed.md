@@ -2,8 +2,7 @@
 id: 249
 title: 'Windows 7 RTM&#8217;ed'
 date: 2009-07-23T08:10:22+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=249
 permalink: /2009/07/windows-7-rtmed/
 categories:

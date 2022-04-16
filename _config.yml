@@ -1,13 +1,16 @@
-title: Tiago Espinha
+title: "Tiago's Tech Blog"
 description: My Personal Blog
 author: Tiago Espinha
-logo: https://www.tiagoespinha.net/static/img/avatar.png
+#logo: https://www.tiagoespinha.net/static/img/avatar.png
 github: https://github.com/etiago
 about: "Tiago's Tech Blog"
 destination: _deploy
 disqus_shortname: tiagostechblog
 google_analytics: UA-5075580-2
 exclude: [cache]
+header_pages:
+  - about.md
+  - projects.md
 urls:
     - text: Home
       url: /
@@ -57,3 +60,24 @@ markdown: kramdown
 gems:
   - jekyll-paginate
   - jekyll-gist
+theme: minimal-mistakes-jekyll
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+minimal_mistakes_skin: "dirt"

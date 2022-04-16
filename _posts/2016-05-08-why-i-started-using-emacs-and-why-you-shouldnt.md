@@ -2,8 +2,7 @@
 id: 773
 title: 'Why I started using emacs (and why you shouldn&#8217;t)'
 date: 2016-05-08T16:03:33+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: https://www.tiagoespinha.net/?p=773
 permalink: /2016/05/why-i-started-using-emacs-and-why-you-shouldnt/
 categories:

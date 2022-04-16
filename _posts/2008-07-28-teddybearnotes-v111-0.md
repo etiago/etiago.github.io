@@ -2,8 +2,7 @@
 id: 11
 title: TeddyBearNotes v1.1.1-0
 date: 2008-07-28T13:59:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=11
 permalink: /2008/07/teddybearnotes-v111-0/
 blogger_blog:
@@ -15,6 +14,7 @@ blogger_permalink:
 categories:
   - tbn releases
   - teddybearnotes
+published: false
 ---
 <div style="text-align: justify;">
   <a href="http://downloads.sourceforge.net/teddybearnotes/TeddyBearNotes-1.1.1-0_setup.zip?use_mirror=osdn">Installer</a><br /><a href="http://downloads.sourceforge.net/teddybearnotes/TeddyBearNotes_src_1.1.1.0.7z?use_mirror=osdn">Source Code</a></p> 

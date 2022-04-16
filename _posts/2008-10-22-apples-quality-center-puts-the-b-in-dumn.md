@@ -2,8 +2,7 @@
 id: 137
 title: 'Apple&#8217;s quality center puts the B in Dumn'
 date: 2008-10-22T19:48:53+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=137
 permalink: /2008/10/apples-quality-center-puts-the-b-in-dumn/
 categories:

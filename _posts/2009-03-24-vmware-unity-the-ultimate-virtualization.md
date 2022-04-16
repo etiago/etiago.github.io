@@ -2,8 +2,7 @@
 id: 164
 title: 'VMWare Unity &#8211; The ultimate virtualization?'
 date: 2009-03-24T18:46:09+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=164
 permalink: /2009/03/vmware-unity-the-ultimate-virtualization/
 categories:

@@ -2,8 +2,7 @@
 id: 237
 title: 'Google Chrome OS &#8211; First Screenshots! [UPDATE]'
 date: 2009-07-09T10:53:43+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=237
 permalink: /2009/07/google-chrome-os-first-screenshots/
 categories:

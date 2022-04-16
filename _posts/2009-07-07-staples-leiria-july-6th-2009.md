@@ -2,8 +2,7 @@
 id: 221
 title: 'Staples Leiria &#8211; July 6th 2009'
 date: 2009-07-07T09:25:51+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=221
 permalink: /2009/07/staples-leiria-july-6th-2009/
 categories:

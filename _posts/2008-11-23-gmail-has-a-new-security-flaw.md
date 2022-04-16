@@ -2,8 +2,7 @@
 id: 146
 title: GMail has a new security flaw
 date: 2008-11-23T12:20:40+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=146
 permalink: /2008/11/gmail-has-a-new-security-flaw/
 categories:

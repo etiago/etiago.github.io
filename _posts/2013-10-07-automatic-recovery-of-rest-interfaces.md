@@ -2,8 +2,7 @@
 id: 640
 title: Automatic Recovery of REST Interfaces
 date: 2013-10-07T14:46:53+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=640
 permalink: /2013/10/automatic-recovery-of-rest-interfaces/
 categories:

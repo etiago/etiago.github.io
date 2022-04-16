@@ -2,8 +2,7 @@
 id: 169
 title: Google Summer of Code 2009
 date: 2009-04-10T21:29:43+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=169
 permalink: /2009/04/google-summer-of-code-2009/
 categories:

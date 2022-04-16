@@ -2,8 +2,7 @@
 id: 109
 title: Google Chrome Released
 date: 2008-09-02T21:14:26+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=109
 permalink: /2008/09/google-chrome-released/
 categories:

@@ -2,8 +2,7 @@
 id: 595
 title: 'WeChat Pebble &#8211; WeChat notifications on your Pebble!'
 date: 2013-08-12T17:04:38+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=595
 permalink: /2013/08/wechat-pebble-wechat-notifications-on-your-pebble/
 categories:

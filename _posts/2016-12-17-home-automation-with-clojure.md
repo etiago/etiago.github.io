@@ -2,8 +2,7 @@
 id: 775
 title: 'Home Automation with Clojure (part 1)'
 date: 2016-12-17T00:00:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: https://www.tiagoespinha.net/?p=775
 permalink: /2016/12/home-automation-with-clojure-part-1/
 categories:

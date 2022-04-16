@@ -2,8 +2,7 @@
 id: 712
 title: How to see the International Space Station (ISS)
 date: 2014-06-10T08:14:14+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=712
 permalink: /2014/06/how-to-see-the-international-space-station-iss/
 categories:

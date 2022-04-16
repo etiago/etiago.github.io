@@ -2,8 +2,7 @@
 id: 276
 title: T-Mobile Sidekick in Danger
 date: 2009-10-10T21:53:13+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=276
 permalink: /2009/10/t-mobile-sidekick-in-danger/
 categories:

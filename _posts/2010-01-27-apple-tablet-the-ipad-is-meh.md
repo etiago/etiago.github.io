@@ -2,8 +2,7 @@
 id: 303
 title: 'Apple Tablet &#8211; the iPad is&#8230; meh'
 date: 2010-01-27T20:10:40+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=303
 permalink: /2010/01/apple-tablet-the-ipad-is-meh/
 categories:

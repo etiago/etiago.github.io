@@ -2,8 +2,7 @@
 id: 200
 title: The Mozilla Mystery
 date: 2009-05-25T20:04:22+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=200
 permalink: /2009/05/the-mozilla-mystery/
 categories:

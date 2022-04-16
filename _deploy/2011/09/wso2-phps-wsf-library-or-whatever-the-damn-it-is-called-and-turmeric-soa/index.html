@@ -1,228 +1,290 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
 
-        <link rel="shortcut icon" href="/static/img/favicon.ico" />
-        <title>WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA - Tiago Espinha</title>
-        <meta name="author" content="Tiago Espinha" />
-        <meta name="description" content="WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA" />
-        <meta name="keywords" content="WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA, Tiago Espinha, SOA, Uncategorized" />
+<!-- begin _includes/seo.html --><title>WSO2 PHP’s WSF Library (or whatever the damn it is called…) and Turmeric SOA - Tiago’s Tech Blog</title>
+<meta name="description" content="The title of this post is verbose enough about the feelings I have regarding the naming of this library. It&#8217;s as if WSO2 took a page from Microsoft&#8217;s book regarding names. What&#8217;s next? A Home Edition? Maybe throw in Professional, Business and Ultimate versions too for good measure.">
 
-        <meta content="0" property="fb:app_id">
-        <meta content="Tiago Espinha" property="og:site_name">
-        
-          <meta content="WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA" property="og:title">
-        
-        
-          <meta content="article" property="og:type">
-        
-        
-          <meta content="My Personal Blog" property="og:description">
-        
-        
-          <meta content="https://www.tiagoespinha.net/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/" property="og:url">
-        
-        
-          <meta content="2011-09-13T10:48:27+01:00" property="article:published_time">
-          <meta content="https://www.tiagoespinha.net/about/" property="article:author">
-        
-        
-          <meta content="http://aboutashu.com/static/img/logo-high-resolution.png" property="og:image">
-        
-        
-          
-          <meta content="SOA" property="article:section">
-          
-        
-        
-          
-          <meta content="PHP" property="article:tag">
-          
-          <meta content="PHP SOAP" property="article:tag">
-          
-          <meta content="PHP WSF" property="article:tag">
-          
-          <meta content="SOAP" property="article:tag">
-          
-          <meta content="WSF" property="article:tag">
-          
-          <meta content="WSF-PHP" property="article:tag">
-          
-          <meta content="wsfphp" property="article:tag">
-          
-          <meta content="WSO2" property="article:tag">
-          
-          <meta content="WSO2 PHP" property="article:tag">
-          
-          <meta content="WSO2 WSF" property="article:tag">
-          
-        
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@\#">
-        <meta name="twitter:creator" content="@\#">
-        
-          <meta name="twitter:title" content="WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA">
-        
-        
-          <meta name="twitter:url" content="https://www.tiagoespinha.net/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/">
-        
-        
-          <meta name="twitter:description" content="My Personal Blog">
-        
-        
 
-        <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
-        <!-- Custom Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <meta name="author" content="Tiago Espinha">
+  
+  <meta property="article:author" content="Tiago Espinha">
+  
 
-        <!-- FontAwesome icons -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
 
-        <!-- Core BootStrap CSS -->
-        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/bootstrap.min.css">
-        <!-- Material Design CSS -->
-        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/bootstrap-material-design.min.css">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Tiago's Tech Blog">
+<meta property="og:title" content="WSO2 PHP’s WSF Library (or whatever the damn it is called…) and Turmeric SOA">
+<meta property="og:url" content="http://localhost:4000/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/syntax.css">
 
-        <!-- Custom CSS -->        
-        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/thickbox.css">
-        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/main.css">
-        <link rel="stylesheet" href="https://www.tiagoespinha.net/static/css/projects.css">
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <meta property="og:description" content="The title of this post is verbose enough about the feelings I have regarding the naming of this library. It&#8217;s as if WSO2 took a page from Microsoft&#8217;s book regarding names. What&#8217;s next? A Home Edition? Maybe throw in Professional, Business and Ultimate versions too for good measure.">
 
-  ga('create', 'UA-5075580-2', 'auto');
-  ga('send', 'pageview');
 
+
+
+
+
+
+  <meta property="article:published_time" content="2011-09-13T10:48:27+01:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
 </script>
-    </head>
 
-    <body class="home overflow-hidden">
-    <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-        your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div class="header-panel shadow-z-2">
-    <div class="container">
-    <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-12">
-      <div class="row-picture">
-        <img id="about" class="logo-img" src="https://www.tiagoespinha.net/static/img/avatar.png" height="75px" width="75px">
-      </div>
-      <div class="row-details">
-      <h4 class="list-group-item-heading">Tiago Espinha</h4>
-      <p class="list-group-item-text">Tiago's Tech Blog</p>
-      <div class="social-icons">
-	
-        <a class="icon" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Tiago's Tech Blog Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
     
-        <a class="icon" target="_blank" href="#"><i class="fa fa-skype"></i></a>
-    
-        <a class="icon" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
-    
-        <a class="icon" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
-    
-        <a class="icon" target="_blank" href="#"><i class="fa fa-stack-exchange"></i></a>
-    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Tiago's Tech Blog
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
 </div>
-      </div>
-        <div class="navbar-header pull-right">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <i class="fa fa-2x fa-bars"></i>
-            </button>
-        </div>
-      </div>
-      <div class="col-md-9 col-sm-8 col-xs-12">
-      <h2 class="blog-title-pro">WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA</h2>
-      <p class="info">
+
+
+    <div class="initial-content">
       
-      <span class="time">13 Sep 2011</span>
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
       
+        <img src="/assets/tiago.jpg" alt="Tiago Espinha" itemprop="image">
       
-    <span class="categories">
-        &raquo; <a href="/category/SOA">SOA</a>, <a href="/category/Uncategorized">Uncategorized</a>
-    </span>
+    </div>
+  
+
+  <div class="author__content">
     
-      </p>
+      <h3 class="author__name" itemprop="name">Tiago Espinha</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>A collection of (mostly) tech related content on topics that I encounter in my day to day.</p>
+
       </div>
-      </div>
-      </div>
-    </div>
-    <div class="container main outer">
-        <div class="row">
-            <div class="col-md-3 col-xs-12">
-                    <nav class="menu">
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="list-separator nav navbar-nav well well-primary post">
+    
+  </div>
 
-	
-	
-	
-	
-	
-	
-	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 current-menu-item wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
 
-	
-	
-	
-	
-	
-	
-	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="/about/"><i class="fa fa-comments"></i> About</a></li>
+      
+        
+          
+            <li><a href="https://tiagoespinha.net" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/etiago" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/etiago" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">Github</span></a></li>
+          
+        
+      
 
-	
-	
-	
-	
-	
-	
-	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="/projects/"><i class="fa fa-desktop"></i> Projects</a></li>
+      
 
-	
-	
-	
-	
-	
-	
-	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="#"><i class="fa fa-graduation-cap"></i> Resume</a></li>
+      
 
-	
-	
-	
-	
-	
-	
-	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="https://github.com/etiago"><i class="fa fa-github"></i> GitHub</a></li>
+      
 
-	
-	
-	
-	
-	
-	
-	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12  wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa"><a href="/feed.xml"><i class="fa fa-feed"></i> XML Feed</a></li>
+      
 
-</ul>
-    </div>
-    </nav>
+      
 
-            </div> <!-- end /.col-md-3 -->
+      
 
-            <div class="col-md-9 col-xs-12 full">
-                <div class="post-content well">
+      
 
-<article class="content">
-    <div class="post"><p style="text-align: justify;">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="WSO2 PHP’s WSF Library (or whatever the damn it is called…) and Turmeric SOA">
+    <meta itemprop="description" content="  The title of this post is verbose enough about the feelings I have regarding the naming of this library. It&#8217;s as if WSO2 took a page from Microsoft&#8217;s book regarding names. What&#8217;s next? A Home Edition? Maybe throw in Professional, Business and Ultimate versions too for good measure.">
+    <meta itemprop="datePublished" content="2011-09-13T10:48:27+01:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">WSO2 PHP’s WSF Library (or whatever the damn it is called…) and Turmeric SOA
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p style="text-align: justify;">
   <a href="https://www.tiagoespinha.net/wp-content/uploads/2011/09/762791717WSO2pic.jpg" rel="lightbox[519]" title="762791717WSO2pic"><img class="alignleft size-full wp-image-523" title="762791717WSO2pic" src="https://www.tiagoespinha.net/wp-content/uploads/2011/09/762791717WSO2pic.jpg" alt="" width="250" height="102" /></a>The title of this post is verbose enough about the feelings I have regarding the naming of this library. It&#8217;s as if WSO2 took a page from Microsoft&#8217;s book regarding names. What&#8217;s next? A Home Edition? Maybe throw in Professional, Business and Ultimate versions too for good measure.
 </p>
 
@@ -345,1560 +407,268 @@ wsf.home="/usr/local/bin/apache2/php/wsf-php/"</pre>
   Till the next post!
 </p>
 </WSF_sources></p></path_to_php></p>
-</div>
-    <hr />
-    
-    <div class="share-page">
-    Share this on &rarr;
- <a href="https://twitter.com/share" class="twitter-share-button" data-via="\#">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-<!-- Google + -->
-<div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-
-<!-- Facebook -->
-<div class="fb-share-button" data-href="https://www.tiagoespinha.net/2011/09/wso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa/" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
-</div>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-</article>
-<hr />
-
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-                
-                <div class="panel-body">
-                <h4>Related Posts</h4>
-                <ul>
-                
-                <li class="relatedPost">
-                    <a href="https://www.tiagoespinha.net/2014/09/wat-is-alcohol-ketonatus-what-is-alcohol-ketonatus/">Wat is alcohol ketonatus? (What is alcohol ketonatus?)</a>
-                    
-                        <small>(Categories: <a href="/category/Life hacks">Life hacks</a>, <a href="/category/Uncategorized">Uncategorized</a>)</small>
-                    
-                </li>
-                
-                
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-                
-                <li class="relatedPost">
-                    <a href="https://www.tiagoespinha.net/2013/10/automatic-recovery-of-rest-interfaces/">Automatic Recovery of REST Interfaces</a>
-                    
-                        <small>(Categories: <a href="/category/SOA">SOA</a>, <a href="/category/Software">Software</a>)</small>
-                    
-                </li>
-                
-                
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-        
-            
-                
-                <li class="relatedPost">
-                    <a href="https://www.tiagoespinha.net/2012/09/turmeric-soa-lessons-learned/">Turmeric SOA &#8211; Lessons learned</a>
-                    
-                        <small>(Categories: <a href="/category/Open source">Open source</a>, <a href="/category/Research">Research</a>, <a href="/category/SOA">SOA</a>, <a href="/category/Software">Software</a>)</small>
-                    
-                </li>
-                
-                
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-                
-                <li class="relatedPost">
-                    <a href="https://www.tiagoespinha.net/2012/07/the-cross-discipline-conundrum-or-how-we-cant-always-learn-from-other-disciplines/">The cross-discipline conundrum (or how we can&#8217;t always learn from other disciplines)</a>
-                    
-                        <small>(Categories: <a href="/category/Research">Research</a>, <a href="/category/SOA">SOA</a>, <a href="/category/Software">Software</a>)</small>
-                    
-                </li>
-                
-                
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-                
-                <li class="relatedPost">
-                    <a href="https://www.tiagoespinha.net/2011/08/on-turmeric-soa-open-source-and-the-apache-software-foundation/">On Turmeric SOA, open-source and the Apache Software Foundation</a>
-                    
-                        <small>(Categories: <a href="/category/SOA">SOA</a>)</small>
-                    
-                </li>
-                
-                
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-                
-                <li class="relatedPost">
-                    <a href="https://www.tiagoespinha.net/2009/10/sidekick-data-recovered-most-of-it-maybe-all/">Sidekick data recovered (most of it, maybe all)</a>
-                    
-                        <small>(Categories: <a href="/category/Uncategorized">Uncategorized</a>)</small>
-                    
-                </li>
-                
-                
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
 
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
         
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
+      </section>
 
-    
-    
+      <footer class="page__meta">
         
-            
         
-            
-        
-    
 
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
 
-    
-    
         
-            
-        
-            
-        
-    
 
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2011-09-13T10:48:27+01:00">September 13, 2011</time></p>
 
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
 
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
+      </footer>
 
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
+      <section class="page__share">
+  
 
-    
-    
-        
-            
-        
-            
-        
-    
+  <a href="https://twitter.com/intent/tweet?text=WSO2+PHP%26%238217%3Bs+WSF+Library+%28or+whatever+the+damn+it+is+called%26%238230%3B%29+and+Turmeric+SOA%20http%3A%2F%2Flocalhost%3A4000%2F2011%2F09%2Fwso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-    
-    
-        
-            
-        
-            
-        
-    
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2011%2F09%2Fwso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-    
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2011%2F09%2Fwso2-phps-wsf-library-or-whatever-the-damn-it-is-called-and-turmeric-soa%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
 
-    
-    
-        
-            
-        
-            
-        
-    
 
-    
-    
-        
-            
-        
-            
-        
+      
+  <nav class="pagination">
     
-        
-            
-        
-            
-        
-    
-
+      <a href="/2011/09/black-and-white-icons-for-caffeine/" class="pagination--pager" title="Black and white icons for Caffeine
+">Previous</a>
     
     
-        
-            
-        
-            
-        
+      <a href="/2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/" class="pagination--pager" title="[Quickies] Galaxy S2 MIUI 1.12.30 Camera Force Closes
+">Next</a>
     
-
+  </nav>
 
-    </ul>
     </div>
 
+    
+  </article>
 
-<div class="PageNavigation">
   
-    <a class="prev pull-left" href="/2011/09/black-and-white-icons-for-caffeine/">&laquo; Black and white icons for Caffeine</a>
   
-  
-    <a class="next pull-right" href="/2012/01/quickies-galaxy-s2-miui-1-12-30-camera-force-closes/">[Quickies] Galaxy S2 MIUI 1.12.30 Camera Force Closes &raquo;</a>
-  
-</div>
-
-
-<div class="disqus-comments">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* <![CDATA[ */
-
-        var disqus_shortname = "tiagostechblog";
-        var disqus_identifier = "https://www.tiagoespinha.net_WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA";
-        var disqus_title = "WSO2 PHP&#8217;s WSF Library (or whatever the damn it is called&#8230;) and Turmeric SOA";
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    /* ]]> */
-    </script>
-</div>
-</div>
-
-
-                <div class="row">
-                  <div class="col-md-12 col-xs-12 footer">
-                <footer>
-                    © Copyright text here
-                     
-                    - <a href="#">Privacy link</a> - Powered by Jekyll.
-                    
-                </footer>
-                <div align="center">
-                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                  <!-- hcz-jekyll -->
-                  <ins class="adsbygoogle"
-                       style="display:block"
-                       data-ad-client="ca-pub-0776433630785969"
-                       data-ad-slot="9690958902"
-                       data-ad-format="auto"></ins>
-                  <script>
-                  (adsbygoogle = window.adsbygoogle || []).push({});
-                  </script>
-                </div>
-            </div>
-                </div>
-            </div> <!-- end /.col-md-9 -->
-        </div> <!-- end /.row -->
-
-    </div> <!-- end /.container -->
-
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="https://www.tiagoespinha.net/static/js/bootstrap.min.js"></script>
+          
 
-        <script src="https://www.tiagoespinha.net/static/js/thickbox-compressed.js"></script>
-        <script src="https://www.tiagoespinha.net/static/js/material.min.js"></script>
-        <script src="https://www.tiagoespinha.net/static/js/main.js"></script>
-        <script src="https://www.tiagoespinha.net/static/js/projects.js"></script>
-    </body>
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2022/02/2022-04-11-lsp-docker-mode-with-multiple-clients/" rel="permalink">LSP Docker mode with multiple clients
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+LSP Docker is a fantastic extension if you need to make use of build containers for development. It creates LSP-mode clients in Emacs that allow a language ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2022/02/2022-02-09-grpc-protobuf-uint64-wrong/" rel="permalink">uint64 encoded in Protobuf bytes looks wrong
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+Today as I was trying to debug an issue, I had to interpret a Protobuf message that happened to have a uint64 in it. I only had access to the packet capture...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2021/06/2021-06-20-https-with-custom-domains-on-azure-cdn/" rel="permalink">HTTPS with custom domains on Azure CDN
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+My blog is written in Jekyll. Simply put, Jekyll takes documents written in Markdown (similar to what you could use to write README files in a Git repositor...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2021/06/2021-06-19-starting-a-new-role/" rel="permalink">Starting a new role
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+As of the 12th of June and after nearly four years, I'm no longer working at Ocado. At Ocado I had the opportunity to work with a number of amazing people a...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Tiago's Tech Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5075580-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+  </body>
 </html>

@@ -2,8 +2,7 @@
 id: 246
 title: 'Imageshack Hacked? &#8211; Yes!'
 date: 2009-07-11T07:31:42+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=246
 permalink: /2009/07/imageshack-hacked-yes/
 categories:

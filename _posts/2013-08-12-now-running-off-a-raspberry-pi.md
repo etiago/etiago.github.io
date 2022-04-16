@@ -2,9 +2,8 @@
 id: 589
 title: Now running off a Raspberry Pi!
 date: 2013-08-12T10:59:41+00:00
-author: tiago
+author: Tiago Espinha
 excerpt: "During my recent trip to the UK I indulged myself in buying a Raspberry Pi. There's just so many things you can do with one that my initial plan of having it as an XMBC media center in our living room was quickly subdued by the rush to run my blog off it."
-layout: post
 guid: http://www.tiagoespinha.net/?p=589
 permalink: /2013/08/now-running-off-a-raspberry-pi/
 categories:

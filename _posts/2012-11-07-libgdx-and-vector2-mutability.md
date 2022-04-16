@@ -2,8 +2,7 @@
 id: 574
 title: libgdx and Vector2 mutability
 date: 2012-11-07T21:48:27+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=574
 permalink: /2012/11/libgdx-and-vector2-mutability/
 categories:

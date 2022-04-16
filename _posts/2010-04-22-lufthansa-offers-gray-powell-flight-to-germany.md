@@ -2,8 +2,7 @@
 id: 320
 title: Lufthansa offers Gray Powell flight to Germany
 date: 2010-04-22T17:34:16+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=320
 permalink: /2010/04/lufthansa-offers-gray-powell-flight-to-germany/
 categories:

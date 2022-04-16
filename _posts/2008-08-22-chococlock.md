@@ -2,8 +2,7 @@
 id: 57
 title: Chococlock
 date: 2008-08-22T18:53:43+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=57
 permalink: /2008/08/chococlock/
 categories:
@@ -12,6 +11,7 @@ tags:
   - Chocolate
   - Funny
   - Funny Gadget
+published: false
 ---
 <p style="text-align: justify;">
   <img class="alignleft size-medium wp-image-58" style="border: 1px solid #000000; margin: 2px; float: left;" title="p1818h" src="https://www.tiagoespinha.net/wp-content/uploads/2008/08/p1818h.gif" alt="" width="120" height="130" />Well, okay this is a very weird and useless gadget but if your girlfriend is suffering from anorexia and you have no clue what to give her on her birthday, here&#8217;s the ideal gift!

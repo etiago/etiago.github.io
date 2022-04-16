@@ -2,8 +2,7 @@
 id: 644
 title: 'Chronopost Portugal? Serviço enganador&#8230;'
 date: 2013-10-11T16:09:39+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=644
 permalink: /2013/10/chronopost-portugal-servico-enganador/
 categories:

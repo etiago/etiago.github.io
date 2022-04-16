@@ -2,8 +2,7 @@
 id: 185
 title: 'Office 2007 SP2 reduces interoperability &#8211; tough luck?'
 date: 2009-05-20T16:13:20+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=185
 permalink: /2009/05/office-2007-sp2-reduces-interoperability-tough-luck/
 categories:

@@ -2,8 +2,7 @@
 id: 113
 title: Solid State Musical Tesla Coil
 date: 2008-09-06T23:16:37+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=113
 permalink: /2008/09/solid-state-musical-tesla-coil/
 categories:

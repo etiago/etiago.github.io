@@ -2,8 +2,7 @@
 id: 178
 title: 'LG KM900 &#8211; You&#8217;re doing it wrong'
 date: 2009-04-26T22:46:43+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=178
 permalink: /2009/04/lg-km900-youre-doing-it-wrong/
 categories:

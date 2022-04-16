@@ -2,8 +2,7 @@
 id: 13
 title: How TeddyBear Notes will change your life
 date: 2008-07-29T04:09:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=13
 permalink: /2008/07/how-teddybear-notes-will-change-your-life/
 blogger_blog:
@@ -14,6 +13,7 @@ blogger_permalink:
   - /2008/07/how-teddybear-notes-will-change-your.html
 categories:
   - teddybearnotes
+published: false
 ---
 <div style="text-align: justify;">
   At some point, we have all used post-its. Some people admittedly use it <a href="http://web.mit.edu/cms/bcc/blogpics/postit.jpg">more than others</a> but we have all used them. They are very handy and at really busy times, we humans have a knack for forgetting things, thus there is the need to note down stuff.</p> 

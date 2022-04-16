@@ -2,8 +2,7 @@
 id: 689
 title: '[Project] How to easily monitor your plants&#8217; soil humidity'
 date: 2014-05-13T20:02:06+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=689
 permalink: /2014/05/project-how-to-easily-monitor-your-plants-soil-humidity/
 categories:

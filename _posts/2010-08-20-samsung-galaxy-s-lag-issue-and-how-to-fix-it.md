@@ -2,8 +2,7 @@
 id: 347
 title: 'Samsung Galaxy S Lag Issue (And How To Fix It) &#8211; Android 2.1 [Updated]'
 date: 2010-08-20T20:26:31+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=347
 permalink: /2010/08/samsung-galaxy-s-lag-issue-and-how-to-fix-it/
 categories:

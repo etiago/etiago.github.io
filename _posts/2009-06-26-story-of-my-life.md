@@ -2,8 +2,7 @@
 id: 215
 title: Story of my Life
 date: 2009-06-26T13:15:45+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=215
 permalink: /2009/06/story-of-my-life/
 categories:
@@ -15,6 +14,7 @@ tags:
   - "Master's Degree"
   - my life
   - University of Leicester
+published: false
 ---
 <p style="text-align: justify;">
   Today, I bring you something that happened with me recently and that I think it is worth sharing.

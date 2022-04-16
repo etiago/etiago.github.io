@@ -2,8 +2,7 @@
 id: 4
 title: TeddyBearNotes v1.1.0-4
 date: 2008-07-22T15:44:00+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://tiagoespinha.info/?p=4
 permalink: /2008/07/teddybearnotes-v110-4/
 blogger_blog:
@@ -15,6 +14,7 @@ blogger_permalink:
 categories:
   - tbn releases
   - teddybearnotes
+published: false
 ---
 <div style="text-align: justify;">
   <span style="font-weight: bold; color: rgb(255, 0, 0);">EDIT:</span><span style="color: rgb(255, 0, 0);"> The links were broken. Apparently the RAR was corrupt, but now it should all be well.</span></p> 

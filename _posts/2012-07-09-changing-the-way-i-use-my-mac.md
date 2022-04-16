@@ -2,9 +2,8 @@
 id: 555
 title: Changing the way I use my Mac
 date: 2012-07-09T10:58:46+00:00
-author: tiago
+author: Tiago Espinha
 excerpt: "I'm a browser person. Pretty much everything I do sits inside the browser: e-mails, RSS feeds, reading the news, facebook, etc... everything happens inside the browser. "
-layout: post
 guid: http://www.tiagoespinha.net/?p=555
 permalink: /2012/07/changing-the-way-i-use-my-mac/
 categories:

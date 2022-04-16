@@ -2,8 +2,7 @@
 id: 296
 title: Out with the old, In with the new!
 date: 2009-12-28T10:57:24+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=296
 permalink: /2009/12/out-with-the-old-in-with-the-new/
 categories:

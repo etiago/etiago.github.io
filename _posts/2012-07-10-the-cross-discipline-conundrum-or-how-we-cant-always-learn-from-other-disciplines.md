@@ -2,8 +2,7 @@
 id: 549
 title: 'The cross-discipline conundrum (or how we can&#8217;t always learn from other disciplines)'
 date: 2012-07-10T15:22:03+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=549
 permalink: /2012/07/the-cross-discipline-conundrum-or-how-we-cant-always-learn-from-other-disciplines/
 categories:

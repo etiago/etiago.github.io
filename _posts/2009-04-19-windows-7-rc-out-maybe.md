@@ -2,8 +2,7 @@
 id: 171
 title: 'Windows 7 RC out &#8211; maybe'
 date: 2009-04-19T12:34:32+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=171
 permalink: /2009/04/windows-7-rc-out-maybe/
 categories:

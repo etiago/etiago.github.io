@@ -2,8 +2,7 @@
 id: 342
 title: 'Samsung Galaxy S and the iPhone 4&#8217;s amazing screen'
 date: 2010-07-26T18:16:28+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=342
 permalink: /2010/07/samsung-galaxy-s-and-the-iphone-4s-amazing-screen/
 categories:

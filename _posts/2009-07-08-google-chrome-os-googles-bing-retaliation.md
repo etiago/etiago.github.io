@@ -2,8 +2,7 @@
 id: 234
 title: 'Google Chrome OS &#8211; Google&#8217;s Bing Retaliation'
 date: 2009-07-08T08:19:42+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=234
 permalink: /2009/07/google-chrome-os-googles-bing-retaliation/
 categories:

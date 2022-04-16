@@ -2,8 +2,7 @@
 id: 409
 title: Android Rooting For Dummies (What is Rooting?)
 date: 2010-09-15T00:24:33+00:00
-author: tiago
-layout: post
+author: Tiago Espinha
 guid: http://www.tiagoespinha.net/?p=409
 permalink: /2010/09/android-rooting-for-dummies-what-is-rooting/
 categories:
